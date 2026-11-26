@@ -1,6 +1,6 @@
 # Universal Paperclips: Remastered（宇宙回形针重制）
 
-> 经典增量游戏《[Universal Paperclips](https://www.decisionproblem.com/paperclips/)》的扩展重制版。目前有简中/English两种语言。
+> 经典增量游戏《[Universal Paperclips](https://www.decisionproblem.com/paperclips/)》的扩展重制版。目前有简中/English两种语言。点进Tag里下载即玩，电脑版是那个单html文件，安卓版是.apk。
 
 做着玩玩顺手发一下，，，代码是从零重写的，重制了所有细节、数值和视觉内容，只保留了原作大致的主线。
 
@@ -31,18 +31,18 @@
 
 为了快速弄出胶水代码，有许多工作由LLM agent辅助，不过并非纯vibe，克尔黑洞渲染器之类部分有比较高的匠心手搓成分。
 
-在仓库根目录执行以下命令，需要 Node.js 22 或更新版本，以及 Python 3。
+在仓库根目录执行以下命令来构建（需要 Node.js 22 或更新版本，以及 Python 3：
 
 ```bash
 python -m pip install -r scripts/fonts/requirements.txt
 npm run build
 ```
 
+构建安卓版时，配置 `JAVA_HOME`、`ANDROID_HOME`（需要 Android SDK 35 和 Build Tools 35.0.0），并使用 `PAPERCLIPS_KEYSTORE`、`PAPERCLIPS_SIGN_PASSWORD` 提供签名信息，然后运行 `npm run build:android`。
+
 出于版权原因，这个仓库没有上传bgm的文件，所以构建出来的是没有bgm的版本。不过，release版本（以及 `dist/` 里的）是打包好bgm的，去那里下载，玩的时候会正常播放。
 
 如果你根据曲名获取到了原始曲目（或者向我索要，除了音乐文件还需要 `曲目.cjs`），可以放到仓库同级的 `../bgm/`，先运行 `npm ci` 安装音频工具，再构建带音乐的版本。MIDI 构建需要 DLS 或 SF2 音源，可以用 `PAPERCLIPS_SOUNDBANK` 指定。Windows 默认使用系统的 `gm.dls`。
-
-构建安卓版时，配置 `JAVA_HOME`、`ANDROID_HOME`（需要 Android SDK 35 和 Build Tools 35.0.0），并使用 `PAPERCLIPS_KEYSTORE`、`PAPERCLIPS_SIGN_PASSWORD` 提供签名信息，然后运行 `npm run build:android`。
 
 ## 关于版权
 
