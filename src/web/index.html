@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>html{background:#000}#loadingCurtain{position:fixed;inset:0;z-index:2147483647;background:#000}</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title><!-- game-title --></title>
+<style>/*__样式__*/</style>
+</head>
+<body class="crt rgb curve vignette noise">
+<div id="loadingCurtain" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true"><defs><filter id="phosphorScreen" x="-8%" y="-8%" width="116%" height="116%" color-interpolation-filters="sRGB">
+<feImage id="barrelMap" x="0" y="0" preserveAspectRatio="none" result="warpMap"/><feDisplacementMap id="barrelWarp" in="SourceGraphic" in2="warpMap" scale="0" xChannelSelector="R" yChannelSelector="G" result="warped"/>
+<feGaussianBlur id="glowTight" in="warped" stdDeviation=".65" result="tight"/><feComponentTransfer in="tight" result="tightGlow"><feFuncR id="glowLevelTight" type="linear" slope=".55" intercept="-.02"/><feFuncG type="linear" slope=".55" intercept="-.02"/><feFuncB type="linear" slope=".55" intercept="-.02"/></feComponentTransfer>
+<feGaussianBlur id="glowWide" in="warped" stdDeviation="5" result="wide"/><feComponentTransfer in="wide" result="wideGlow"><feFuncR id="glowLevel" type="linear" slope="1.6" intercept="-.006"/><feFuncG type="linear" slope="1.6" intercept="-.006"/><feFuncB type="linear" slope="1.6" intercept="-.006"/></feComponentTransfer>
+<feComponentTransfer in="wide" result="edgeLight"><feFuncR id="edgeGlowLevel" type="linear" slope="1.6"/><feFuncG type="linear" slope="1.6"/><feFuncB type="linear" slope="1.6"/></feComponentTransfer>
+<feComposite in="edgeLight" in2="warped" operator="out" result="edgeSpill"/><feBlend in="wideGlow" in2="edgeSpill" mode="screen" result="outerGlow"/>
+<feBlend in="tightGlow" in2="outerGlow" mode="screen" result="glow"/><feBlend in="warped" in2="glow" mode="screen" result="lit"/>
+<feColorMatrix id="redChannel" in="lit" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" result="red"/><feDisplacementMap id="redFringe" in="red" in2="warpMap" scale="-1.6" xChannelSelector="R" yChannelSelector="G" result="rf"/><feOffset id="redOffset" in="rf" dx="-1.05" result="r"/>
+<feColorMatrix id="greenChannel" in="lit" values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0" result="g"/>
+<feColorMatrix id="blueChannel" in="lit" values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" result="blue"/><feDisplacementMap id="blueFringe" in="blue" in2="warpMap" scale="1.6" xChannelSelector="R" yChannelSelector="G" result="bf"/><feOffset id="blueOffset" in="bf" dx="1.05" result="b"/>
+<feBlend in="r" in2="g" mode="screen" result="rg"/><feBlend in="rg" in2="b" mode="screen"/>
+</filter></defs></svg>
+<div id="crtShell"><div id="crtGlass"><div id="viewport"><div class="screen" id="screen">
+<canvas id="ambient" aria-hidden="true"></canvas>
+<header class="topbar"><div class="brand">{{copy.universal-paperclips}}</div><div class="hero"><div><span class="counter-label" id="countLabel">{{copy.total-paperclips}}</span><span class="big-number" id="clipCount">0</span></div></div><nav class="top-tools" aria-label="{{copy.tools}}"><button class="ghost tiny" data-modal="log">{{copy.log}}</button><button class="ghost tiny" data-modal="guide">{{copy.guide}}</button><button class="ghost tiny" data-modal="display">{{copy.settings}}</button><button class="ghost tiny" data-modal="save">{{copy.save}}</button></nav></header>
+<div id="gameArea"><main class="layout"><div class="column management" id="leftColumn"><section class="journal" aria-label="{{copy.news}}"><div class="journal-lines" id="journal" tabindex="0"></div><div class="production-row"><div id="manualControl"></div><span class="counter-side" id="production">{{index.0-clips-day}}</span></div></section><div id="management" class="management-controls"></div></div>
+<div class="column observation"><section class="viz" aria-label="{{copy.expansion-view}}"><canvas id="view" class="view-surface" role="img" aria-label="{{copy.interactive-main-view}}" tabindex="0" data-help="{{copy.drag-to-rotate-double-click-to-reset}}"></canvas><div class="viz-top"><span id="vizCode"></span><span id="vizMode"></span></div><div class="cross"></div><div class="viz-bottom"><span id="vizCoord"></span><span id="vizScale"></span><canvas id="cosmicScale" width="1" height="22" aria-hidden="true"></canvas></div></section><div class="plot-caption"><span id="vizCaption"></span><span id="vizPreviousState" class="viz-previous hidden"></span><span id="vizState"></span></div><div id="centralControls"></div></div>
+<div class="column research"><div id="researchExtras"></div><div id="industrialReadout"></div><section class="section"><div class="section-head"><span>{{copy.projects}}</span><small id="researchCount"></small></div><div class="projects" id="projects"></div></section></div></main></div>
+<div class="ending hidden" id="ending"></div>
+<footer class="time-dock" id="timeDock"><button class="pause" id="pause" aria-label="{{copy.pause-time}}" data-help="{{index.pause-space}}"><span class="pause-symbol"><i></i><i></i></span></button><div class="clock-display"><strong id="clockDate">2027-01-01</strong><span id="clockTime">00:00:00.000</span></div><div class="speed-control"><span>{{copy.time}}</span><div class="time-scale"><div class="speed-ticks" id="speedTicks" aria-hidden="true"></div><input id="speed" type="range" min="0" max="1000" value="500" aria-label="{{copy.time-speed}}"></div></div><span class="speed-readout" id="speedValue"></span><output id="fpsReadout" aria-label="{{index.fps}}">{{index.fps-2}}</output></footer>
+<div class="screen-decoration" aria-hidden="true"></div></div></div><div id="scanlines"></div><div id="grain"></div><div id="vignette"></div><div id="modalRoot"></div><div class="notification hidden" id="toast" role="status"></div><div id="contextHelp" class="context-help" role="tooltip" style="visibility:hidden"></div></div></div><canvas id="glassLight" aria-hidden="true"></canvas>
+<!-- game-scripts -->
+</body>
+</html>

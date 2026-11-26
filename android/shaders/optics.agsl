@@ -1,0 +1,21 @@
+uniform shader source;
+uniform float2 extent;
+uniform float density;
+uniform float bend;
+uniform float offset;
+
+half4 sampleScreen(float2 p) {
+ if (bend == 0.0) return source.eval(p);
+ float2 uv=p/extent*2.0-1.0;
+ float2 at=p+extent*bend*uv*dot(uv,uv);
+ float coverage=clamp(min(min(at.x,extent.x-at.x),min(at.y,extent.y-at.y))+0.5,0.0,1.0);
+ return source.eval(clamp(at,float2(0.5),extent-0.5))*coverage;
+}
+
+half4 main(float2 p) {
+ if (offset == 0.0) return sampleScreen(p);
+ float2 uv=p/extent*2.0-1.0;
+ float2 displacement=(bend/0.011)*extent/max(extent.x,extent.y)*0.25*uv*dot(uv,uv);
+ float2 delta=(float2(offset,0.0)-(offset/1.05)*1.6*displacement)*density;
+ return half4(sampleScreen(p+delta).r,sampleScreen(p).g,sampleScreen(p-delta).b,1.0);
+}

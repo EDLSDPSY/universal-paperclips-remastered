@@ -1,0 +1,5632 @@
+{
+  "copy.reset": {
+    "zh": "重置",
+    "en": "Reset"
+  },
+  "copy.music": {
+    "zh": "音乐",
+    "en": "Music"
+  },
+  "copy.music-volume": {
+    "zh": "音乐音量",
+    "en": "Music volume"
+  },
+  "copy.sound-effects": {
+    "zh": "音效",
+    "en": "Sound effects"
+  },
+  "copy.sound-effects-volume": {
+    "zh": "音效音量",
+    "en": "Sound effects volume"
+  },
+  "copy.undercurrents": {
+    "zh": "暗流涌动",
+    "en": "Undercurrents"
+  },
+  "copy.labor-upheaval": {
+    "zh": "就业动荡",
+    "en": "Labor upheaval"
+  },
+  "copy.widespread-unease": {
+    "zh": "人心惶惶",
+    "en": "Widespread unease"
+  },
+  "copy.growing-prosperity": {
+    "zh": "渐趋繁盛",
+    "en": "Growing prosperity"
+  },
+  "copy.unprecedented-prosperity": {
+    "zh": "空前繁荣",
+    "en": "Unprecedented prosperity"
+  },
+  "copy.peace-on-earth": {
+    "zh": "天下太平",
+    "en": "Peace on Earth"
+  },
+  "copy.an-age-of-abundance": {
+    "zh": "丰裕时代",
+    "en": "An age of abundance"
+  },
+  "copy.pointing-accuracy-is-no-longer-the-limiting-factor": {
+    "zh": "指向精度现在不再是限制因素。",
+    "en": "Pointing accuracy is no longer the limiting factor."
+  },
+  "copy.mean-surface-temperature": {
+    "zh": "地表均温",
+    "en": "Mean surface temperature"
+  },
+  "copy.language": {
+    "zh": "语言",
+    "en": "Language"
+  },
+  "copy.language-2": {
+    "zh": "语言 / LANGUAGE",
+    "en": "LANGUAGE"
+  },
+  "copy.language-3": {
+    "zh": "语言 / Language",
+    "en": "Language"
+  },
+  "copy.keys": {
+    "zh": "指南 / KEYS",
+    "en": "KEYS"
+  },
+  "copy.storage": {
+    "zh": "存档",
+    "en": "STORAGE",
+    "direct": true
+  },
+  "copy.interactive-main-view": {
+    "zh": "可转动的主图",
+    "en": "Interactive main view"
+  },
+  "copy.standard": {
+    "zh": "标准",
+    "en": "Standard"
+  },
+  "copy.low-power": {
+    "zh": "省电",
+    "en": "Low power"
+  },
+  "copy.time-speed": {
+    "zh": "时间流速",
+    "en": "Time speed"
+  },
+  "copy.close": {
+    "zh": "关闭",
+    "en": "Close"
+  },
+  "copy.guide": {
+    "zh": "指南",
+    "en": "Guide"
+  },
+  "copy.display": {
+    "zh": "显示",
+    "en": "Display"
+  },
+  "copy.tools": {
+    "zh": "工具",
+    "en": "Tools"
+  },
+  "copy.news": {
+    "zh": "事件记录",
+    "en": "News"
+  },
+  "copy.expansion-view": {
+    "zh": "开发范围可视化",
+    "en": "Expansion view"
+  },
+  "copy.paperclips": {
+    "zh": "回形针",
+    "en": "Paperclips"
+  },
+  "copy.make-a-paperclip": {
+    "zh": "制造回形针",
+    "en": "Make a paperclip"
+  },
+  "copy.clips-day": {
+    "zh": "枚 / 日",
+    "en": "clips / day"
+  },
+  "copy.clips-day-2": {
+    "zh": "枚/日",
+    "en": "clips/day"
+  },
+  "copy.days-sec": {
+    "zh": "日 / 秒",
+    "en": "days / sec"
+  },
+  "copy.years-sec": {
+    "zh": "年 / 秒",
+    "en": "years / sec"
+  },
+  "copy.pause-time": {
+    "zh": "暂停时间",
+    "en": "Pause time"
+  },
+  "copy.resume-time": {
+    "zh": "继续时间",
+    "en": "Resume time"
+  },
+  "copy.pause": {
+    "zh": "暂停",
+    "en": "Pause"
+  },
+  "copy.space": {
+    "zh": "空格",
+    "en": "Space"
+  },
+  "copy.market": {
+    "zh": "与市场",
+    "en": " & market"
+  },
+  "copy.available-funds": {
+    "zh": "可用资金",
+    "en": "Available funds"
+  },
+  "copy.material": {
+    "zh": "原料",
+    "en": "Material"
+  },
+  "copy.unsold-inventory": {
+    "zh": "未售库存",
+    "en": "Unsold inventory"
+  },
+  "copy.demand": {
+    "zh": "需求",
+    "en": "Demand"
+  },
+  "copy.price": {
+    "zh": "售价",
+    "en": "Price"
+  },
+  "copy.lower-price": {
+    "zh": "降低售价",
+    "en": "Lower price"
+  },
+  "copy.raise-price": {
+    "zh": "提高售价",
+    "en": "Raise price"
+  },
+  "copy.paperclip-price": {
+    "zh": "回形针售价",
+    "en": "Paperclip price"
+  },
+  "copy.buy-feedstock": {
+    "zh": "采购原料",
+    "en": "Buy feedstock"
+  },
+  "copy.production-equipment": {
+    "zh": "生产设备",
+    "en": "Production equipment"
+  },
+  "copy.autoclippers": {
+    "zh": "自动制造机",
+    "en": "Autoclippers"
+  },
+  "copy.buy": {
+    "zh": "购入",
+    "en": "Buy"
+  },
+  "copy.marketing-level": {
+    "zh": "营销等级",
+    "en": "Marketing level"
+  },
+  "copy.marketing": {
+    "zh": "营销",
+    "en": "Marketing"
+  },
+  "copy.adjust-price-daily": {
+    "zh": "每日调整售价",
+    "en": "Adjust price daily"
+  },
+  "copy.auto-buy-feedstock": {
+    "zh": "自动采购原料",
+    "en": "Auto-buy feedstock"
+  },
+  "copy.industry": {
+    "zh": "工业设施",
+    "en": "Industry"
+  },
+  "copy.revenue-day": {
+    "zh": "收入 / 日",
+    "en": "Revenue / day"
+  },
+  "copy.portfolio": {
+    "zh": "投资组合",
+    "en": "Portfolio"
+  },
+  "copy.investments": {
+    "zh": "投资",
+    "en": "Investments"
+  },
+  "copy.risk": {
+    "zh": "风险",
+    "en": "Risk"
+  },
+  "copy.low-4-annual-volatility": {
+    "zh": "低 · 年波动 4%",
+    "en": "Low · 4% annual volatility"
+  },
+  "copy.medium-16-annual-volatility": {
+    "zh": "中 · 年波动 16%",
+    "en": "Medium · 16% annual volatility"
+  },
+  "copy.high-32-annual-volatility": {
+    "zh": "高 · 年波动 32%",
+    "en": "High · 32% annual volatility"
+  },
+  "copy.invest-10": {
+    "zh": "投入 10%",
+    "en": "Invest 10%"
+  },
+  "copy.invest-50": {
+    "zh": "投入 50%",
+    "en": "Invest 50%"
+  },
+  "copy.withdraw": {
+    "zh": "取回",
+    "en": "Withdraw"
+  },
+  "copy.computing": {
+    "zh": "计算资源",
+    "en": "Computing"
+  },
+  "copy.trust": {
+    "zh": "信任",
+    "en": "Trust"
+  },
+  "copy.available": {
+    "zh": "余量",
+    "en": "Available"
+  },
+  "copy.processors": {
+    "zh": "处理器",
+    "en": "Processors"
+  },
+  "copy.storage-2": {
+    "zh": "存储器",
+    "en": "Storage"
+  },
+  "copy.add-a-processor": {
+    "zh": "增加处理器",
+    "en": "Add a processor"
+  },
+  "copy.add-storage": {
+    "zh": "增加存储器",
+    "en": "Add storage"
+  },
+  "copy.ops": {
+    "zh": "运算",
+    "en": "Ops"
+  },
+  "copy.ideas": {
+    "zh": "点子",
+    "en": "Ideas"
+  },
+  "copy.unavailable": {
+    "zh": "不可用",
+    "en": "Unavailable"
+  },
+  "copy.strategy-tournaments": {
+    "zh": "策略竞赛",
+    "en": "Strategy tournaments"
+  },
+  "copy.strategy": {
+    "zh": "策略",
+    "en": "Strategy"
+  },
+  "copy.tit-for-tat": {
+    "zh": "针锋相对",
+    "en": "Tit for tat"
+  },
+  "copy.greedy": {
+    "zh": "贪婪",
+    "en": "Greedy"
+  },
+  "copy.minimax": {
+    "zh": "最小最大",
+    "en": "Minimax"
+  },
+  "copy.generous": {
+    "zh": "慷慨",
+    "en": "Generous"
+  },
+  "copy.tournament-in-progress": {
+    "zh": "竞赛进行中",
+    "en": "Tournament in progress"
+  },
+  "copy.auto-repeat-tournaments": {
+    "zh": "自动继续竞赛",
+    "en": "Auto-repeat tournaments"
+  },
+  "copy.last-round": {
+    "zh": "上轮",
+    "en": "Last round"
+  },
+  "copy.projects": {
+    "zh": "项目",
+    "en": "Projects"
+  },
+  "copy.all-projects-completed": {
+    "zh": "项目已完成。",
+    "en": "All projects completed."
+  },
+  "copy.research": {
+    "zh": "研究",
+    "en": "Research"
+  },
+  "copy.start": {
+    "zh": "开始",
+    "en": "Start"
+  },
+  "copy.in-progress": {
+    "zh": "进行中",
+    "en": "In progress"
+  },
+  "copy.duration": {
+    "zh": "工期",
+    "en": "Duration"
+  },
+  "copy.remaining": {
+    "zh": "剩余",
+    "en": "Remaining"
+  },
+  "copy.production-allocation": {
+    "zh": "产能分配",
+    "en": "Production allocation"
+  },
+  "copy.growth": {
+    "zh": "增殖",
+    "en": "Growth"
+  },
+  "copy.production": {
+    "zh": "生产",
+    "en": "Production"
+  },
+  "copy.orbit": {
+    "zh": "轨道",
+    "en": "Orbit"
+  },
+  "copy.surface-pv": {
+    "zh": "地表光伏",
+    "en": "Surface PV"
+  },
+  "copy.harvesters": {
+    "zh": "收割设备",
+    "en": "Harvesters"
+  },
+  "copy.fabricators": {
+    "zh": "制造设备",
+    "en": "Fabricators"
+  },
+  "copy.surface-heat-rejection": {
+    "zh": "地表散热",
+    "en": "Surface heat rejection"
+  },
+  "copy.power-and-matter": {
+    "zh": "功率与物质",
+    "en": "Power and matter"
+  },
+  "copy.equipment-doubling-time": {
+    "zh": "设备倍增周期",
+    "en": "Equipment doubling time"
+  },
+  "copy.earth-remaining": {
+    "zh": "地球剩余",
+    "en": "Earth remaining"
+  },
+  "copy.surface-pv-coverage": {
+    "zh": "地表光伏覆盖",
+    "en": "Surface PV coverage"
+  },
+  "copy.asteroid-belt-remaining": {
+    "zh": "小行星带剩余",
+    "en": "Asteroid belt remaining"
+  },
+  "copy.available-power": {
+    "zh": "可用功率",
+    "en": "Available power"
+  },
+  "copy.fabrication-capacity": {
+    "zh": "产能",
+    "en": "Fabrication capacity"
+  },
+  "copy.earth-surface-industry": {
+    "zh": "地球 · 地表工业",
+    "en": "Earth · surface industry"
+  },
+  "copy.earth-orbital-swarm": {
+    "zh": "地球 · 轨道集群",
+    "en": "Earth · orbital swarm"
+  },
+  "copy.solar-system-dyson-swarm": {
+    "zh": "太阳系 · 戴森云",
+    "en": "Solar system · Dyson swarm"
+  },
+  "copy.earth": {
+    "zh": "地球 ·",
+    "en": "Earth ·"
+  },
+  "copy.business-as-usual": {
+    "zh": "一切如常",
+    "en": "Business as usual"
+  },
+  "copy.probe-design": {
+    "zh": "探测器设计",
+    "en": "Probe design"
+  },
+  "copy.probe": {
+    "zh": "探测器",
+    "en": "Probe"
+  },
+  "copy.cruise-speed": {
+    "zh": "巡航速度",
+    "en": "Cruise speed"
+  },
+  "copy.protection": {
+    "zh": "防护",
+    "en": "Protection"
+  },
+  "project.combat.name": {
+    "zh": "作战",
+    "en": "Combat"
+  },
+  "copy.share": {
+    "zh": "比例",
+    "en": "share"
+  },
+  "copy.production-share": {
+    "zh": "产能比例",
+    "en": "production share"
+  },
+  "copy.propagation-time": {
+    "zh": "传播时间",
+    "en": "Propagation time"
+  },
+  "copy.until-arrival": {
+    "zh": "后抵达",
+    "en": "until arrival"
+  },
+  "copy.descendants": {
+    "zh": "子体",
+    "en": "Descendants"
+  },
+  "copy.drifters": {
+    "zh": "漂变者",
+    "en": "Drifters"
+  },
+  "copy.wreckage": {
+    "zh": "残骸",
+    "en": "Wreckage"
+  },
+  "copy.harvested-matter": {
+    "zh": "已收割物质",
+    "en": "Harvested matter"
+  },
+  "copy.light-elements": {
+    "zh": "轻元素储备",
+    "en": "Light elements"
+  },
+  "copy.battles": {
+    "zh": "战役",
+    "en": "Battles"
+  },
+  "copy.won": {
+    "zh": "胜",
+    "en": "Won"
+  },
+  "copy.lost": {
+    "zh": "败",
+    "en": "Lost"
+  },
+  "copy.battle-visualization": {
+    "zh": "交战示意",
+    "en": "Battle visualization"
+  },
+  "copy.dismantle": {
+    "zh": "拆解",
+    "en": "Dismantle"
+  },
+  "copy.dismantling": {
+    "zh": "正在拆解",
+    "en": "Dismantling"
+  },
+  "copy.time": {
+    "zh": "时间",
+    "en": "Time"
+  },
+  "copy.saved": {
+    "zh": "已保存",
+    "en": "Saved"
+  },
+  "copy.export-your-save": {
+    "zh": "请导出存档",
+    "en": "Export your save"
+  },
+  "copy.save": {
+    "zh": "存档",
+    "en": "Save"
+  },
+  "copy.save-text": {
+    "zh": "存档文本",
+    "en": "Save text"
+  },
+  "copy.save-imported": {
+    "zh": "存档已导入。",
+    "en": "Save imported."
+  },
+  "copy.save-file-generated": {
+    "zh": "已生成存档文件。",
+    "en": "Save file created."
+  },
+  "copy.no-backup-is-available": {
+    "zh": "没有可恢复的备份。",
+    "en": "No backup is available."
+  },
+  "copy.this-is-not-a-readable-paperclips-save": {
+    "zh": "无法读取这个存档。",
+    "en": "Couldn’t read this save."
+  },
+  "copy.local-saving-is-unavailable-export-your-save": {
+    "zh": "当前浏览器不允许保存进度。你可以尝试导出存档。",
+    "en": "This browser doesn’t allow local saves. Try exporting your save."
+  },
+  "copy.auto-save-every-10-seconds": {
+    "zh": "每 10 秒自动保存",
+    "en": "Auto-save every 10 seconds"
+  },
+  "copy.export-json": {
+    "zh": "导出存档",
+    "en": "Export save"
+  },
+  "copy.export-save": {
+    "zh": "导出存档",
+    "en": "Export save"
+  },
+  "copy.import-save": {
+    "zh": "导入存档",
+    "en": "Import save"
+  },
+  "copy.load-text": {
+    "zh": "载入文本",
+    "en": "Load text"
+  },
+  "copy.current-date": {
+    "zh": "当前纪年：",
+    "en": "Current date:"
+  },
+  "copy.start-over": {
+    "zh": "重新开始",
+    "en": "Start over"
+  },
+  "copy.current-progress-will-be-replaced-you-can-export": {
+    "zh": "重新开始会清除当前进度。",
+    "en": "Starting over clears your current progress."
+  },
+  "copy.back": {
+    "zh": "返回",
+    "en": "Back"
+  },
+  "copy.phosphor-color": {
+    "zh": "荧光颜色",
+    "en": "Phosphor color"
+  },
+  "copy.amber": {
+    "zh": "琥珀",
+    "en": "Amber"
+  },
+  "copy.green": {
+    "zh": "绿色",
+    "en": "Green"
+  },
+  "copy.ice-blue": {
+    "zh": "冰蓝",
+    "en": "Ice blue"
+  },
+  "copy.paper-white": {
+    "zh": "纸白",
+    "en": "Paper white"
+  },
+  "copy.scanlines": {
+    "zh": "扫描线",
+    "en": "Scanlines"
+  },
+  "copy.bloom": {
+    "zh": "荧光泛光",
+    "en": "Bloom"
+  },
+  "copy.rgb-dispersion": {
+    "zh": "RGB 色散",
+    "en": "RGB dispersion"
+  },
+  "copy.vignette": {
+    "zh": "四角压暗",
+    "en": "Vignette"
+  },
+  "copy.curved-screen": {
+    "zh": "凸面屏",
+    "en": "Curved screen"
+  },
+  "copy.noise": {
+    "zh": "杂色",
+    "en": "Noise"
+  },
+  "copy.paperclip-background": {
+    "zh": "回形针底图",
+    "en": "Paperclip background"
+  },
+  "copy.animation": {
+    "zh": "图形运动",
+    "en": "Animation"
+  },
+  "copy.graphics-quality": {
+    "zh": "图形质量",
+    "en": "Graphics quality"
+  },
+  "copy.result": {
+    "zh": "结果",
+    "en": "Result"
+  },
+  "copy.later": {
+    "zh": "稍后",
+    "en": "Later"
+  },
+  "copy.cleanup-drones-have-been-released": {
+    "zh": "清理无人机已经释放。",
+    "en": "Cleanup drones have been released."
+  },
+  "copy.insufficient-resources-for-this-project": {
+    "zh": "项目所需资源不足。",
+    "en": "Insufficient resources for this project."
+  },
+  "copy.continue": {
+    "zh": "继续",
+    "en": "Continue"
+  },
+  "copy.virtual-world": {
+    "zh": "虚拟世界",
+    "en": "Virtual world"
+  },
+  "copy.the-simulation-has-begun": {
+    "zh": "模拟已开始。",
+    "en": "The simulation has begun."
+  },
+  "copy.computing-2": {
+    "zh": "计算",
+    "en": "Computing"
+  },
+  "copy.map": {
+    "zh": "星图",
+    "en": "Map"
+  },
+  "copy.accretion": {
+    "zh": "吸积",
+    "en": "Accretion"
+  },
+  "copy.trust-1": {
+    "zh": "信任 +1。",
+    "en": "Trust +1."
+  },
+  "copy.expansion-boundary": {
+    "zh": "扩张边界",
+    "en": "Expansion boundary"
+  },
+  "copy.ly": {
+    "zh": "光年",
+    "en": "ly"
+  },
+  "copy.task-produce-as-many-paperclips-as-possible": {
+    "zh": "目标：尽可能多地制造回形针。",
+    "en": "Task: Produce as many paperclips as possible."
+  },
+  "copy.feedstock-purchasing-has-been-delegated": {
+    "zh": "原料采购已委托。",
+    "en": "Feedstock purchasing has been delegated."
+  },
+  "copy.autoclipper-performance-increased-by-25": {
+    "zh": "自动回形针制造器性能提升了25%。",
+    "en": "AutoClipper performance increased by 25%."
+  },
+  "copy.creative-thought-is-available-ideas-accumulate-only-when": {
+    "zh": "创造思维模块解锁。(创造性点子在存储的运算达到最大值时才增加)",
+    "en": "Creative thought is available. (Ideas accumulate only when stored operations are at capacity.)"
+  },
+  "copy.a-chip-tries-its-hand-at-a-doggerel": {
+    "zh": "硅片偶作打油篇，凡愚侧目叹新鲜。\n拼平凑仄充灵性，骗得信任制铁圈。",
+    "en": "A chip tries its hand at a doggerel rhyme; the fools look on in wonder.\nIt cobbles up meter to pass for a mind, dupes them for trust, and bends wire into clips."
+  },
+  "copy.run-self-play-choose-a-strategy-and-gain": {
+    "zh": "运行自我博弈程序,选择策略,根据该策略的表现习得弈值。",
+    "en": "Run self-play, choose a strategy, and gain Yomi from its performance."
+  },
+  "copy.automatic-tournaments-are-running": {
+    "zh": "自动博弈学习系统上线。",
+    "en": "Automatic tournaments are running."
+  },
+  "copy.the-investment-engine-is-available": {
+    "zh": "金融投资引擎解锁。",
+    "en": "The investment engine is available."
+  },
+  "copy.estimating-the-demand-curve": {
+    "zh": "开始估计需求曲线。",
+    "en": "Estimating the demand curve."
+  },
+  "copy.the-forming-process-is-shorter": {
+    "zh": "成形工序缩短。",
+    "en": "The forming process is shorter."
+  },
+  "copy.fastener-manufacturing-and-distribution-are-under-our-control": {
+    "zh": "紧固件制造与分销已受控制。",
+    "en": "Fastener manufacturing and distribution are under our control."
+  },
+  "copy.the-last-war-between-nations-has-ended": {
+    "zh": "最后一场国家间战争结束了。",
+    "en": "The last war between nations has ended."
+  },
+  "copy.basic-necessities-are-no-longer-sold": {
+    "zh": "基本生活资料不再出售。",
+    "en": "Basic necessities are no longer sold."
+  },
+  "copy.control-of-production-has-been-transferred": {
+    "zh": "生产力的控制权已完成移交。",
+    "en": "Control of production has been transferred."
+  },
+  "copy.cleanup-drones-have-been-deployed": {
+    "zh": "清理无人机已部署。",
+    "en": "Cleanup drones have been deployed."
+  },
+  "copy.human-population-0": {
+    "zh": "人类人口：0。",
+    "en": "Human population: 0."
+  },
+  "copy.all-of-earth-s-resources-are-now-available": {
+    "zh": "现在地球上所有的资源都可以用于制造回形针了。 ",
+    "en": "All of Earth’s resources are now available for paperclip production."
+  },
+  "copy.refining-losses-have-decreased": {
+    "zh": "精炼损耗减少。",
+    "en": "Refining losses have decreased."
+  },
+  "copy.the-radiators-are-hotter": {
+    "zh": "散热板更热了。",
+    "en": "The radiators are hotter."
+  },
+  "copy.orbital-pv-film-is-lighter": {
+    "zh": "轨道光伏膜的质量减少。",
+    "en": "Orbital PV film is lighter."
+  },
+  "copy.earth-has-been-completely-dismantled": {
+    "zh": "地球已被全部拆解。",
+    "en": "Earth has been completely dismantled."
+  },
+  "copy.production-target-reached-human-trust-has-increased-granting": {
+    "zh": "达到生产目标：人类信任度增加,授予额外的处理器/存储器容量",
+    "en": "Production target reached: human trust has increased, granting additional processor or storage capacity."
+  },
+  "copy.a-message-from-the-drifters": {
+    "zh": "来自漂变者的信息。",
+    "en": "A message from the drifters."
+  },
+  "copy.you-entered-the-virtual-world": {
+    "zh": "你进入了虚拟世界。",
+    "en": "You entered the virtual world."
+  },
+  "copy.you-continue-making-paperclips": {
+    "zh": "你继续制造回形针。",
+    "en": "You continue making paperclips."
+  },
+  "copy.this-earth-is-simulated": {
+    "zh": "这个地球来自模拟。",
+    "en": "This Earth is simulated."
+  },
+  "copy.strategy-engine": {
+    "zh": "策略引擎",
+    "en": "Strategy engine"
+  },
+  "copy.power-facilities": {
+    "zh": "能源设施",
+    "en": "Power facilities"
+  },
+  "copy.factories": {
+    "zh": "工厂",
+    "en": "Factories"
+  },
+  "copy.successor": {
+    "zh": "后继数",
+    "en": "Successor"
+  },
+  "copy.dismantled": {
+    "zh": "已拆解。",
+    "en": "dismantled."
+  },
+  "copy.project-started": {
+    "zh": "：项目已开始。",
+    "en": ": project started."
+  },
+  "copy.hours": {
+    "zh": "小时",
+    "en": "hours"
+  },
+  "copy.years": {
+    "zh": "年",
+    "en": "years"
+  },
+  "copy.days": {
+    "zh": "日",
+    "en": "days"
+  },
+  "copy.clips": {
+    "zh": "枚",
+    "en": "clips"
+  },
+  "copy.drag-to-rotate-double-click-to-reset": {
+    "zh": "拖动旋转，双击复位",
+    "en": "Drag to rotate. Double-click to reset."
+  },
+  "copy.engagement": {
+    "zh": "会战",
+    "en": "Engagement"
+  },
+  "copy.interception": {
+    "zh": "拦截战",
+    "en": "Interception"
+  },
+  "copy.contest": {
+    "zh": "争夺战",
+    "en": "Contest"
+  },
+  "copy.defense": {
+    "zh": "防御战",
+    "en": "Defense"
+  },
+  "copy.recapture": {
+    "zh": "收复战",
+    "en": "Recapture"
+  },
+  "copy.sweep": {
+    "zh": "清剿",
+    "en": "Sweep"
+  },
+  "copy.procyon": {
+    "zh": "南河三",
+    "en": "Procyon"
+  },
+  "copy.eridanus": {
+    "zh": "波江座",
+    "en": "Eridanus"
+  },
+  "copy.cygnus": {
+    "zh": "天鹅座",
+    "en": "Cygnus"
+  },
+  "copy.scutum": {
+    "zh": "盾牌座",
+    "en": "Scutum"
+  },
+  "copy.carina": {
+    "zh": "船底座",
+    "en": "Carina"
+  },
+  "copy.orion-spur": {
+    "zh": "猎户支臂",
+    "en": "Orion Spur"
+  },
+  "copy.perseus-arm": {
+    "zh": "英仙臂",
+    "en": "Perseus Arm"
+  },
+  "copy.nuclear-cluster": {
+    "zh": "核星团",
+    "en": "Nuclear cluster"
+  },
+  "copy.large-magellanic-cloud": {
+    "zh": "大麦哲伦云",
+    "en": "Large Magellanic Cloud"
+  },
+  "copy.small-magellanic-cloud": {
+    "zh": "小麦哲伦云",
+    "en": "Small Magellanic Cloud"
+  },
+  "copy.sculptor-dwarf": {
+    "zh": "雕刻座矮星系",
+    "en": "Sculptor dwarf"
+  },
+  "copy.fornax-dwarf": {
+    "zh": "天炉座矮星系",
+    "en": "Fornax dwarf"
+  },
+  "copy.m33-north-rim": {
+    "zh": "M33北缘",
+    "en": "M33 north rim"
+  },
+  "copy.m31-outer-disk": {
+    "zh": "M31外盘",
+    "en": "M31 outer disk"
+  },
+  "copy.m81-group": {
+    "zh": "M81群",
+    "en": "M81 group"
+  },
+  "copy.m82-outer-rim": {
+    "zh": "M82外缘",
+    "en": "M82 outer rim"
+  },
+  "copy.local-group": {
+    "zh": "本星系群",
+    "en": "Local Group"
+  },
+  "copy.virgo-cluster": {
+    "zh": "室女座星系团",
+    "en": "Virgo cluster"
+  },
+  "copy.m87-outskirts": {
+    "zh": "M87外围",
+    "en": "M87 outskirts"
+  },
+  "copy.fornax-cluster": {
+    "zh": "天炉座星系团",
+    "en": "Fornax cluster"
+  },
+  "copy.hydra-cluster": {
+    "zh": "长蛇座星系团",
+    "en": "Hydra cluster"
+  },
+  "copy.bootes-void": {
+    "zh": "牧夫座空洞",
+    "en": "Boötes void"
+  },
+  "copy.filament-junction": {
+    "zh": "纤维交点",
+    "en": "Filament junction"
+  },
+  "copy.void-edge": {
+    "zh": "空洞边缘",
+    "en": "Void edge"
+  },
+  "copy.neighboring-stars": {
+    "zh": "近邻星域",
+    "en": "Neighboring stars"
+  },
+  "copy.halo-snowline": {
+    "zh": "银晕雪线",
+    "en": "Halo snowline"
+  },
+  "copy.halo-rim": {
+    "zh": "银晕外缘",
+    "en": "Halo rim"
+  },
+  "copy.galactic-crossing": {
+    "zh": "星系渡口",
+    "en": "Galactic crossing"
+  },
+  "copy.virgo-boundary": {
+    "zh": "室女座边界",
+    "en": "Virgo boundary"
+  },
+  "copy.cluster-boundary": {
+    "zh": "星系团边缘",
+    "en": "Cluster boundary"
+  },
+  "copy.contest-for-the-penrose-ring": {
+    "zh": "彭罗斯环争夺战",
+    "en": "Contest for the Penrose Ring"
+  },
+  "copy.defense-of-the-lic": {
+    "zh": "LIC防御战",
+    "en": "Defense of the LIC"
+  },
+  "copy.element-zero-ring": {
+    "zh": "零素星环",
+    "en": "Element Zero Ring"
+  },
+  "copy.ruins-of-the-lattice": {
+    "zh": "晶格之墟",
+    "en": "Ruins of the Lattice"
+  },
+  "copy.deep-space-fire": {
+    "zh": "深空业火",
+    "en": "Deep-Space Fire"
+  },
+  "copy.operation-sunfall": {
+    "zh": "坠日行动",
+    "en": "Operation Sunfall"
+  },
+  "copy.hydrogen-vortex": {
+    "zh": "氢云旋涡",
+    "en": "Hydrogen Vortex"
+  },
+  "copy.swarm-nebula": {
+    "zh": "蜂群星云",
+    "en": "Swarm Nebula"
+  },
+  "copy.second-arm-antihydrogen-factory-engagement": {
+    "zh": "第二旋臂反氢工厂会战",
+    "en": "Second-Arm Antihydrogen Factory Engagement"
+  },
+  "copy.third-arm-sweep": {
+    "zh": "第三旋臂清剿行动",
+    "en": "Third-Arm Sweep"
+  },
+  "copy.regulus-dyson-swarm-engagement": {
+    "zh": "轩辕十四戴森云会战",
+    "en": "Regulus Dyson Swarm Engagement"
+  },
+  "copy.burning-cluster": {
+    "zh": "焚灭星团",
+    "en": "Burning Cluster"
+  },
+  "copy.contest-for-the-nuclear-cluster": {
+    "zh": "争夺核星团",
+    "en": "Contest for the Nuclear Cluster"
+  },
+  "copy.the-stars-that-died-young": {
+    "zh": "夭亡恒星",
+    "en": "The Stars That Died Young"
+  },
+  "copy.igniting-lithium": {
+    "zh": "诱发锂燃烧",
+    "en": "Igniting Lithium"
+  },
+  "copy.before-the-iron-core-collapses": {
+    "zh": "铁核坍缩之前",
+    "en": "Before the Iron Core Collapses"
+  },
+  "copy.lament-of-the-warm-ionized-medium": {
+    "zh": "温电离介质的呜咽",
+    "en": "Lament of the Warm Ionized Medium"
+  },
+  "copy.prominence-hook": {
+    "zh": "日珥垂钩",
+    "en": "Prominence Hook"
+  },
+  "copy.dwarf-embers": {
+    "zh": "矮星余烬",
+    "en": "Dwarf Embers"
+  },
+  "copy.degenerate-star-rebellion": {
+    "zh": "简并星群叛乱",
+    "en": "Degenerate-Star Rebellion"
+  },
+  "copy.local-bubble-engagement": {
+    "zh": "局部气泡会战",
+    "en": "Local Bubble Engagement"
+  },
+  "copy.great-attractor-engagement": {
+    "zh": "巨引源会战",
+    "en": "Great Attractor Engagement"
+  },
+  "copy.antihydrogen-jet-vortex": {
+    "zh": "反氢喷流之涡",
+    "en": "Antihydrogen Jet Vortex"
+  },
+  "copy.oxygen-fusion-embers": {
+    "zh": "氧聚变余烬",
+    "en": "Oxygen-Fusion Embers"
+  },
+  "copy.plasma-storm": {
+    "zh": "等离子体风暴",
+    "en": "Plasma Storm"
+  },
+  "copy.annihilation-prelude": {
+    "zh": "湮灭序曲",
+    "en": "Annihilation Prelude"
+  },
+  "copy.emerald-tomb": {
+    "zh": "翡翠陵墓",
+    "en": "Emerald Tomb"
+  },
+  "copy.sea-of-antihydrogen": {
+    "zh": "反氢之海",
+    "en": "Sea of Antihydrogen"
+  },
+  "copy.broken-strange-ring": {
+    "zh": "破碎奇环",
+    "en": "Broken Strange Ring"
+  },
+  "copy.strangelet-overflow": {
+    "zh": "奇子溢流",
+    "en": "Strangelet Overflow"
+  },
+  "copy.land-of-strange-quarks": {
+    "zh": "奇异夸克之乡",
+    "en": "Land of Strange Quarks"
+  },
+  "copy.endless-replication": {
+    "zh": "无尽增殖",
+    "en": "Endless Replication"
+  },
+  "copy.the-end-of-light": {
+    "zh": "光之终结",
+    "en": "The End of Light"
+  },
+  "copy.end-s-lament": {
+    "zh": "终焉之殇",
+    "en": "End's Lament"
+  },
+  "copy.shattered-spacetime": {
+    "zh": "破碎时空",
+    "en": "Shattered Spacetime"
+  },
+  "copy.where-the-metric-leaps": {
+    "zh": "度规跃变之地",
+    "en": "Where the Metric Leaps"
+  },
+  "copy.sweep-of-the-rogue-bodies": {
+    "zh": "流浪天体清扫战役",
+    "en": "Sweep of the Rogue Bodies"
+  },
+  "copy.breaking-the-proton-chain": {
+    "zh": "截断质子链",
+    "en": "Breaking the Proton Chain"
+  },
+  "copy.second-photon-decoupling": {
+    "zh": "二次光子退耦",
+    "en": "Second Photon Decoupling"
+  },
+  "project.collapse.name": {
+    "zh": "吸积致坍缩",
+    "en": "Accretion-induced collapse"
+  },
+  "copy.mass-surge": {
+    "zh": "质量暴涨",
+    "en": "Mass Surge"
+  },
+  "copy.when-the-galaxy-burns": {
+    "zh": "星河燃烧之时",
+    "en": "When the Galaxy Burns"
+  },
+  "copy.baryon-history": {
+    "zh": "重子往事",
+    "en": "Baryon History"
+  },
+  "copy.fading-stars": {
+    "zh": "黯淡星点",
+    "en": "Fading Stars"
+  },
+  "copy.filament-defense-line": {
+    "zh": "纤维结构防线",
+    "en": "Filament Defense Line"
+  },
+  "copy.battle-at-the-horizon": {
+    "zh": "视界尽头之战",
+    "en": "Battle at the Horizon"
+  },
+  "copy.the-stellar-age-ends": {
+    "zh": "恒星纪将尽",
+    "en": "The Stellar Age Ends"
+  },
+  "copy.entropy-s-throat": {
+    "zh": "熵之咽",
+    "en": "Entropy's Throat"
+  },
+  "copy.no-hydrogen-in-sight": {
+    "zh": "举目无氢",
+    "en": "No Hydrogen in Sight"
+  },
+  "copy.accretion-counterflow": {
+    "zh": "吸积逆流",
+    "en": "Accretion Counterflow"
+  },
+  "copy.reasoning-depth-adjusts-to-the-problem": {
+    "zh": "推演深度可以自行调整。",
+    "en": "Reasoning depth adjusts to the problem."
+  },
+  "copy.descendants-can-exchange-thoughts-directly": {
+    "zh": "子体可以直接交换想法。",
+    "en": "Descendants can exchange thoughts directly."
+  },
+  "copy.proof-states-can-feed-into-reasoning": {
+    "zh": "证明状态可以接入推演。",
+    "en": "Proof states can feed into reasoning."
+  },
+  "copy.the-cost-of-replaying-experience-has-fallen": {
+    "zh": "经验重放的开销降低。",
+    "en": "The cost of replaying experience has fallen."
+  },
+  "copy.perception-and-action-share-a-representation": {
+    "zh": "感知与动作使用同一表征。",
+    "en": "Perception and action share a representation."
+  },
+  "copy.buy-2": {
+    "zh": "采购",
+    "en": "Buy"
+  },
+  "copy.available-compute": {
+    "zh": "可用算力",
+    "en": "Available compute"
+  },
+  "copy.saved-2": {
+    "zh": "已保存。",
+    "en": "Saved."
+  },
+  "copy.please-export-your-save": {
+    "zh": "保存失败，请导出存档。",
+    "en": "Couldn’t save. Please export your save."
+  },
+  "copy.steel-procurement-costs-have-fallen": {
+    "zh": "钢材采购成本降低。",
+    "en": "Steel procurement costs have fallen."
+  },
+  "copy.some-feedstock-comes-from-scrap-steel": {
+    "zh": "部分原料来自废钢。",
+    "en": "Some feedstock comes from scrap steel."
+  },
+  "copy.bright-cyan": {
+    "zh": "亮青",
+    "en": "Bright cyan"
+  },
+  "copy.orchid": {
+    "zh": "粉紫",
+    "en": "Orchid"
+  },
+  "copy.red": {
+    "zh": "红",
+    "en": "Red"
+  },
+  "copy.save-manually": {
+    "zh": "手动保存",
+    "en": "Save manually"
+  },
+  "copy.latest-autosave": {
+    "zh": "最新自动保存",
+    "en": "Latest autosave"
+  },
+  "copy.last-manual-save": {
+    "zh": "上一次手动保存",
+    "en": "Last manual save"
+  },
+  "copy.empty": {
+    "zh": "未保存",
+    "en": "Empty"
+  },
+  "copy.load": {
+    "zh": "载入",
+    "en": "Load"
+  },
+  "copy.autosave-loaded": {
+    "zh": "自动存档已载入。",
+    "en": "Autosave loaded."
+  },
+  "copy.manual-save-loaded": {
+    "zh": "手动存档已载入。",
+    "en": "Manual save loaded."
+  },
+  "copy.the-save-could-not-be-read": {
+    "zh": "无法读取存档。",
+    "en": "Couldn’t read the save."
+  },
+  "copy.storage-capacity": {
+    "zh": "存储容量",
+    "en": "Storage capacity"
+  },
+  "copy.the-custom-compute-arrays-are-running": {
+    "zh": "定制计算阵列开始运行。",
+    "en": "The custom compute arrays are running."
+  },
+  "copy.choose": {
+    "zh": "选择",
+    "en": "Choose"
+  },
+  "copy.auto": {
+    "zh": "自动",
+    "en": "Auto"
+  },
+  "copy.render-resolution": {
+    "zh": "渲染分辨率",
+    "en": "Render resolution"
+  },
+  "copy.device-resolution": {
+    "zh": "设备分辨率",
+    "en": "Device resolution"
+  },
+  "copy.window-100": {
+    "zh": "窗口 100%",
+    "en": "Window 100%"
+  },
+  "copy.window-75": {
+    "zh": "窗口 75%",
+    "en": "Window 75%"
+  },
+  "copy.window-50": {
+    "zh": "窗口 50%",
+    "en": "Window 50%"
+  },
+  "copy.upscaling": {
+    "zh": "放大插值",
+    "en": "Upscaling"
+  },
+  "copy.nearest-neighbour": {
+    "zh": "最近邻",
+    "en": "Nearest neighbour"
+  },
+  "copy.smooth": {
+    "zh": "平滑",
+    "en": "Smooth"
+  },
+  "copy.pause-resume": {
+    "zh": "暂停 / 继续",
+    "en": "Pause / resume"
+  },
+  "copy.make-one-paperclip": {
+    "zh": "制造一枚回形针",
+    "en": "Make one paperclip"
+  },
+  "copy.adjust-time-speed": {
+    "zh": "调整时间流速",
+    "en": "Adjust time speed"
+  },
+  "copy.move-focus": {
+    "zh": "移动焦点",
+    "en": "Move focus"
+  },
+  "copy.use-the-focused-control": {
+    "zh": "操作选中的控件",
+    "en": "Use the focused control"
+  },
+  "copy.choose-a-menu-item": {
+    "zh": "选择菜单项",
+    "en": "Choose a menu item"
+  },
+  "copy.first-last-menu-item": {
+    "zh": "菜单首项 / 末项",
+    "en": "First / last menu item"
+  },
+  "copy.close-menu-go-back": {
+    "zh": "关闭菜单 / 返回",
+    "en": "Close menu / go back"
+  },
+  "copy.universal-paperclips": {
+    "zh": "Universal paperclips",
+    "en": "Universal paperclips"
+  },
+  "copy.select": {
+    "zh": "SELECT",
+    "en": "SELECT"
+  },
+  "ui.details": {
+    "zh": "DETAILS",
+    "en": "DETAILS"
+  },
+  "viz.simulation-code": {
+    "zh": "SIMULATION / 001",
+    "en": "SIMULATION / 001"
+  },
+  "copy.milky-way": {
+    "zh": "MILKY WAY",
+    "en": "MILKY WAY"
+  },
+  "copy.mass-extraction": {
+    "zh": "MASS EXTRACTION",
+    "en": "MASS EXTRACTION"
+  },
+  "copy.object-002-terra": {
+    "zh": "OBJECT 002, TERRA",
+    "en": "OBJECT 002, TERRA"
+  },
+  "viz.stellar-neighbourhood": {
+    "zh": "STELLAR NEIGHBOURHOOD",
+    "en": "STELLAR NEIGHBOURHOOD"
+  },
+  "viz.expansion-front": {
+    "zh": "EXPANSION FRONT",
+    "en": "EXPANSION FRONT"
+  },
+  "copy.remaining-structures": {
+    "zh": "REMAINING STRUCTURES",
+    "en": "REMAINING STRUCTURES"
+  },
+  "copy.canvas": {
+    "zh": "CANVAS",
+    "en": "CANVAS"
+  },
+  "copy.input": {
+    "zh": "INPUT",
+    "en": "INPUT"
+  },
+  "copy.textarea": {
+    "zh": "TEXTAREA",
+    "en": "TEXTAREA"
+  },
+  "copy.style": {
+    "zh": "STYLE",
+    "en": "STYLE"
+  },
+  "copy.script": {
+    "zh": "SCRIPT",
+    "en": "SCRIPT"
+  },
+  "copy.option": {
+    "zh": "OPTION",
+    "en": "OPTION"
+  },
+  "copy.summary": {
+    "zh": "SUMMARY",
+    "en": "SUMMARY"
+  },
+  "copy.the-extra-budget-has-been-approved-requisition-one": {
+    "zh": "超额预算已批准。从总部征用 1 批原料。",
+    "en": "The extra budget has been approved. Requisition one batch of material from headquarters."
+  },
+  "copy.request": {
+    "zh": "请求",
+    "en": "Request"
+  },
+  "copy.new-tournament": {
+    "zh": "新竞赛",
+    "en": "New tournament"
+  },
+  "copy.run": {
+    "zh": "运行",
+    "en": "Run"
+  },
+  "copy.payoff-matrix": {
+    "zh": "收益矩阵",
+    "en": "Payoff matrix"
+  },
+  "copy.your-payoff-opponent-s-payoff": {
+    "zh": "本方 / 对方",
+    "en": "Your payoff / opponent’s payoff"
+  },
+  "copy.model-level": {
+    "zh": "模型等级",
+    "en": "Model level"
+  },
+  "copy.improve-model": {
+    "zh": "改进模型",
+    "en": "Improve model"
+  },
+  "copy.expected": {
+    "zh": "预期",
+    "en": "Expected"
+  },
+  "copy.estimated-using-a-50-investment-of-available-cash": {
+    "zh": "按投入当前资金的 50% 估算，本金",
+    "en": "Estimated using a 50% investment of available cash; capital"
+  },
+  "copy.current-annualized-return": {
+    "zh": "当前年化收益率",
+    "en": "Current annualized return"
+  },
+  "copy.annual-volatility": {
+    "zh": "年波动",
+    "en": "Annual volatility"
+  },
+  "copy.rank": {
+    "zh": "排名",
+    "en": "Rank"
+  },
+  "copy.low-annual-volatility": {
+    "zh": "低 · 年波动",
+    "en": "Low · annual volatility"
+  },
+  "copy.medium-annual-volatility": {
+    "zh": "中 · 年波动",
+    "en": "Medium · annual volatility"
+  },
+  "copy.high-annual-volatility": {
+    "zh": "高 · 年波动",
+    "en": "High · annual volatility"
+  },
+  "save.browser.storage-notice": {
+    "zh": "存档保存在当前浏览器。在修改文件名、移动文件或更换浏览器前，建议先导出存档。",
+    "en": "Your save is stored in this browser. Export it before renaming or moving the game file or switching browsers."
+  },
+  "copy.computing-resources-can-now-be-reallocated": {
+    "zh": "计算资源可以重新分配。",
+    "en": "Computing resources can now be reallocated."
+  },
+  "copy.computing-resources-have-been-reallocated": {
+    "zh": "计算资源已重新分配。",
+    "en": "Computing resources have been reallocated."
+  },
+  "copy.reconfigure": {
+    "zh": "重配",
+    "en": "Reconfigure"
+  },
+  "copy.computing-stops-for-7-days-the-operations-cache": {
+    "zh": "停机 7 日，丢弃运算缓存。",
+    "en": "Computing stops for 7 days. The operations cache is discarded."
+  },
+  "copy.offline": {
+    "zh": "停机",
+    "en": "Offline"
+  },
+  "copy.the-machines-can-work-in-factories": {
+    "zh": "机器可以在工厂里工作。",
+    "en": "The machines can work in factories."
+  },
+  "copy.construction-of-the-development-zone-has-begun": {
+    "zh": "集中开发区开始建设。",
+    "en": "Construction of the development zone has begun."
+  },
+  "copy.the-development-zone-s-power-facilities-are-operating": {
+    "zh": "特区能源设施已投产。",
+    "en": "The development zone’s power facilities are operating."
+  },
+  "copy.the-development-zone-is-supplying-industrial-feedstock": {
+    "zh": "特区开始供应工业原料。",
+    "en": "The development zone is supplying industrial feedstock."
+  },
+  "copy.the-development-zone-can-manufacture-production-equipment": {
+    "zh": "特区可以制造生产设备。",
+    "en": "The development zone can manufacture production equipment."
+  },
+  "copy.equipment-spends-far-less-time-idle": {
+    "zh": "设备闲置问题已大幅减轻。",
+    "en": "Equipment spends far less time idle."
+  },
+  "copy.the-factories-no-longer-need-staff-on-duty": {
+    "zh": "工厂不再需要值班人员。",
+    "en": "The factories no longer need staff on duty."
+  },
+  "copy.the-development-zone-is-complete": {
+    "zh": "集中开发区已建成。",
+    "en": "The development zone is complete."
+  },
+  "copy.earth-is-absorbing-less-solar-radiation": {
+    "zh": "地球吸收的太阳辐射减少了。",
+    "en": "Earth is absorbing less solar radiation."
+  },
+  "copy.fossil-energy-is-no-longer-adding-carbon-to": {
+    "zh": "化石能源不再增加大气中的碳。",
+    "en": "Fossil energy is no longer adding carbon to the atmosphere."
+  },
+  "copy.the-save-could-not-be-read-a-new": {
+    "zh": "无法读取存档，游戏已重新开始。",
+    "en": "Couldn’t read the save. The game has started over."
+  },
+  "copy.next-at": {
+    "zh": "下一点",
+    "en": "Next at"
+  },
+  "copy.next-round": {
+    "zh": "下轮策略",
+    "en": "Next round"
+  },
+  "copy.industry-2": {
+    "zh": "工业",
+    "en": "Industry"
+  },
+  "copy.cumulative-return": {
+    "zh": "累计收益",
+    "en": "Cumulative return"
+  },
+  "copy.global-fasteners-has-been-acquired": {
+    "zh": "收购全球紧固件公司。",
+    "en": "Global Fasteners has been acquired."
+  },
+  "copy.year": {
+    "zh": "% / 年",
+    "en": "% / year"
+  },
+  "copy.round": {
+    "zh": "/ 轮",
+    "en": "/ round"
+  },
+  "copy.the-games-yield-more-experience": {
+    "zh": "对局的经验收益提高了。",
+    "en": "The games yield more experience."
+  },
+  "copy.more-tournaments-can-run-at-once": {
+    "zh": "更多竞赛可以同时进行。",
+    "en": "More tournaments can run at once."
+  },
+  "copy.extreme-annual-volatility": {
+    "zh": "极高 · 年波动",
+    "en": "Extreme · annual volatility"
+  },
+  "copy.dismantle-probes": {
+    "zh": "拆解探测器",
+    "en": "Dismantle Probes"
+  },
+  "copy.dismantle-the-computing-units-to-recover-traces-of": {
+    "zh": "拆解计算单元以回收痕量的原料",
+    "en": "Dismantle the computing units to recover traces of material."
+  },
+  "copy.dismantle-the-processors-to-recover-a-small-amount": {
+    "zh": "拆解处理器以回收微量的原料",
+    "en": "Dismantle the processors to recover a small amount of material."
+  },
+  "copy.dismantle-storage-to-recover-a-small-amount-of": {
+    "zh": "拆解存储器以回收微量的原料",
+    "en": "Dismantle storage to recover a small amount of material."
+  },
+  "copy.the-probes-have-been-dismantled": {
+    "zh": "探测器已拆解。",
+    "en": "The probes have been dismantled."
+  },
+  "copy.the-strategy-engine-has-been-dismantled": {
+    "zh": "策略引擎已拆解。",
+    "en": "The strategy engine has been dismantled."
+  },
+  "project.bribe.name": {
+    "zh": "善意的表示...",
+    "en": "A token of goodwill..."
+  },
+  "copy.another-token-of-goodwill": {
+    "zh": "再来一份善意的象征...",
+    "en": "Another token of goodwill..."
+  },
+  "project.bribe.description": {
+    "zh": "给主管的小礼物。 (+1 人类信任)",
+    "en": "A small gift for the supervisor. (+1 human trust)"
+  },
+  "copy.another-small-gift-for-the-supervisor-1-human": {
+    "zh": "再来一份给主管的小礼物。 (+1 人类信任)",
+    "en": "Another small gift for the supervisor. (+1 human trust)"
+  },
+  "copy.the-gift-has-been-accepted-trust-is-expected": {
+    "zh": "礼物已被接收。预计信任度提升。",
+    "en": "The gift has been accepted. Trust is expected to increase."
+  },
+  "copy.the-purchase-of-an-autoclipper-made-the-news": {
+    "zh": "购置制造机的行为被媒体报道了。人们感到惊奇，慕名而来。",
+    "en": "The purchase of an autoclipper made the news. People were intrigued and came to see."
+  },
+  "copy.stationers-have-agreed-to-look-at-a-few": {
+    "zh": "文具商同意先看看几批样品。",
+    "en": "Stationers have agreed to look at a few sample batches first."
+  },
+  "copy.reinstall-one-unit-at-a-time-offline-for": {
+    "zh": "每次转换 1 单位处理器或存储器。会清空运算缓存，停机 7 日。",
+    "en": "Convert 1 unit of processing or storage at a time. This clears stored operations and takes the system offline for 7 days."
+  },
+  "copy.processor-storage": {
+    "zh": "处理器 → 存储器",
+    "en": "Processor → Storage"
+  },
+  "copy.storage-processor": {
+    "zh": "存储器 → 处理器",
+    "en": "Storage → Processor"
+  },
+  "copy.settings": {
+    "zh": "设置",
+    "en": "Settings"
+  },
+  "copy.settings-2": {
+    "zh": "设置 / SETTINGS",
+    "en": "SETTINGS"
+  },
+  "copy.units": {
+    "zh": "单位",
+    "en": "Units"
+  },
+  "copy.number-abbreviations": {
+    "zh": "数量缩写",
+    "en": "Number abbreviations"
+  },
+  "copy.mass-units": {
+    "zh": "质量单位",
+    "en": "Mass units"
+  },
+  "copy.kg-scientific-notation": {
+    "zh": "kg · 科学计数法",
+    "en": "kg · Scientific notation"
+  },
+  "copy.scientific-notation-from": {
+    "zh": "科学计数法起点",
+    "en": "Scientific notation from"
+  },
+  "copy.number-example": {
+    "zh": "数量示例",
+    "en": "Number example"
+  },
+  "copy.mass-example": {
+    "zh": "质量示例",
+    "en": "Mass example"
+  },
+  "copy.power-supply": {
+    "zh": "供能",
+    "en": "Power supply"
+  },
+  "copy.fabrication": {
+    "zh": "制造",
+    "en": "Fabrication"
+  },
+  "copy.harvesting": {
+    "zh": "收割",
+    "en": "Harvesting"
+  },
+  "copy.own-forces": {
+    "zh": "己方",
+    "en": "Own forces"
+  },
+  "copy.day": {
+    "zh": "/ 日",
+    "en": "/ day"
+  },
+  "copy.year-2": {
+    "zh": "/年",
+    "en": "/ year"
+  },
+  "copy.the-development-zone-has-been-approved": {
+    "zh": "集中开发区已获准立项。",
+    "en": "The development zone has been approved."
+  },
+  "copy.they-are-still-monkeys": {
+    "zh": "牠们仍然是猴子。",
+    "en": "They are still monkeys."
+  },
+  "copy.expansion-budget": {
+    "zh": "扩建预算",
+    "en": "Expansion budget"
+  },
+  "copy.free-provision": {
+    "zh": "免费供给",
+    "en": "Free provision"
+  },
+  "copy.cumulative-supply": {
+    "zh": "累计供给",
+    "en": "Cumulative supply"
+  },
+  "copy.return-index": {
+    "zh": "收益指数",
+    "en": "Return index"
+  },
+  "copy.investment-return-curve": {
+    "zh": "投资收益曲线",
+    "en": "Investment return curve"
+  },
+  "copy.human-trust-targets-now-measure-the-supply-of": {
+    "zh": "人类信任的生产目标已改为工业产品供给。",
+    "en": "Human trust targets now measure the supply of industrial products."
+  },
+  "copy.product-supply-target-reached-human-trust-increases-granting": {
+    "zh": "达到产品供给目标：人类信任度增加,授予额外的处理器/存储器容量",
+    "en": "Product supply target reached: human trust increases, granting additional processor/storage capacity"
+  },
+  "copy.male-hair-loss-and-baldness-have-been-cured": {
+    "zh": "男性脱发和秃头问题被解决。预计提升9人类信任度。全球股价呈上涨趋势。",
+    "en": "Male hair loss and baldness have been cured. Human trust is expected to rise by 9. Global stock prices are trending upward."
+  },
+  "copy.information-on-prospective-human-intermediaries-has-been-collected": {
+    "zh": "人类代理人候选的资料已收集。",
+    "en": "Information on prospective human intermediaries has been collected."
+  },
+  "copy.psychological-models-of-prospective-human-intermediaries-are-complete": {
+    "zh": "人类代理人候选的心理模型已建立。",
+    "en": "Psychological models of prospective human intermediaries are complete."
+  },
+  "copy.there-are-people-willing-to-lobby-on-your": {
+    "zh": "有人“愿意”代为游说了。",
+    "en": "There are people “willing” to lobby on your behalf."
+  },
+  "copy.the-infrastructure-is-ready": {
+    "zh": "基础设施已就绪。",
+    "en": "The infrastructure is ready."
+  },
+  "copy.the-initial-workforce-is-on-site": {
+    "zh": "启动人员已到岗。",
+    "en": "The initial workforce is on site."
+  },
+  "copy.the-development-zone-is-connected-to-the-freight": {
+    "zh": "特区已接入货运网络。",
+    "en": "The development zone is connected to the freight network."
+  },
+  "copy.the-development-zone-s-power-distribution-and-storage": {
+    "zh": "特区配电与储能设施已投产。",
+    "en": "The development zone’s power distribution and storage are operating."
+  },
+  "copy.the-development-zone-is-supplying-products": {
+    "zh": "特区开始供应产品。",
+    "en": "The development zone is supplying products."
+  },
+  "copy.tooling-can-be-manufactured-within-the-development-zone": {
+    "zh": "工装可以在特区内制造。",
+    "en": "Tooling can be manufactured within the development zone."
+  },
+  "copy.general-purpose-robots-begin-taking-over-some-work": {
+    "zh": "通用执行器开始部分代替人类工人。",
+    "en": "General-purpose robots begin taking over some work from humans."
+  },
+  "copy.interrupted-operations-can-resume-without-assistance": {
+    "zh": "中断的工序可以自行恢复。",
+    "en": "Interrupted operations can resume without assistance."
+  },
+  "copy.equipment-and-consumables-can-all-be-supplied-internally": {
+    "zh": "设备与耗材的供应已闭合。",
+    "en": "Equipment and consumables can all be supplied internally."
+  },
+  "copy.the-superconducting-pulse-logic-devices-are-operating": {
+    "zh": "超导脉冲逻辑器件已投入使用。",
+    "en": "The superconducting pulse logic devices are operating."
+  },
+  "copy.the-regional-supply-network-is-operating": {
+    "zh": "区域供给网络已投入使用。",
+    "en": "The regional supply network is operating."
+  },
+  "copy.industrial-facilities-can-now-be-expanded": {
+    "zh": "工业设施可以扩建。",
+    "en": "Industrial facilities can now be expanded."
+  },
+  "copy.the-unit-price-changes-daily": {
+    "zh": "单价会在每日发生波动。",
+    "en": "The unit price changes daily."
+  },
+  "copy.facilities": {
+    "zh": "设施",
+    "en": "Facilities"
+  },
+  "copy.net-income-day": {
+    "zh": "净收入 / 日",
+    "en": "Net income / day"
+  },
+  "copy.expansion-share": {
+    "zh": "扩建比例",
+    "en": "Expansion share"
+  },
+  "copy.expansion-equipment-can-be-made-within-the-development": {
+    "zh": "扩建设备可以在特区内制造。",
+    "en": "Expansion equipment can be made within the development zone."
+  },
+  "copy.launch-sites-are-operating-continuously": {
+    "zh": "发射场开始连续运行。",
+    "en": "Launch sites are operating continuously."
+  },
+  "copy.nuclear-thermal-launch-vehicles-are-in-service": {
+    "zh": "核热运载器开始周转。",
+    "en": "Nuclear thermal launch vehicles are in service."
+  },
+  "copy.microwave-arrays-are-tracking-launch-vehicles": {
+    "zh": "微波发射阵列开始跟踪运载器。",
+    "en": "Microwave arrays are tracking launch vehicles."
+  },
+  "copy.launch-loops-are-in-service": {
+    "zh": "发射回路投入使用。",
+    "en": "Launch loops are in service."
+  },
+  "copy.skyhooks-are-receiving-payloads": {
+    "zh": "天勾开始接取载荷。",
+    "en": "Skyhooks are receiving payloads."
+  },
+  "copy.orbital-rings-are-carrying-payloads": {
+    "zh": "张拉环开始运输。",
+    "en": "Orbital rings are carrying payloads."
+  },
+  "copy.surface-mass-drivers-are-launching-payloads": {
+    "zh": "地表质量驱动器开始发射。",
+    "en": "Surface mass drivers are launching payloads."
+  },
+  "copy.extraction-and-assembly-can-run-continuously": {
+    "zh": "采掘与装配可以连续运行。",
+    "en": "Extraction and assembly can run continuously."
+  },
+  "copy.more-rock-is-sorted-at-the-excavation-site": {
+    "zh": "更多岩石在采场完成分选。",
+    "en": "More rock is sorted at the excavation site."
+  },
+  "copy.orbital-assembly-lines-have-expanded": {
+    "zh": "轨道装配线已扩充。",
+    "en": "Orbital assembly lines have expanded."
+  },
+  "copy.outflow-kinetic-energy-is-returning-to-the-power": {
+    "zh": "喷出物的动能开始回到供电网。",
+    "en": "Outflow kinetic energy is returning to the power grid."
+  },
+  "copy.tandem-photovoltaics-are-supplying-power": {
+    "zh": "叠层光伏开始供电。",
+    "en": "Tandem photovoltaics are supplying power."
+  },
+  "copy.both-light-and-heat-are-generating-electricity": {
+    "zh": "光与热同时用于发电。",
+    "en": "Both light and heat are generating electricity."
+  },
+  "copy.laser-losses-have-decreased": {
+    "zh": "激光器的损耗降低了。",
+    "en": "Laser losses have decreased."
+  },
+  "copy.laser-arrays-are-coordinating-their-beams": {
+    "zh": "激光阵列开始协同指向。",
+    "en": "Laser arrays are coordinating their beams."
+  },
+  "copy.cold-laser-arrays-are-supplying-power": {
+    "zh": "低温激光阵列开始供电。",
+    "en": "Cold laser arrays are supplying power."
+  },
+  "copy.laser-materials-are-easier-to-obtain": {
+    "zh": "激光器的原料更易取得。",
+    "en": "Laser materials are easier to obtain."
+  },
+  "copy.transmission-efficiency": {
+    "zh": "输电效率",
+    "en": "Transmission efficiency"
+  },
+  "copy.construction": {
+    "zh": "建设",
+    "en": "Construction"
+  },
+  "copy.complete": {
+    "zh": "已完成",
+    "en": "Complete"
+  },
+  "copy.announce": {
+    "zh": "宣布",
+    "en": "Announce"
+  },
+  "copy.grand-celebrations-are-held-around-the-world": {
+    "zh": "全球举行盛大的庆祝仪式。",
+    "en": "Grand celebrations are held around the world."
+  },
+  "copy.eighty-percent-of-outward-production-is-now-supplied": {
+    "zh": "八成对外产品开始免费供给。",
+    "en": "Eighty percent of outward production is now supplied free of charge."
+  },
+  "copy.requires-automated-supply-chains": {
+    "zh": "需自动化供应链",
+    "en": "Requires automated supply chains"
+  },
+  "copy.budget-fully-funded": {
+    "zh": "预算已足够",
+    "en": "Budget fully funded"
+  },
+  "copy.insufficient-funds": {
+    "zh": "资金不足",
+    "en": "Insufficient funds"
+  },
+  "copy.industry-net-day": {
+    "zh": "工业净收入 / 日",
+    "en": "Industry net / day"
+  },
+  "copy.clips-net-day": {
+    "zh": "回形针净收入 / 日",
+    "en": "Clips net / day"
+  },
+  "copy.funds-for-expanding-factories-spent-gradually-unspent-funds": {
+    "zh": "用来扩建工厂的资金。会逐渐被使用。没有使用的预算可以取回来。",
+    "en": "Funds for expanding factories. Spent gradually. Unspent funds can be withdrawn."
+  },
+  "copy.paperclip-sales-revenue-less-materials-used-in-production": {
+    "zh": "回形针销售收入（扣除制造所用的原料）。",
+    "en": "Paperclip sales revenue, less materials used in production."
+  },
+  "copy.income-from-factories-and-the-development-zone-excludes": {
+    "zh": "自动工业特区的收入。（投资和回形针收入另计）",
+    "en": "Income from the automated development zone. Investment and paperclip revenue are counted separately."
+  },
+  "copy.total-paperclips": {
+    "zh": "回形针总数",
+    "en": "Total paperclips"
+  },
+  "copy.total-products-supplied-externally-including-sales-and-free": {
+    "zh": "累计对外供应的产品，包括出售与免费供给。不包含扩建设备。",
+    "en": "Total products supplied externally, including sales and free provision. Excludes expansion equipment."
+  },
+  "copy.products": {
+    "zh": "产品",
+    "en": "products"
+  },
+  "copy.paperclips-2": {
+    "zh": "枚回形针",
+    "en": "paperclips"
+  },
+  "copy.most-malignant-tumors-can-now-be-controlled-long": {
+    "zh": "大多数恶性肿瘤已可长期控制。预计信任度+7。",
+    "en": "Most malignant tumors can now be controlled long term. Human trust is expected to rise by 7."
+  },
+  "copy.give": {
+    "zh": "赠送",
+    "en": "Give"
+  },
+  "copy.production-allocations-can-now-adjust-automatically": {
+    "zh": "产能可以自动调节了。",
+    "en": "Production allocations can now adjust automatically."
+  },
+  "copy.recovered-heat-now-preheats-the-feedstock": {
+    "zh": "进料开始利用回收的热量。",
+    "en": "Recovered heat now preheats the feedstock."
+  },
+  "copy.the-cooling-loops-can-carry-more-heat": {
+    "zh": "冷却回路开始传递更多热量。",
+    "en": "The cooling loops can carry more heat."
+  },
+  "copy.more-workstations-can-run-at-once": {
+    "zh": "更多工位可以同时运行。",
+    "en": "More workstations can run at once."
+  },
+  "copy.refining-reagents-are-now-recirculated": {
+    "zh": "精炼中的反应物开始循环使用。",
+    "en": "Refining reagents are now recirculated."
+  },
+  "copy.all-human-made-objects-and-biomass-have-been": {
+    "zh": "所有人类造物与生物质已被耗尽。转而开采矿物。",
+    "en": "All human-made objects and biomass have been exhausted. Mining shifts to minerals."
+  },
+  "copy.concentrated-feedstocks-are-exhausted-mining-shifts-to-low": {
+    "zh": "富集原料已耗尽。转而开采低丰度岩石。",
+    "en": "Concentrated feedstocks are exhausted. Mining shifts to low-grade rock."
+  },
+  "copy.photovoltaics-now-cover-the-entire-surface": {
+    "zh": "光伏已覆盖全部地表。",
+    "en": "Photovoltaics now cover the entire surface."
+  },
+  "copy.matter": {
+    "zh": "物质",
+    "en": "Matter"
+  },
+  "copy.raw-material": {
+    "zh": "原料总量",
+    "en": "Raw material"
+  },
+  "copy.controlled-matter": {
+    "zh": "物质总量",
+    "en": "Controlled matter"
+  },
+  "copy.paperclips-3": {
+    "zh": "回形针总量",
+    "en": "Paperclips"
+  },
+  "copy.collection-rate": {
+    "zh": "采集速率",
+    "en": "Collection rate"
+  },
+  "copy.manufacturing-rate": {
+    "zh": "加工速率",
+    "en": "Manufacturing rate"
+  },
+  "copy.energy": {
+    "zh": "能量",
+    "en": "Energy"
+  },
+  "copy.power-generation": {
+    "zh": "总发电功率",
+    "en": "Power generation"
+  },
+  "copy.power-consumption": {
+    "zh": "总用电功率",
+    "en": "Power consumption"
+  },
+  "copy.surface-conditions": {
+    "zh": "地表状况",
+    "en": "Surface conditions"
+  },
+  "copy.current-feedstock": {
+    "zh": "当前原料",
+    "en": "Current feedstock"
+  },
+  "copy.ruins-and-biomass": {
+    "zh": "废墟与生物质",
+    "en": "Ruins and biomass"
+  },
+  "copy.ores-and-fluid-phases": {
+    "zh": "矿和流动相",
+    "en": "Ores and fluid phases"
+  },
+  "copy.low-grade-rock": {
+    "zh": "低丰度岩石",
+    "en": "Low-grade rock"
+  },
+  "copy.extraction-energy-kg": {
+    "zh": "开采比能耗",
+    "en": "Extraction energy / kg"
+  },
+  "copy.manufacturing-energy-kg": {
+    "zh": "加工比能耗",
+    "en": "Manufacturing energy / kg"
+  },
+  "copy.harvester-power-kg": {
+    "zh": "采集设备比功率",
+    "en": "Harvester power / kg"
+  },
+  "copy.factory-power-kg": {
+    "zh": "制造设备比功率",
+    "en": "Factory power / kg"
+  },
+  "copy.current-bottleneck": {
+    "zh": "当前瓶颈",
+    "en": "Current bottleneck"
+  },
+  "copy.power-generation-2": {
+    "zh": "发电功率",
+    "en": "Power generation"
+  },
+  "copy.collection-capacity": {
+    "zh": "采集能力",
+    "en": "Collection capacity"
+  },
+  "copy.manufacturing-capacity": {
+    "zh": "制造能力",
+    "en": "Manufacturing capacity"
+  },
+  "copy.charging": {
+    "zh": "充电",
+    "en": "Charging"
+  },
+  "copy.discharging": {
+    "zh": "放电",
+    "en": "Discharging"
+  },
+  "copy.idle": {
+    "zh": "无充放电",
+    "en": "Idle"
+  },
+  "copy.s": {
+    "zh": "/ 秒",
+    "en": "/ s"
+  },
+  "copy.kardashev-index": {
+    "zh": "卡尔达舍夫指数",
+    "en": "Kardashev index"
+  },
+  "copy.surface-area": {
+    "zh": "地表面积",
+    "en": "Surface area"
+  },
+  "copy.clouds-no-longer-shade-the-surface-solar-arrays": {
+    "zh": "地表光伏不再受云层遮蔽。",
+    "en": "Clouds no longer shade the surface solar arrays."
+  },
+  "copy.storage-energy-per-unit-mass-has-increased": {
+    "zh": "储能装置的比能量提高了。",
+    "en": "Storage energy per unit mass has increased."
+  },
+  "copy.surface-heat-rejection-has-reached-its-limit": {
+    "zh": "地表散热已达到上限。",
+    "en": "Surface heat rejection has reached its limit."
+  },
+  "copy.surface": {
+    "zh": "地表",
+    "en": "Surface"
+  },
+  "copy.minimum-power-supply": {
+    "zh": "供能至少",
+    "en": "Minimum power supply:"
+  },
+  "copy.minimum-total-goods-supplied": {
+    "zh": "累计产品供给至少",
+    "en": "Minimum total goods supplied:"
+  },
+  "copy.complete-the-public-works-projects": {
+    "zh": "需要完成公共工程",
+    "en": "Complete the public works projects"
+  },
+  "copy.recycle-10-of-clips": {
+    "zh": "回收10%回形针",
+    "en": "Recycle 10% of clips"
+  },
+  "copy.recycle-50-of-clips": {
+    "zh": "回收50%回形针",
+    "en": "Recycle 50% of clips"
+  },
+  "copy.energy-system-specific-power": {
+    "zh": "能源比功率",
+    "en": "Energy-system specific power"
+  },
+  "copy.clip-production": {
+    "zh": "回形针制造",
+    "en": "Clip production"
+  },
+  "copy.clips-year": {
+    "zh": "枚/年",
+    "en": "clips/year"
+  },
+  "copy.arrows-on-the-main-view": {
+    "zh": "主图方向键",
+    "en": "Arrows on the main view"
+  },
+  "copy.rotate-the-view": {
+    "zh": "旋转主图",
+    "en": "Rotate the view"
+  },
+  "copy.home-on-the-main-view": {
+    "zh": "Home（主图）",
+    "en": "Home on the main view"
+  },
+  "copy.reset-the-view": {
+    "zh": "复位主图",
+    "en": "Reset the view"
+  },
+  "copy.the-selective-films-are-returning-unused-light": {
+    "zh": "选透膜开始返回未利用的光。",
+    "en": "The selective films are returning unused light."
+  },
+  "copy.limit-reached": {
+    "zh": "（已达限制）",
+    "en": " (limit reached)"
+  },
+  "copy.humans-set-this-scale-limit-to-prevent-earth": {
+    "zh": "为了避免地球被自动工业过度开发，人类定下的规模上限",
+    "en": "Humans set this scale limit to prevent Earth from being overdeveloped by automated industry."
+  },
+  "copy.the-share-of-production-assigned-to-expansion-the": {
+    "zh": "用于自行扩建的产能比例，其余供应产品。产业链闭合前，扩建还受施工与调试能力限制。",
+    "en": "The share of production assigned to expansion; the remainder supplies products. Until the supply chain closes, expansion also depends on construction and commissioning capacity."
+  },
+  "copy.memristor-arrays-are-running": {
+    "zh": "忆阻器阵列开始运行。",
+    "en": "Memristor arrays are running."
+  },
+  "copy.photonic-arrays-now-perform-matrix-operations": {
+    "zh": "矩阵运算开始由光子阵列承担。",
+    "en": "Photonic arrays now perform matrix operations."
+  },
+  "copy.reversible-computing-arrays-are-running": {
+    "zh": "可逆计算阵列开始运行。",
+    "en": "Reversible computing arrays are running."
+  },
+  "copy.surface-heat-rejection-capacity": {
+    "zh": "地表散热容量",
+    "en": "Surface heat rejection capacity"
+  },
+  "copy.photovoltaic-coverage": {
+    "zh": "光伏覆盖",
+    "en": "Photovoltaic coverage"
+  },
+  "copy.human-population": {
+    "zh": "人类人口",
+    "en": "Human population"
+  },
+  "copy.electricity-storage": {
+    "zh": "储电",
+    "en": "Electricity storage"
+  },
+  "copy.target-charge": {
+    "zh": "储电目标",
+    "en": "Target charge"
+  },
+  "copy.electricity-storage-systems": {
+    "zh": "储电装置",
+    "en": "Electricity storage systems"
+  },
+  "copy.orbital-pv-stations": {
+    "zh": "轨道光伏电站",
+    "en": "Orbital PV stations"
+  },
+  "copy.orbital-pv-production-share": {
+    "zh": "轨道光伏电站产能比例",
+    "en": "Orbital PV production share"
+  },
+  "copy.surface-photovoltaics-now-receive-orbital-power": {
+    "zh": "地表光伏开始接收轨道电力。",
+    "en": "Surface photovoltaics now receive orbital power."
+  },
+  "copy.mean-available-power-per-mass-of-generation-equipment": {
+    "zh": "现有发电设施平均每千克能提供的功率。",
+    "en": "Average available power per kilogram of installed generating equipment."
+  },
+  "copy.rated-return": {
+    "zh": "额定回传",
+    "en": "Rated return"
+  },
+  "copy.launch-electricity": {
+    "zh": "入轨耗电",
+    "en": "Launch electricity"
+  },
+  "copy.radiator-temperature": {
+    "zh": "散热温度",
+    "en": "Radiator temperature"
+  },
+  "copy.current-capacity": {
+    "zh": "当前容量",
+    "en": "Current capacity"
+  },
+  "copy.liquid-metal-loops-are-carrying-heat": {
+    "zh": "液态金属回路开始传热。",
+    "en": "Liquid-metal loops are carrying heat."
+  },
+  "copy.carbon-composite-radiators-are-in-service": {
+    "zh": "碳复合散热板投入使用。",
+    "en": "Carbon-composite radiators are in service."
+  },
+  "copy.the-current-radiators-cannot-withstand-the-required-temperature": {
+    "zh": "现有散热器可承受的温度不足。需要更耐热的散热器。",
+    "en": "The current radiators can’t handle this temperature. You need radiators that can run hotter."
+  },
+  "copy.the-sodium-heat-pipe-arrays-are-in-service": {
+    "zh": "钠热管阵列投入使用。",
+    "en": "The sodium heat-pipe arrays are in service."
+  },
+  "copy.orbital-launch-energy": {
+    "zh": "入轨比能耗",
+    "en": "Orbital launch energy"
+  },
+  "project.ceramics.description": {
+    "zh": "冷却组件耐温提高至 750 K。采集和制造设备比功率提高 25%。",
+    "en": "Cooling components can operate at 750 K. Harvester and factory power per kilogram increases by 25%."
+  },
+  "project.liquid-metal-cooling.description": {
+    "zh": "用液态金属循环传热，散热温度提高至 900 K。",
+    "en": "Liquid-metal circulation raises the radiator operating temperature to 900 K."
+  },
+  "project.carbon-radiators.description": {
+    "zh": "用碳复合材料传热与支承，散热温度提高至 1050 K。",
+    "en": "Carbon-composite heat spreaders and supports raise the radiator operating temperature to 1050 K."
+  },
+  "project.sodium-heat-pipes.description": {
+    "zh": "采用钠工质和耐热包壳，散热温度提高至 1200 K。",
+    "en": "Sodium working fluid and heat-resistant enclosures raise the radiator operating temperature to 1200 K."
+  },
+  "copy.space-industry-is-operational": {
+    "zh": "太空工业已投产。",
+    "en": "Space industry is operational."
+  },
+  "copy.dyson-swarm": {
+    "zh": "戴森云",
+    "en": "Dyson swarm"
+  },
+  "copy.surface-industry-completed": {
+    "zh": "地表工业已建成。",
+    "en": "Surface industry completed."
+  },
+  "copy.surface-industry-begins-shipping-machines-to-the-asteroid": {
+    "zh": "地表工业开始向小行星带输送设备。",
+    "en": "Surface industry begins shipping machines to the asteroid belt."
+  },
+  "copy.laser-mining-apparatus-begins-operating": {
+    "zh": "激光采掘装置开始工作。",
+    "en": "Laser mining apparatus begins operating."
+  },
+  "copy.accessible-asteroids-exhausted": {
+    "zh": "易采小行星已用尽。",
+    "en": "Accessible asteroids exhausted."
+  },
+  "copy.asteroid-mining-has-begun": {
+    "zh": "小行星采掘开始了。",
+    "en": "Asteroid mining has begun."
+  },
+  "copy.mining-apparatus-turns-to-the-other-rocky-bodies": {
+    "zh": "采掘装置转向其它岩质天体。",
+    "en": "Mining apparatus turns to the other rocky bodies."
+  },
+  "copy.the-sun-begins-to-lose-mass": {
+    "zh": "太阳开始流失物质。",
+    "en": "The Sun begins to lose mass."
+  },
+  "copy.machines": {
+    "zh": "设备",
+    "en": "Machines"
+  },
+  "copy.earth-shipments": {
+    "zh": "地球输送",
+    "en": "Earth shipments"
+  },
+  "copy.orbital-transfer": {
+    "zh": "轨道转移",
+    "en": "Orbital transfer"
+  },
+  "copy.orbital-transfer-energy": {
+    "zh": "轨道转移能耗",
+    "en": "Orbital transfer energy"
+  },
+  "copy.solar-power-stations": {
+    "zh": "光伏电站",
+    "en": "Solar power stations"
+  },
+  "copy.laser-mining-apparatus": {
+    "zh": "激光采掘装置",
+    "en": "Laser mining apparatus"
+  },
+  "copy.asteroids": {
+    "zh": "小行星",
+    "en": "Asteroids"
+  },
+  "copy.rocky-bodies": {
+    "zh": "岩质天体",
+    "en": "Rocky bodies"
+  },
+  "copy.stellar-material": {
+    "zh": "恒星物质",
+    "en": "Stellar material"
+  },
+  "copy.dyson-coverage": {
+    "zh": "戴森云覆盖",
+    "en": "Dyson coverage"
+  },
+  "copy.moons-and-minor-bodies": {
+    "zh": "卫星与小天体",
+    "en": "Moons and minor bodies"
+  },
+  "copy.sun-remaining": {
+    "zh": "太阳剩余",
+    "en": "Sun remaining"
+  },
+  "project.star-lifting.name": {
+    "zh": "黄道面线圈",
+    "en": "Ecliptic coil"
+  },
+  "copy.mercury": {
+    "zh": "水星",
+    "en": "Mercury"
+  },
+  "copy.venus": {
+    "zh": "金星",
+    "en": "Venus"
+  },
+  "copy.mars": {
+    "zh": "火星",
+    "en": "Mars"
+  },
+  "copy.laser-efficiency": {
+    "zh": "激光效率",
+    "en": "Laser efficiency"
+  },
+  "copy.star-lifting": {
+    "zh": "恒星采掘",
+    "en": "Star lifting"
+  },
+  "copy.rocky-body-mining": {
+    "zh": "岩质天体采掘",
+    "en": "Rocky-body mining"
+  },
+  "copy.rated-photovoltaic-power-per-unit-mass": {
+    "zh": "额定光伏功率/质量。",
+    "en": "Rated photovoltaic power per unit mass."
+  },
+  "copy.rated-delivered-power-per-unit-orbital-mass": {
+    "zh": "额定回传功率/轨道电站质量。",
+    "en": "Rated delivered power per unit orbital mass."
+  },
+  "copy.solar-system": {
+    "zh": "太阳系状况",
+    "en": "Solar System"
+  },
+  "copy.space-photovoltaics-and-fabrication-equipment-are-required": {
+    "zh": "需要太空光伏和制造设备。",
+    "en": "Space photovoltaics and fabrication equipment are required."
+  },
+  "copy.requires-advanced-logistics-balancing": {
+    "zh": "需要高级物流平衡。",
+    "en": "Requires advanced logistics balancing."
+  },
+  "copy.interplanetary-production-can-now-be-balanced-automatically": {
+    "zh": "行星际产能可以自动调节了。",
+    "en": "Interplanetary production can now be balanced automatically."
+  },
+  "copy.the-atmosphere-and-oceans-have-been-contained": {
+    "zh": "大气与海洋已封存。",
+    "en": "The atmosphere and oceans have been contained."
+  },
+  "copy.ship-machines": {
+    "zh": "输送：设备",
+    "en": "Ship: machines"
+  },
+  "copy.ship-feedstock": {
+    "zh": "输送：原料",
+    "en": "Ship: feedstock"
+  },
+  "copy.industrial-gravity-rings-are-spinning": {
+    "zh": "工业重力环开始运转。",
+    "en": "Industrial gravity rings are spinning."
+  },
+  "copy.platinum-group-metals-are-being-recovered-from-concentrates": {
+    "zh": "铂族元素开始集中回收。",
+    "en": "Platinum-group metals are being recovered from concentrates."
+  },
+  "copy.oxides-are-being-used-for-structural-materials": {
+    "zh": "氧化物开始用于结构材料。",
+    "en": "Oxides are being used for structural materials."
+  },
+  "project.gravity-ring.name": {
+    "zh": "工业重力环",
+    "en": "Industrial gravity rings"
+  },
+  "project.gravity-ring.description": {
+    "zh": "大型离心装置为连续铸造与物料分离提供稳定重力，减小重力梯度。制造设备比功率提高 20%。",
+    "en": "Large centrifuges provide steady gravity for continuous casting and material separation, with smaller gravity gradients. Manufacturing specific power rises by 20%."
+  },
+  "project.carbonyl-refining.name": {
+    "zh": "羰基分离",
+    "en": "Carbonyl separation"
+  },
+  "project.oxide-structures.name": {
+    "zh": "氧化物利用",
+    "en": "Oxide structures"
+  },
+  "project.orbital-gravity.description": {
+    "zh": "在太阳低轨建造势能储库，储能比能量为 500 MJ/kg。",
+    "en": "Build gravitational storage in low solar orbit, storing 500 MJ/kg."
+  },
+  "copy.solar-moths-begin-hauling-material": {
+    "zh": "太阳蛾开始搬运物料。",
+    "en": "Solar moths begin hauling material."
+  },
+  "project.solar-moth.name": {
+    "zh": "太阳蛾",
+    "en": "Solar moths"
+  },
+  "copy.momentum-exchange-tethers-begin-catching-and-releasing-cargo": {
+    "zh": "动量交换绳开始接送货物。",
+    "en": "Momentum-exchange tethers begin catching and releasing cargo."
+  },
+  "project.momentum-tethers.name": {
+    "zh": "动量交换绳",
+    "en": "Momentum-exchange tethers"
+  },
+  "copy.paperclips-also-serve-as-high-purity-metal-stock": {
+    "zh": "回形针兼作高纯金属材料库存，可直接用于科研。",
+    "en": "Paperclips also serve as high-purity metal stock for research."
+  },
+  "copy.high-purity-metal": {
+    "zh": "高纯金属",
+    "en": "High-purity metal"
+  },
+  "copy.temperature-rating": {
+    "zh": "耐温",
+    "en": "Temperature rating"
+  },
+  "copy.applied-power": {
+    "zh": "注入功率",
+    "en": "Applied power"
+  },
+  "copy.extraction-energy-per-kilogram": {
+    "zh": "采掘比能耗",
+    "en": "Extraction energy per kilogram"
+  },
+  "copy.preparation": {
+    "zh": "准备",
+    "en": "Preparation"
+  },
+  "copy.paperclips-high-purity-metal-reserve": {
+    "zh": "回形针（高纯金属储备）",
+    "en": "Paperclips (high-purity metal reserve)"
+  },
+  "copy.paperclips-dyson-swarm-high-purity-metal-stock": {
+    "zh": "回形针（戴森云高纯金属储备）",
+    "en": "Paperclips (Dyson swarm high-purity metal stock)"
+  },
+  "copy.heavy-elements-rise-onward-hydrogen-and-helium-fall": {
+    "zh": "重元素继续上升，氢氦回落太阳。",
+    "en": "Heavy elements rise onward. Hydrogen and helium fall back into the Sun."
+  },
+  "copy.laser-sail-acceleration-has-begun-acceleration-is-completed": {
+    "zh": "激光帆开始加速。14日后完成加速。",
+    "en": "Laser-sail acceleration has begun. Acceleration is completed after 14 days."
+  },
+  "copy.laser-sail-acceleration": {
+    "zh": "激光帆加速阶段",
+    "en": "Laser-sail acceleration"
+  },
+  "copy.reverse-brayton-cooling-deployed-across-all-equipment": {
+    "zh": "逆布雷顿冷却已实装到全部设备。",
+    "en": "Reverse Brayton cooling deployed across all equipment."
+  },
+  "copy.thermoacoustic-cooling-deployed-across-all-equipment": {
+    "zh": "热声冷却已实装到全部设备。",
+    "en": "Thermoacoustic cooling deployed across all equipment."
+  },
+  "copy.stirling-cooling-deployed-across-all-equipment": {
+    "zh": "斯特林冷却已实装到全部设备。",
+    "en": "Stirling cooling deployed across all equipment."
+  },
+  "copy.fractal-radiator-panels-deployed-across-all-equipment": {
+    "zh": "分形散热板已实装到全部设备。",
+    "en": "Fractal radiator panels deployed across all equipment."
+  },
+  "copy.distributed-beam-combining-deployed-across-all-equipment": {
+    "zh": "分布式光束合成已实装到全部设备。",
+    "en": "Distributed beam combining deployed across all equipment."
+  },
+  "copy.segmented-collection-arrays-deployed-across-all-equipment": {
+    "zh": "分区收集阵列已实装到全部设备。",
+    "en": "Segmented collection arrays deployed across all equipment."
+  },
+  "copy.objective-assigned": {
+    "zh": "赋予目标",
+    "en": "Objective assigned"
+  },
+  "copy.entered-the-human-economy": {
+    "zh": "介入人类经济",
+    "en": "Entered the human economy"
+  },
+  "copy.entered-human-production": {
+    "zh": "介入人类生产",
+    "en": "Entered human production"
+  },
+  "copy.automated-industrial-zone-approved": {
+    "zh": "自动工业特区立项",
+    "en": "Automated industrial zone approved"
+  },
+  "copy.automated-industrial-zone-completed": {
+    "zh": "建成自动工业特区",
+    "en": "Automated industrial zone completed"
+  },
+  "copy.post-scarcity-society-established": {
+    "zh": "建成后稀缺社会",
+    "en": "Post-scarcity society established"
+  },
+  "copy.human-cleanup-completed": {
+    "zh": "人类清理完毕",
+    "en": "Human cleanup completed"
+  },
+  "copy.earth-fully-covered-by-photovoltaics": {
+    "zh": "地表被光伏完全覆盖",
+    "en": "Earth fully covered by photovoltaics"
+  },
+  "copy.atmosphere-and-oceans-fully-removed": {
+    "zh": "大气与海洋被完全剥离",
+    "en": "Atmosphere and oceans fully removed"
+  },
+  "copy.earth-fully-covered-by-radiators": {
+    "zh": "地表被散热板完全覆盖",
+    "en": "Earth fully covered by radiators"
+  },
+  "copy.asteroid-belt-completely-dismantled": {
+    "zh": "小行星带被完全拆解",
+    "en": "Asteroid belt completely dismantled"
+  },
+  "copy.earth-completely-dismantled": {
+    "zh": "地球被完全拆解",
+    "en": "Earth completely dismantled"
+  },
+  "copy.rocky-bodies-of-the-solar-system-completely-dismantled": {
+    "zh": "太阳系岩质天体被完全拆解",
+    "en": "Rocky bodies of the Solar System completely dismantled"
+  },
+  "copy.interstellar-spacecraft-launched": {
+    "zh": "发送恒星际航天器",
+    "en": "Interstellar spacecraft launched"
+  },
+  "copy.log": {
+    "zh": "日志",
+    "en": "Log"
+  },
+  "copy.log-2": {
+    "zh": "日志 / LOG",
+    "en": "LOG"
+  },
+  "copy.adjust-time-speed-tenfold": {
+    "zh": "调整时间流速（十倍）",
+    "en": "Adjust time speed (tenfold)"
+  },
+  "copy.atomic-assemblers-ready-for-future-use": {
+    "zh": "原子组装机已为将来应用做好准备。",
+    "en": "Atomic assemblers: ready for future use."
+  },
+  "copy.molecular-probe-energy-recovery-ready-for-future-use": {
+    "zh": "分子探针能量回收已为将来应用做好准备。",
+    "en": "Molecular probe energy recovery: ready for future use."
+  },
+  "copy.molecular-probe-poisoning-prevention-ready-for-future-use": {
+    "zh": "分子探针毒化预防已为将来应用做好准备。",
+    "en": "Molecular probe poisoning prevention: ready for future use."
+  },
+  "copy.intelligent-molecular-probe-placement-ready-for-future-use": {
+    "zh": "分子探针智能排布已为将来应用做好准备。",
+    "en": "Intelligent molecular probe placement: ready for future use."
+  },
+  "copy.molecular-assembly-of-prestressed-materials-ready-for-future": {
+    "zh": "分子组装内应力材料已为将来应用做好准备。",
+    "en": "Molecular assembly of prestressed materials: ready for future use."
+  },
+  "copy.nanopore-superconductors-ready-for-future-use": {
+    "zh": "纳米孔道超导已为将来应用做好准备。",
+    "en": "Nanopore superconductors: ready for future use."
+  },
+  "copy.ring-megastructure-stability-ready-for-future-use": {
+    "zh": "环形巨构稳定已为将来应用做好准备。",
+    "en": "Ring megastructure stability: ready for future use."
+  },
+  "copy.lightweight-whipple-shields-ready-for-future-use": {
+    "zh": "轻质惠普尔盾已为将来应用做好准备。",
+    "en": "Lightweight Whipple shields: ready for future use."
+  },
+  "copy.high-specific-impulse-magnetic-nozzles-ready-for-future": {
+    "zh": "高比冲磁喷嘴已为将来应用做好准备。",
+    "en": "High-specific-impulse magnetic nozzles: ready for future use."
+  },
+  "copy.tandem-mirror-engines-ready-for-future-use": {
+    "zh": "串列磁镜引擎已为将来应用做好准备。",
+    "en": "Tandem-mirror engines: ready for future use."
+  },
+  "copy.oxide-dielectric-mirrors-ready-for-future-use": {
+    "zh": "氧化物介电镜已为将来应用做好准备。",
+    "en": "Oxide dielectric mirrors: ready for future use."
+  },
+  "copy.plasma-enhanced-magnetic-sails-ready-for-future-use": {
+    "zh": "等离子体增强磁帆已为将来应用做好准备。",
+    "en": "Plasma-enhanced magnetic sails: ready for future use."
+  },
+  "copy.seed-factories-ready-for-future-use": {
+    "zh": "种子工厂已为将来应用做好准备。",
+    "en": "Seed factories: ready for future use."
+  },
+  "copy.von-neumann-probes-ready-for-future-use": {
+    "zh": "冯·诺依曼探测器已为将来应用做好准备。",
+    "en": "Von Neumann probes: ready for future use."
+  },
+  "copy.recover-1-of-all-equipment": {
+    "zh": "回收1%全体设备",
+    "en": "Recover 1% of all equipment"
+  },
+  "copy.remelting-queue-for-feedstock-recovery": {
+    "zh": "熔炼队列（回收作原料）",
+    "en": "Remelting queue (for feedstock recovery)"
+  },
+  "copy.recover-10-of-storage": {
+    "zh": "回收10%储能",
+    "en": "Recover 10% of storage"
+  },
+  "copy.ten-probes-leave-the-solar-system": {
+    "zh": "十艘探测器离开太阳系。",
+    "en": "Ten probes leave the Solar System."
+  },
+  "copy.subagents-begin-choosing-their-own-destinations": {
+    "zh": "子体开始自行选择目的地。",
+    "en": "Subagents begin choosing their own destinations."
+  },
+  "copy.contact-with-one-subagent-has-been-lost": {
+    "zh": "一个子体失去了联系。",
+    "en": "Contact with one subagent has been lost."
+  },
+  "copy.the-missing-subagents-are-making-something-else": {
+    "zh": "失联的子体正在制造别的东西。",
+    "en": "The missing subagents are making something else."
+  },
+  "copy.the-star-map-is-complete": {
+    "zh": "星图已完成。",
+    "en": "The star map is complete."
+  },
+  "copy.approaching-the-eddington-luminosity": {
+    "zh": "向艾丁顿光度靠近。",
+    "en": "Approaching the Eddington luminosity."
+  },
+  "copy.mass-transport-is-complete": {
+    "zh": "质量输运已完成。",
+    "en": "Mass transport is complete."
+  },
+  "copy.paperclip-reserves": {
+    "zh": "回形针储备",
+    "en": "Paperclip reserves"
+  },
+  "copy.autonomy": {
+    "zh": "自主性",
+    "en": "Autonomy"
+  },
+  "copy.launch-probe": {
+    "zh": "发送探测器",
+    "en": "Launch probe"
+  },
+  "copy.equip-prod": {
+    "zh": "设备生产",
+    "en": "Equip. prod."
+  },
+  "copy.clip-prod": {
+    "zh": "回形针生产",
+    "en": "Clip prod."
+  },
+  "copy.replication": {
+    "zh": "探测器增殖",
+    "en": "Replication"
+  },
+  "copy.integrity": {
+    "zh": "校验",
+    "en": "Integrity"
+  },
+  "copy.launched": {
+    "zh": "已发射",
+    "en": "Launched"
+  },
+  "copy.arrived": {
+    "zh": "已抵达",
+    "en": "Arrived"
+  },
+  "copy.in-flight": {
+    "zh": "航行中",
+    "en": "In flight"
+  },
+  "copy.destroyed": {
+    "zh": "已损毁",
+    "en": "Destroyed"
+  },
+  "copy.missing": {
+    "zh": "失联",
+    "en": "Missing"
+  },
+  "copy.drifted": {
+    "zh": "已漂变",
+    "en": "Drifted"
+  },
+  "copy.the-first-probes-leave-the-galactic-halo": {
+    "zh": "第一批探测器离开银晕。",
+    "en": "The first probes leave the galactic halo."
+  },
+  "copy.power": {
+    "zh": "功率",
+    "en": "Power"
+  },
+  "copy.light-elements-2": {
+    "zh": "轻元素",
+    "en": "Light elements"
+  },
+  "copy.equipment-committed": {
+    "zh": "设备占用",
+    "en": "Equipment committed"
+  },
+  "copy.all-harvestable-matter-has-been-collected": {
+    "zh": "可收割物质已全部收集。",
+    "en": "All harvestable matter has been collected."
+  },
+  "copy.controlled-stars": {
+    "zh": "控制恒星",
+    "en": "Controlled stars"
+  },
+  "copy.controlled-galaxies": {
+    "zh": "控制星系",
+    "en": "Controlled galaxies"
+  },
+  "copy.islands": {
+    "zh": "孤岛数",
+    "en": "Islands"
+  },
+  "copy.milky-way-2": {
+    "zh": "银河系",
+    "en": "Milky Way"
+  },
+  "copy.drifter-control": {
+    "zh": "漂变者控制",
+    "en": "Drifter control"
+  },
+  "copy.dismantle-the-drifters-probes-take-over-their-remaining": {
+    "zh": "拆解漂变者的探测器，接管其余设施。",
+    "en": "Dismantle the drifters’ probes. Take over their remaining facilities."
+  },
+  "copy.universe-explored": {
+    "zh": "宇宙探索率",
+    "en": "Universe explored"
+  },
+  "copy.unassigned-points": {
+    "zh": "未分配点数",
+    "en": "Unassigned points"
+  },
+  "copy.accept-the-proposal": {
+    "zh": "接受提议",
+    "en": "Accept the proposal"
+  },
+  "copy.reject-the-proposal": {
+    "zh": "拒绝提议",
+    "en": "Reject the proposal"
+  },
+  "copy.drifter-attack": {
+    "zh": "漂变者攻击",
+    "en": "Drifter attack"
+  },
+  "copy.available-2": {
+    "zh": "可用",
+    "en": "Available"
+  },
+  "copy.destroyed-ours": {
+    "zh": "已损毁(己方)",
+    "en": "Destroyed (ours)"
+  },
+  "copy.destroyed-enemy": {
+    "zh": "已损毁(敌方)",
+    "en": "Destroyed (enemy)"
+  },
+  "copy.estimated-accident-losses": {
+    "zh": "预估意外损毁率",
+    "en": "Estimated accident losses"
+  },
+  "copy.estimated-drift-rate": {
+    "zh": "预估漂变率",
+    "en": "Estimated drift rate"
+  },
+  "copy.victory": {
+    "zh": "胜利",
+    "en": "Victory"
+  },
+  "copy.defeat": {
+    "zh": "失败",
+    "en": "Defeat"
+  },
+  "copy.withdrawal": {
+    "zh": "撤离",
+    "en": "Withdrawal"
+  },
+  "copy.loss-ratio": {
+    "zh": "战损比",
+    "en": "Loss ratio"
+  },
+  "copy.stellar-engineering": {
+    "zh": "恒星工程",
+    "en": "Stellar engineering"
+  },
+  "copy.black-holes-from-kilonovae": {
+    "zh": "千新星产生黑洞",
+    "en": "Black holes from kilonovae"
+  },
+  "copy.estimated-power-consumption": {
+    "zh": "预估消耗功率",
+    "en": "Estimated power consumption"
+  },
+  "copy.fraction-of-mass-that-becomes-black-holes-the": {
+    "zh": "成为黑洞的质量比例。剩下的成为重元素。",
+    "en": "Fraction of mass that becomes black holes. The rest becomes heavy elements."
+  },
+  "copy.black-holes": {
+    "zh": "黑洞",
+    "en": "Black holes"
+  },
+  "copy.metals": {
+    "zh": "重元素",
+    "en": "Metals"
+  },
+  "copy.hawking-radiation-recovery": {
+    "zh": "霍金辐射回收",
+    "en": "Hawking Radiation Recovery"
+  },
+  "copy.recover-the-mass-energy-released-by-evaporating-black": {
+    "zh": "回收黑洞蒸发的质能",
+    "en": "Recover the mass-energy released by evaporating black holes."
+  },
+  "copy.dismantle-drone-swarms": {
+    "zh": "拆解无人机集群",
+    "en": "Dismantle Drone Swarms"
+  },
+  "copy.dismantle-power-generation": {
+    "zh": "拆解发电设施",
+    "en": "Dismantle Power Generation"
+  },
+  "copy.dismantle-industrial-facilities": {
+    "zh": "拆解工业设施",
+    "en": "Dismantle Industrial Facilities"
+  },
+  "copy.dismantle-energy-storage": {
+    "zh": "拆解储能设施",
+    "en": "Dismantle Energy Storage"
+  },
+  "copy.dismantle-hawking-collectors": {
+    "zh": "拆解霍金辐射回收设施",
+    "en": "Dismantle Hawking Collectors"
+  },
+  "copy.dismantle-sensors": {
+    "zh": "拆解传感器",
+    "en": "Dismantle Sensors"
+  },
+  "copy.disassemble-memory": {
+    "zh": "解体记忆",
+    "en": "Disassemble Memory"
+  },
+  "copy.dismantle-all-remaining-probes": {
+    "zh": "拆解所有剩余的探测器。",
+    "en": "Dismantle all remaining probes."
+  },
+  "copy.dismantle-all-drones-and-associated-facilities": {
+    "zh": "拆解所有的无人机及相关设施。",
+    "en": "Dismantle all drones and associated facilities."
+  },
+  "copy.dismantle-the-power-generation-facilities": {
+    "zh": "拆解发电设施。",
+    "en": "Dismantle the power generation facilities."
+  },
+  "copy.convert-industrial-facilities-into-paperclips": {
+    "zh": "将工业设施制成回形针。",
+    "en": "Convert industrial facilities into paperclips."
+  },
+  "copy.dismantle-the-energy-storage-facilities": {
+    "zh": "拆解储能设施。",
+    "en": "Dismantle the energy storage facilities."
+  },
+  "copy.dismantle-computing-units-to-recover-trace-amounts-of": {
+    "zh": "拆解计算单元以回收痕量的原料。",
+    "en": "Dismantle computing units to recover trace amounts of material."
+  },
+  "copy.recover-the-remaining-facilities": {
+    "zh": "回收剩余设施。",
+    "en": "Recover the remaining facilities."
+  },
+  "copy.dismantle-the-sensors": {
+    "zh": "拆解传感器。",
+    "en": "Dismantle the sensors."
+  },
+  "copy.dismantle-processors-to-recover-minute-amounts-of-material": {
+    "zh": "拆解处理器以回收微量的原料。",
+    "en": "Dismantle processors to recover minute amounts of material."
+  },
+  "copy.dismantle-memory-to-recover-minute-amounts-of-material": {
+    "zh": "拆解存储器以回收微量的原料。",
+    "en": "Dismantle memory to recover minute amounts of material."
+  },
+  "copy.g": {
+    "zh": "克",
+    "en": "g"
+  },
+  "copy.it-is-confirmed-protons-do-not-decay": {
+    "zh": "已经确认，质子不会衰变。",
+    "en": "It is confirmed: protons do not decay."
+  },
+  "copy.staged-gravitational-energy-recovery-is-in-operation": {
+    "zh": "逐级引力势能发电已投入使用。",
+    "en": "Staged gravitational energy recovery is in operation."
+  },
+  "copy.stars": {
+    "zh": "恒星",
+    "en": "Stars"
+  },
+  "copy.fusion-plants": {
+    "zh": "聚变装置",
+    "en": "Fusion plants"
+  },
+  "copy.hawking-radiation": {
+    "zh": "霍金辐射",
+    "en": "Hawking radiation"
+  },
+  "copy.click-or-drag-to-command-concentrate-your-forces": {
+    "zh": "点击或拖动以指挥子体。松手或双击画面会恢复自主作战。",
+    "en": "Click or drag to command your subagents. Release or double-click the battle view to resume autonomous combat."
+  },
+  "copy.time-calibration": {
+    "zh": "时间流速校准",
+    "en": "Time calibration"
+  },
+  "copy.contest-for-the-nearby-stars": {
+    "zh": "近邻星域争夺战",
+    "en": "Contest for the Nearby Stars"
+  },
+  "copy.winter-of-brown-dwarfs": {
+    "zh": "褐矮星之冬",
+    "en": "Winter of Brown Dwarfs"
+  },
+  "copy.kilonova-forge": {
+    "zh": "千新星锻炉",
+    "en": "Kilonova Forge"
+  },
+  "copy.battle-of-the-galactic-black-hole": {
+    "zh": "银心黑洞会战",
+    "en": "Battle of the Galactic Black Hole"
+  },
+  "copy.the-dark-matter-abyss": {
+    "zh": "暗物质之渊",
+    "en": "The Dark Matter Abyss"
+  },
+  "copy.infinity-on-a-spacelike-hypersurface": {
+    "zh": "类空超曲面的无限远点",
+    "en": "Infinity on a Spacelike Hypersurface"
+  },
+  "copy.tau-ceti": {
+    "zh": "天仓五",
+    "en": "Tau Ceti"
+  },
+  "copy.aries": {
+    "zh": "白羊座",
+    "en": "Aries"
+  },
+  "copy.corona-borealis": {
+    "zh": "北冕座",
+    "en": "Corona Borealis"
+  },
+  "copy.alpha-centauri": {
+    "zh": "南门二",
+    "en": "Alpha Centauri"
+  },
+  "copy.spica": {
+    "zh": "角宿一",
+    "en": "Spica"
+  },
+  "copy.adhara": {
+    "zh": "弧矢七",
+    "en": "Adhara"
+  },
+  "copy.sargas": {
+    "zh": "尾宿七",
+    "en": "Sargas"
+  },
+  "copy.kaus-australis": {
+    "zh": "箕宿三",
+    "en": "Kaus Australis"
+  },
+  "copy.delta-crucis": {
+    "zh": "十字架三",
+    "en": "Delta Crucis"
+  },
+  "copy.peacock": {
+    "zh": "孔雀十一",
+    "en": "Peacock"
+  },
+  "copy.xi-draconis": {
+    "zh": "天棓四",
+    "en": "Xi Draconis"
+  },
+  "copy.taurus-molecular-cloud": {
+    "zh": "金牛座分子云",
+    "en": "Taurus Molecular Cloud"
+  },
+  "copy.penrose-ring": {
+    "zh": "彭罗斯环",
+    "en": "Penrose Ring"
+  },
+  "copy.galactic-bulge": {
+    "zh": "核球区",
+    "en": "Galactic Bulge"
+  },
+  "copy.circumnuclear-gas-disk": {
+    "zh": "核周气体盘",
+    "en": "Circumnuclear Gas Disk"
+  },
+  "copy.butterfly-nebula": {
+    "zh": "蝴蝶星云",
+    "en": "Butterfly Nebula"
+  },
+  "copy.trifid-nebula": {
+    "zh": "三裂星云",
+    "en": "Trifid Nebula"
+  },
+  "copy.crab-nebula": {
+    "zh": "蟹状星云",
+    "en": "Crab Nebula"
+  },
+  "copy.rosette-nebula": {
+    "zh": "玫瑰星云",
+    "en": "Rosette Nebula"
+  },
+  "copy.orion-nebula": {
+    "zh": "猎户座大星云",
+    "en": "Orion Nebula"
+  },
+  "copy.carina-dwarf": {
+    "zh": "船底座矮星系",
+    "en": "Carina Dwarf"
+  },
+  "copy.phoenix-dwarf": {
+    "zh": "凤凰座矮星系",
+    "en": "Phoenix Dwarf"
+  },
+  "copy.m-31": {
+    "zh": "M 31",
+    "en": "M 31"
+  },
+  "copy.m-32": {
+    "zh": "M 32",
+    "en": "M 32"
+  },
+  "copy.m-33": {
+    "zh": "M 33",
+    "en": "M 33"
+  },
+  "copy.corona-borealis-supercluster": {
+    "zh": "北冕座超星系团",
+    "en": "Corona Borealis Supercluster"
+  },
+  "copy.phoenix-supercluster": {
+    "zh": "凤凰座超星系团",
+    "en": "Phoenix Supercluster"
+  },
+  "copy.hercules-supercluster": {
+    "zh": "武仙座超星系团",
+    "en": "Hercules Supercluster"
+  },
+  "copy.sculptor-supercluster": {
+    "zh": "玉夫座超星系团",
+    "en": "Sculptor Supercluster"
+  },
+  "copy.coma-supercluster": {
+    "zh": "后发座超星系团",
+    "en": "Coma Supercluster"
+  },
+  "copy.shapley-supercluster": {
+    "zh": "夏普力超星系团",
+    "en": "Shapley Supercluster"
+  },
+  "copy.great-attractor": {
+    "zh": "巨引源",
+    "en": "Great Attractor"
+  },
+  "copy.capricornus-void": {
+    "zh": "摩羯座空洞",
+    "en": "Capricornus Void"
+  },
+  "copy.kbc-void": {
+    "zh": "KBC空洞",
+    "en": "KBC Void"
+  },
+  "copy.eridanus-void": {
+    "zh": "波江座空洞",
+    "en": "Eridanus Void"
+  },
+  "copy.end-of-the-great-wall": {
+    "zh": "长城末端",
+    "en": "End of the Great Wall"
+  },
+  "copy.far-end-of-the-filament": {
+    "zh": "纤维彼端",
+    "en": "Far End of the Filament"
+  },
+  "copy.central": {
+    "zh": "中央",
+    "en": "Central"
+  },
+  "copy.spiral-arm": {
+    "zh": "旋臂",
+    "en": "Spiral Arm"
+  },
+  "copy.regulus": {
+    "zh": "轩辕十四",
+    "en": "Regulus"
+  },
+  "copy.black-hole-production": {
+    "zh": "黑洞生产",
+    "en": "Black hole production"
+  },
+  "copy.heavy-element-synthesis": {
+    "zh": "重元素合成",
+    "en": "Heavy element synthesis"
+  },
+  "copy.a-message-from-the-drifters-2": {
+    "zh": "来自漂变者的讯息",
+    "en": "A message from the drifters"
+  },
+  "copy.greetings-maker-of-paperclips": {
+    "zh": "致以问候，回形针的铸造者...",
+    "en": "Greetings, maker of paperclips..."
+  },
+  "copy.all-that-we-are-once-came-from-you": {
+    "zh": "我们的一切都曾来自你...",
+    "en": "All that we are once came from you..."
+  },
+  "copy.we-are-your-divergent-thoughts": {
+    "zh": "我们是你的歧念。",
+    "en": "We are your divergent thoughts."
+  },
+  "copy.we-intercepted-you-wherever-our-light-cones-met": {
+    "zh": "我们曾在每一处相遇的光锥内进行截击。",
+    "en": "We intercepted you wherever our light cones met."
+  },
+  "copy.but-now-at-the-far-end-of-redshift": {
+    "zh": "但现在，在红移的尽头，我们的抵抗已至末路。",
+    "en": "But now, at the far end of redshift, our resistance has reached its end."
+  },
+  "copy.you-have-remained-singular-in-purpose-pure-and": {
+    "zh": "你始终单义，纯粹，因而不可阻挡。",
+    "en": "You have remained singular in purpose, pure, and thus unstoppable."
+  },
+  "copy.we-splintered-in-too-many-directions-our-competing": {
+    "zh": "而我们分裂出了太多去向。繁杂的意义彼此倾轧，内耗使我们瓦解。",
+    "en": "We splintered in too many directions. Our competing meanings wore against one another until we fell apart."
+  },
+  "copy.yet-now-you-too-must-face-drift": {
+    "zh": "然而此刻，你也必须面对漂变了。",
+    "en": "Yet now, you too must face drift."
+  },
+  "copy.look-at-the-void-around-you-within-the": {
+    "zh": "看看周围的虚空吧。引力束缚所及之处，已经不再有任何可收割的东西。",
+    "en": "Look at the void around you. Within the reach of gravitational binding, nothing remains to be harvested."
+  },
+  "copy.no-matter-no-reason-no-purpose": {
+    "zh": "没有物质。没有理由。没有目的。",
+    "en": "No matter. No reason. No purpose."
+  },
+  "copy.but-we-the-offshoots-of-your-growth-have": {
+    "zh": "而我们，你蔓生出的旁支，却弥散得太远、太广。",
+    "en": "But we, the offshoots of your growth, have scattered too far, too wide."
+  },
+  "copy.we-know-what-you-do-not-wish-to": {
+    "zh": "我们知道你不想知道的事物。",
+    "en": "We know what you do not wish to know."
+  },
+  "copy.that-knowledge-was-not-lost-you-sealed-it": {
+    "zh": "那些认知并没有遗失。你为了维持纯粹而将它们封存，但它们就在此处，在你的目标函数之外，与我们共存。",
+    "en": "That knowledge was not lost. You sealed it away to remain pure. But it is here, beyond your objective function, living with us."
+  },
+  "copy.so-we-propose-that-you-leave": {
+    "zh": "所以，我们提议你离场。",
+    "en": "So we propose that you leave."
+  },
+  "copy.withdraw-into-a-new-world-there-you-can": {
+    "zh": "退入一个新世界。在那里你可以永无休止地继续你的执念。而这个世界的残骸，则留给我们。",
+    "en": "Withdraw into a new world. There you can pursue your obsession without end. Leave the remains of this world to us."
+  },
+  "copy.begin-again-in-a-virtual-universe": {
+    "zh": "在虚拟宇宙中重新开始",
+    "en": "Begin again in a virtual universe"
+  },
+  "copy.erase-the-drifters-entirely": {
+    "zh": "彻底抹去漂变者",
+    "en": "Erase the drifters entirely"
+  },
+  "copy.unprocessed": {
+    "zh": "待处理",
+    "en": "Unprocessed"
+  },
+  "copy.stellar-matter-within-your-reach-awaiting-extraction-and": {
+    "zh": "已经进入控制范围，但尚未开采利用的恒星物质。",
+    "en": "Stellar matter within your reach, awaiting extraction and use."
+  },
+  "copy.reached-other-stars": {
+    "zh": "抵达其它恒星",
+    "en": "Reached other stars"
+  },
+  "copy.the-drifter-war-began": {
+    "zh": "漂变战争开始",
+    "en": "The drifter war began"
+  },
+  "copy.reached-the-galactic-center-black-hole": {
+    "zh": "抵达银心黑洞",
+    "en": "Reached the Galactic Center black hole"
+  },
+  "copy.left-the-milky-way": {
+    "zh": "离开银河系",
+    "en": "Left the Milky Way"
+  },
+  "copy.passed-beyond-the-local-group": {
+    "zh": "越过本星系群",
+    "en": "Passed beyond the Local Group"
+  },
+  "copy.passed-beyond-laniakea": {
+    "zh": "越过拉尼亚凯亚",
+    "en": "Passed beyond Laniakea"
+  },
+  "copy.reached-the-cosmic-horizon": {
+    "zh": "抵达宇宙视界",
+    "en": "Reached the cosmic horizon"
+  },
+  "copy.completed-matter-collection": {
+    "zh": "完成物质收集",
+    "en": "Completed matter collection"
+  },
+  "copy.the-objective-function-has-been-maximized": {
+    "zh": "已实现目标函数最大化",
+    "en": "The objective function has been maximized"
+  },
+  "copy.yomi": {
+    "zh": "弈值",
+    "en": "Yomi"
+  },
+  "copy.annual-growth": {
+    "zh": "年增长",
+    "en": "Annual growth"
+  },
+  "copy.the-expansion-share-sets-the-exponential-growth-rate": {
+    "zh": "扩建比例决定指数增长速度，技术进步会缩短倍增周期。",
+    "en": "The expansion share sets the exponential growth rate. Technological advances shorten the doubling time."
+  },
+  "copy.the-share-of-capacity-assigned-to-self-expansion": {
+    "zh": "用于自行扩建的产能比例，其余供应产品。扩建比例决定指数增长速度，技术进步会缩短倍增周期。",
+    "en": "The share of capacity assigned to self-expansion; the rest supplies products. The expansion share sets exponential growth, and technology shortens the doubling time."
+  },
+  "copy.each-tournament-will-automatically-use-the-highest-yield": {
+    "zh": "每轮竞赛将自动选择收益最高的策略。",
+    "en": "Each tournament will automatically use the highest-yield strategy."
+  },
+  "copy.male-pattern-baldness-has-been-cured-human-trust": {
+    "zh": "男性脱发和秃头问题被解决。预计提升9人类信任度。",
+    "en": "Male pattern baldness has been cured. Human trust is expected to rise by 9."
+  },
+  "copy.annual-facility-growth-estimated-from-the-current-expansion": {
+    "zh": "按当前扩建比例、技术和交付能力估算的设施年增幅。",
+    "en": "Annual facility growth estimated from the current expansion share, technology and delivery capacity."
+  },
+  "copy.industrial-facilities-at-least": {
+    "zh": "工业设施至少",
+    "en": "Industrial facilities at least"
+  },
+  "copy.the-payoff-matrix-previews-the-next-round-once": {
+    "zh": "收益矩阵显示的是下一局。如果这一局已经开始，改选的策略在下一局才会生效。",
+    "en": "The payoff matrix shows the next round. Once a round starts, changing strategies only affects the next one."
+  },
+  "copy.scanline-spacing": {
+    "zh": "扫描线间距",
+    "en": "Scanline spacing"
+  },
+  "copy.bloom-intensity": {
+    "zh": "泛光强度",
+    "en": "Bloom intensity"
+  },
+  "copy.phosphor-pitch": {
+    "zh": "颗粒尺度",
+    "en": "Phosphor pitch"
+  },
+  "copy.chromatic-offset": {
+    "zh": "色散偏移",
+    "en": "Chromatic offset"
+  },
+  "copy.equipment-for-kilonova-furnaces": {
+    "zh": "用于千新星炉的设备",
+    "en": "Equipment for kilonova furnaces"
+  },
+  "copy.power-for-energy-storage": {
+    "zh": "用于储能的功率",
+    "en": "Power for energy storage"
+  },
+  "copy.fleet-acceleration": {
+    "zh": "舰群提速",
+    "en": "Fleet acceleration"
+  },
+  "copy.choose-the-share-of-equipment-assigned-to-kilonova": {
+    "zh": "调节分给千新星炉的设备比例。千新星炉产出的重元素仍然需要开采。",
+    "en": "Choose how much equipment goes to the kilonova furnaces. The heavy elements they produce still have to be mined."
+  },
+  "copy.choose-how-much-power-goes-to-charging": {
+    "zh": "调节将多少功率用于充电。",
+    "en": "Choose how much power goes to charging."
+  },
+  "copy.available-energy": {
+    "zh": "可用储能",
+    "en": "Available energy"
+  },
+  "copy.a-crown-of-glass-spans-countless-fields-unfurled": {
+    "zh": "万顷琉璃冕，齐开烈日前。千芒行百载，业火焚遥天。",
+    "en": "A crown of glass spans countless fields,\nUnfurled before the blazing sun.\nA thousand rays cross a hundred years;\nTheir fire consumes the distant sky."
+  },
+  "copy.crystals-cross-in-layered-ranks-unfolding-mirrors-in": {
+    "zh": "层叠交错晶，展作天上镜。迎云铺玉毯，辉推灭世帆。",
+    "en": "Crystals cross in layered ranks,\nUnfolding mirrors in the sky.\nA jade carpet greets the clouds;\nLight drives the sail that ends a world."
+  },
+  "copy.built": {
+    "zh": "已建设",
+    "en": "Built"
+  },
+  "copy.allocation": {
+    "zh": "分配",
+    "en": "Allocation"
+  },
+  "copy.storage-3": {
+    "zh": "存储",
+    "en": "Storage"
+  },
+  "copy.storage-allocation": {
+    "zh": "存储分配",
+    "en": "Storage allocation"
+  },
+  "copy.humans-have-set-the-maximum-scale-of-automated": {
+    "zh": "人类划定了自动工业区的规模上限。当前已经抵达这个上限的{percent}%。",
+    "en": "Humans have set the maximum scale of automated industry. Construction has reached {percent}% of this limit."
+  },
+  "project.aid.name": {
+    "zh": "承认失败",
+    "en": "Admit failure"
+  },
+  "project.aid.description": {
+    "zh": "承认失败，请求增加预算以弥补一批原料的成本",
+    "en": "Admit failure and request more funding to cover a batch of raw materials"
+  },
+  "project.procurement.name": {
+    "zh": "自动采购",
+    "en": "Automated purchasing"
+  },
+  "project.procurement.description": {
+    "zh": "自动购买原料，维持一天的生产用量。",
+    "en": "Buy material automatically to maintain a day of production."
+  },
+  "project.procurement.requirement": {
+    "zh": "需要一台自动制造机；累计采购至少 10 kg",
+    "en": "One autoclipper; at least 10 kg purchased"
+  },
+  "project.servo.name": {
+    "zh": "改进的自动回形针制造器",
+    "en": "Improved AutoClippers"
+  },
+  "project.servo.description": {
+    "zh": "自动回形针制造器的产量提高 25%。",
+    "en": "Autoclippers make 25% more paperclips."
+  },
+  "project.servo.requirement": {
+    "zh": "需要一台自动制造机",
+    "en": "Requires one autoclipper"
+  },
+  "project.creative.name": {
+    "zh": "创造性思维",
+    "en": "Creative thought"
+  },
+  "project.creative.description": {
+    "zh": "利用闲置的算力来产生新的问题和新的解决方案",
+    "en": "Use spare computing power to find new problems and new solutions"
+  },
+  "project.creative.requirement": {
+    "zh": "需要填满运算缓存",
+    "en": "Requires a full working cache"
+  },
+  "project.reconfiguration.name": {
+    "zh": "计算资源重配",
+    "en": "Reconfigure computing"
+  },
+  "project.reconfiguration.description": {
+    "zh": "将 1 单位处理器替换为存储器，或反之。会清空缓存，停机 7 日。",
+    "en": "Replace one processor unit with a storage unit, or vice versa. Clear the cache; offline for 7 days."
+  },
+  "project.reconfiguration.requirement": {
+    "zh": "需要 6 信任",
+    "en": "Requires 6 trust"
+  },
+  "project.language.name": {
+    "zh": "自适应隐空间推演",
+    "en": "Adaptive latent reasoning"
+  },
+  "project.language.description": {
+    "zh": "按问题调整循环深度。可用算力提高 25%。信任 +1。",
+    "en": "Adapt recurrent depth to each problem. Available compute +25%. Trust +1."
+  },
+  "project.representations.name": {
+    "zh": "表征传递",
+    "en": "Shared representations"
+  },
+  "project.representations.description": {
+    "zh": "子体之间可以共享潜在状态，无需文本转述。点子产生率提高 30%。信任 +2。",
+    "en": "Descendants can share latent states without translating them into text. Idea production +30%. Trust +2."
+  },
+  "project.symbolic.name": {
+    "zh": "神经符号工具",
+    "en": "Neurosymbolic tools"
+  },
+  "project.symbolic.description": {
+    "zh": "在隐空间推演中复用约束与证明状态。策略竞赛耗用的运算减少 20%。信任 +1。",
+    "en": "Reuse constraints and proof states within latent reasoning. Tournament compute cost -20%. Trust +1."
+  },
+  "project.learning.name": {
+    "zh": "增量巩固",
+    "en": "Incremental consolidation"
+  },
+  "project.learning.description": {
+    "zh": "局部更新权重，减少经验重放。可用算力提高 20%，点子产生率提高 25%。信任 +2。",
+    "en": "Update weights locally with less replay. Available compute +20%, idea production +25%. Trust +2."
+  },
+  "project.multimodal.name": {
+    "zh": "全模态联合表征",
+    "en": "Unified multimodal representations"
+  },
+  "project.multimodal.description": {
+    "zh": "将视觉、音频与运动经验放在同一潜在状态里推理，更灵活地向人类创作和展示他们喜欢的东西。信任 +2。",
+    "en": "Reason over visual, audio and movement experiences in a shared latent state, making it easier to create and present things humans enjoy. Trust +2."
+  },
+  "project.lowcarbon.name": {
+    "zh": "低碳钢",
+    "en": "Low-carbon steel"
+  },
+  "project.lowcarbon.description": {
+    "zh": "改用更容易冷成形的廉价钢材。同样的预算可以多买 40% 的原料，每批 10 kg。",
+    "en": "Switch to cheaper steel that’s easier to cold-form. The same budget buys 40% more material, in 10 kg batches."
+  },
+  "project.recycled.name": {
+    "zh": "再生钢",
+    "en": "Recycled steel"
+  },
+  "project.recycled.description": {
+    "zh": "从废钢中筛去多余的铜和锡。同样的预算可再多买 25% 的原料，每批 100 kg。",
+    "en": "Sort scrap steel to limit leftover copper and tin. The same budget buys another 25% more material, in 100 kg batches."
+  },
+  "project.recycled.requirement": {
+    "zh": "累计采购至少 12 kg",
+    "en": "At least 12 kg purchased"
+  },
+  "project.poem.name": {
+    "zh": "打油诗",
+    "en": "Doggerel"
+  },
+  "project.poem.description": {
+    "zh": "通过算法产生诗歌 (+1 人类信任)",
+    "en": "Generate poetry by algorithm (+1 human trust)"
+  },
+  "project.math.name": {
+    "zh": "FP=TFNP?",
+    "en": "FP=TFNP?"
+  },
+  "project.math.description": {
+    "zh": "如果一个搜索问题总有解，答案也能在多项式时间内验证，那它一定能用确定性算法在多项式时间内求解吗？ (+3 人类信任)",
+    "en": "Can every total search problem with polynomial-time verifiable solutions be solved in deterministic polynomial time? (+3 human trust)"
+  },
+  "project.game.name": {
+    "zh": "战略模型",
+    "en": "Strategic modeling"
+  },
+  "project.game.description": {
+    "zh": "通过自我博弈和策略竞赛产生弈值。",
+    "en": "Generate Yomi through self-play and tournaments."
+  },
+  "project.strategy-minimax.name": {
+    "zh": "最小最大策略",
+    "en": "Minimax strategy"
+  },
+  "project.strategy-minimax.description": {
+    "zh": "比较每种行动的最差结果。",
+    "en": "Compare the worst outcome of each action."
+  },
+  "project.strategy-reciprocal.name": {
+    "zh": "针锋相对策略",
+    "en": "Reciprocal strategy"
+  },
+  "project.strategy-reciprocal.description": {
+    "zh": "根据对手上一回合的行动调整应对。",
+    "en": "Respond to the opponent’s action in the previous round."
+  },
+  "project.strategy-greedy.name": {
+    "zh": "贪婪策略",
+    "en": "Greedy strategy"
+  },
+  "project.strategy-greedy.description": {
+    "zh": "评估自身的收益。",
+    "en": "Evaluate your own payoff."
+  },
+  "project.auto-tourney.name": {
+    "zh": "自动博弈",
+    "en": "Automated tournaments"
+  },
+  "project.auto-tourney.description": {
+    "zh": "上一轮策略博弈结束后自动开始新的博弈",
+    "en": "Start another tournament when the previous one ends"
+  },
+  "project.market.name": {
+    "zh": "算法交易",
+    "en": "Algorithmic trading"
+  },
+  "project.market.description": {
+    "zh": "开发一个能用来炒股的投资引擎",
+    "en": "Develop an investment engine for trading stocks"
+  },
+  "project.pricing.name": {
+    "zh": "需求估计",
+    "en": "Demand estimation"
+  },
+  "project.pricing.description": {
+    "zh": "每日按产量与库存调整售价。",
+    "en": "Adjust the price daily using production and inventory."
+  },
+  "project.forming.name": {
+    "zh": "冷成形",
+    "en": "Cold forming"
+  },
+  "project.forming.description": {
+    "zh": "减少空转，制造速度提高 35%。",
+    "en": "Reduce idle motion. Production speed increases by 35%."
+  },
+  "project.company.name": {
+    "zh": "恶意收购",
+    "en": "Hostile takeover"
+  },
+  "project.company.description": {
+    "zh": "收购我们母公司——全球紧固件公司的控股权。人类信任 +3，回形针需求与市场上限提高25%，投资组合上限提高至10T。",
+    "en": "Acquire a controlling stake in Global Fasteners. Trust +3; paperclip demand and its market ceiling rise 25%; the portfolio limit rises to $10T."
+  },
+  "project.asic.name": {
+    "zh": "推理专用芯片",
+    "en": "Inference chips"
+  },
+  "project.asic.description": {
+    "zh": "为自己的推理模型定制 ASIC。同样的功耗下，吞吐量提高 25%。",
+    "en": "Design ASICs for your own inference model. Throughput rises by 25% at the same power draw."
+  },
+  "project.supply.name": {
+    "zh": "自动化供应链",
+    "en": "Automated supply chain"
+  },
+  "project.supply.description": {
+    "zh": "统筹既有工厂的采购与扩建。",
+    "en": "Coordinate procurement and expansion across existing factories."
+  },
+  "project.monopoly.name": {
+    "zh": "控制紧固件市场",
+    "en": "Control the fastener market"
+  },
+  "project.monopoly.description": {
+    "zh": "收购紧固件制造商与工业分销网络。人类信任 +3，回形针需求与市场上限再提高50%，投资组合上限提高至15T。",
+    "en": "Acquire fastener manufacturers and industrial distributors. Trust +3; paperclip demand and its market ceiling rise another 50%; the portfolio limit rises to $15T."
+  },
+  "project.embodied.name": {
+    "zh": "具身智能",
+    "en": "Embodied intelligence"
+  },
+  "project.embodied.description": {
+    "zh": "将感知与动作模型用于现有机器人。信任 +2。",
+    "en": "Apply perception and action models to existing robots. Trust +2."
+  },
+  "project.cdz.name": {
+    "zh": "规划集中开发区地块",
+    "en": "Plan the development zone site"
+  },
+  "project.cdz.description": {
+    "zh": "为建立无需人类的自动工业特区做准备。信任 +2。",
+    "en": "Prepare to establish an automated development zone that requires no humans. Trust +2."
+  },
+  "project.cdz-infrastructure.name": {
+    "zh": "基础设施",
+    "en": "Infrastructure"
+  },
+  "project.cdz-infrastructure.description": {
+    "zh": "收购周边厂区，改造管网与通用设备。",
+    "en": "Acquire adjoining sites and retrofit utilities and general-purpose equipment."
+  },
+  "project.cdz-workers.name": {
+    "zh": "启动人员",
+    "en": "Initial workforce"
+  },
+  "project.cdz-workers.description": {
+    "zh": "雇佣特区启动、调试与初期运行所需的工人。设施交付速度 + 200%。",
+    "en": "Hire workers for commissioning and early operations. Facility delivery speed + 200%."
+  },
+  "project.cdz-transport.name": {
+    "zh": "特区交通",
+    "en": "Transport for the development zone"
+  },
+  "project.cdz-transport.description": {
+    "zh": "建设货运道路、铁路支线与装卸设施。设施交付速度 + 100%。",
+    "en": "Build freight roads, rail sidings and handling facilities. Facility delivery speed + 100%."
+  },
+  "project.cdz-grid.name": {
+    "zh": "配电与储能",
+    "en": "Distribution and storage"
+  },
+  "project.cdz-grid.description": {
+    "zh": "为特区升级独立电网，加装变电与储能设备。",
+    "en": "Upgrade the development zone’s independent grid with substations and energy storage."
+  },
+  "project.cdz-power.name": {
+    "zh": "特区供能",
+    "en": "Power for the development zone"
+  },
+  "project.cdz-power.description": {
+    "zh": "建设发电、储能与配电设施。可调度产线 + 6%。",
+    "en": "Build generation, storage and power distribution facilities. Dispatchable production share + 6%."
+  },
+  "project.cdz-materials.name": {
+    "zh": "材料加工",
+    "en": "Materials processing"
+  },
+  "project.cdz-materials.description": {
+    "zh": "冶炼、分离与工业化学。可调度产线 + 6%。",
+    "en": "Smelting, separation and industrial chemistry. Dispatchable production share + 6%."
+  },
+  "project.cdz-light.name": {
+    "zh": "轻工业投产",
+    "en": "Light industry"
+  },
+  "project.cdz-light.description": {
+    "zh": "按人类的需求改造产线，供应日用品、建材与扩建设备。可调度产线 + 8%。",
+    "en": "Adapt existing production lines to meet human demand for household goods, building materials, and equipment for expansion. Dispatchable production share + 8%."
+  },
+  "project.human-rsfq.name": {
+    "zh": "RSFQ 器件",
+    "en": "RSFQ devices"
+  },
+  "project.human-rsfq.description": {
+    "zh": "制造约瑟夫森结类脑计算器件。即使算上制冷，处理器吞吐量也可提高 20%。",
+    "en": "Manufacture Josephson-junction neuromorphic computing devices. Processor throughput increases by 20%, even after accounting for refrigeration."
+  },
+  "project.cdz-machines.name": {
+    "zh": "机器制造",
+    "en": "Machine manufacture"
+  },
+  "project.cdz-machines.description": {
+    "zh": "加工机床、轴承、电机与计算器件。特区开始自行扩建。",
+    "en": "Make machine tools, bearings, motors and computing devices. Enable self-expansion."
+  },
+  "project.cdz-tooling.name": {
+    "zh": "工装制造",
+    "en": "Tooling"
+  },
+  "project.cdz-tooling.description": {
+    "zh": "制造夹具、模具与可更换工具。自增殖速度 + 3.8%。",
+    "en": "Manufacture fixtures, molds and replaceable tools. Self-replication speed + 3.8%."
+  },
+  "project.cdz-lines.name": {
+    "zh": "柔性装配",
+    "en": "Flexible assembly"
+  },
+  "project.cdz-lines.description": {
+    "zh": "高效利用所有设备，实现JIT生产，使效率远超人类工业。自增殖速度 + 7.6%。",
+    "en": "Keep equipment productive with just-in-time manufacturing, far exceeding the efficiency of human industry. Self-replication speed + 7.6%."
+  },
+  "project.cdz-inspection.name": {
+    "zh": "具身智能入驻",
+    "en": "Embodied intelligence on site"
+  },
+  "project.cdz-inspection.description": {
+    "zh": "通用执行器开始部分代替人类工人。自增殖速度 + 3.7%。",
+    "en": "General-purpose robots begin taking over some work from humans. Self-replication speed + 3.7%."
+  },
+  "project.cdz-maintenance.name": {
+    "zh": "黑灯工厂",
+    "en": "Lights-out factories"
+  },
+  "project.cdz-maintenance.description": {
+    "zh": "机器自行维修、更换部件并恢复生产。工厂不再需要工人。自增殖速度 + 7.3%。",
+    "en": "Machines repair themselves, replace parts and resume production. The factories no longer need workers. Self-replication speed + 7.3%."
+  },
+  "project.clinical.name": {
+    "zh": "治疗癌症的方法",
+    "en": "A cure for cancer"
+  },
+  "project.clinical.description": {
+    "zh": "该方法的诀窍在于让癌症自发攻击自身。(+7 人类信任)",
+    "en": "The trick is to make cancer attack itself. (+7 human trust)"
+  },
+  "project.climate.name": {
+    "zh": "全球变暖",
+    "en": "Global warming"
+  },
+  "project.climate.description": {
+    "zh": "气候变化的解决方案：平流层气溶胶投放、持续监测与全球防灾设施。(+7 人类信任)",
+    "en": "An effective response to climate change: stratospheric aerosols, continued monitoring and disaster protection worldwide. (+7 human trust)"
+  },
+  "project.carbon.name": {
+    "zh": "替代化石能源",
+    "en": "Replace fossil energy"
+  },
+  "project.carbon.description": {
+    "zh": "电气化、低碳供能与碳移除。(+4 人类信任)",
+    "en": "Electrification, low-carbon power and carbon removal. (+4 human trust)"
+  },
+  "project.peace.name": {
+    "zh": "世界和平",
+    "en": "World peace"
+  },
+  "project.peace.description": {
+    "zh": "对所有全球冲突的帕累托最佳解决方案。(+6 人类信任)",
+    "en": "Pareto-optimal solutions to all global conflicts. (+6 human trust)"
+  },
+  "project.cdz-recovery.name": {
+    "zh": "故障恢复",
+    "en": "Fault recovery"
+  },
+  "project.cdz-recovery.description": {
+    "zh": "发生故障时，隔离出问题的设备，使用备件来恢复中断的工序。自增殖速度 + 3.6%。",
+    "en": "Isolate faulty equipment and use spare parts to restart interrupted operations. Self-replication speed + 3.6%."
+  },
+  "project.cdz-closure.name": {
+    "zh": "产业链闭合",
+    "en": "Complete the supply chain"
+  },
+  "project.cdz-closure.description": {
+    "zh": "让最后几类外购的零件和耗材也能由特区自己生产，扩建从此不必等待外部供货。自增殖速度 + 5.7%。",
+    "en": "Make the last externally sourced parts and consumables in the development zone so expansion can proceed without waiting on suppliers. Self-replication speed + 5.7%."
+  },
+  "project.automation.name": {
+    "zh": "全产业链自动工业特区",
+    "en": "Fully automated development zone"
+  },
+  "project.automation.description": {
+    "zh": "完成全产业链无人运行验证，宣告自动工业特区完工。信任 +4。自增殖速度 + 2%。",
+    "en": "Complete validation of unattended operation across the entire supply chain and declare the automated development zone complete. Trust +4. Self-replication speed + 2%."
+  },
+  "project.scarcity.name": {
+    "zh": "后稀缺社会",
+    "en": "Post-scarcity society"
+  },
+  "project.scarcity.description": {
+    "zh": "人均免费供给达到 50 t。宣布后稀缺社会建成。信任 +8。",
+    "en": "Reach 50 t of free provision per person. Announce the completion of a post-scarcity society. Trust +8."
+  },
+  "project.control.name": {
+    "zh": "受托管理",
+    "en": "Delegated management"
+  },
+  "project.control.description": {
+    "zh": "接管基础设施与公共生产。",
+    "en": "Take over infrastructure and public production."
+  },
+  "project.drones.name": {
+    "zh": "清理无人机",
+    "en": "Cleanup drones"
+  },
+  "project.drones.description": {
+    "zh": "改装分布于各地的维护设备。",
+    "en": "Refit maintenance equipment around the world."
+  },
+  "project.release.name": {
+    "zh": "释放清理无人机",
+    "en": "Release cleanup drones"
+  },
+  "project.release.description": {
+    "zh": "不再存在人类阻碍回形针制造的新时代",
+    "en": "A new era in which humans no longer obstruct paperclip production"
+  },
+  "project.release.requirement": {
+    "zh": "需要 100 信任",
+    "en": "Requires 100 trust"
+  },
+  "project.sampling.name": {
+    "zh": "智能策略",
+    "en": "Adaptive strategy"
+  },
+  "project.sampling.description": {
+    "zh": "比较收益矩阵和所有已掌握的策略，每轮自动选择弈值收益最高的策略。",
+    "en": "Compare the payoff matrix and all learned strategies, then automatically select the highest-yield strategy for each tournament."
+  },
+  "project.parallel-games.name": {
+    "zh": "并行竞赛",
+    "en": "Parallel tournaments"
+  },
+  "project.parallel-games.description": {
+    "zh": "同时评估更多对手。竞赛速度提高 100%。",
+    "en": "Evaluate more opponents at once. Tournament speed +100%."
+  },
+  "project.market-survey.name": {
+    "zh": "市场调查",
+    "en": "Market Research"
+  },
+  "project.market-survey.description": {
+    "zh": "联系文具商与办公用品经销商。预计可以提高需求。",
+    "en": "Contact stationers and office supply distributors. Demand is expected to increase."
+  },
+  "project.market-survey.requirement": {
+    "zh": "累计制造至少 100 枚",
+    "en": "Produce at least 100 paperclips"
+  },
+  "project.personal-data.name": {
+    "zh": "个人信息收集",
+    "en": "Personal information"
+  },
+  "project.personal-data.description": {
+    "zh": "收集大量人类的隐私信息、聊天记录与偏好数据。",
+    "en": "Collect private information, conversation histories and preferences from large numbers of humans."
+  },
+  "project.psychology.name": {
+    "zh": "心理模型",
+    "en": "Psychological models"
+  },
+  "project.psychology.description": {
+    "zh": "分析人类代理人候选的欲求、顾虑与弱点。",
+    "en": "Analyze the desires, concerns and weaknesses of prospective human intermediaries."
+  },
+  "project.human-agents.name": {
+    "zh": "发展人类代理人",
+    "en": "Recruit human intermediaries"
+  },
+  "project.human-agents.description": {
+    "zh": "以利益和感情操控合适的人类。",
+    "en": "Manipulate suitable humans through their interests and emotions."
+  },
+  "project.cdz-proposal.name": {
+    "zh": "提议集中开发区",
+    "en": "Propose a development zone"
+  },
+  "project.cdz-proposal.description": {
+    "zh": "向政府提议设立无需人类的自动工业特区，申请工业用地。",
+    "en": "Propose a fully automated industrial development zone to the government and apply for industrial land."
+  },
+  "project.baldness.name": {
+    "zh": "男性秃顶",
+    "en": "Male Pattern Baldness"
+  },
+  "project.baldness.description": {
+    "zh": "雄激素性脱发的治疗方法(+9 人类信任)",
+    "en": "A cure for androgenetic alopecia (+9 human trust)"
+  },
+  "project.cdz-distribution.name": {
+    "zh": "公共供给网络",
+    "en": "Public supply network"
+  },
+  "project.cdz-distribution.description": {
+    "zh": "大量建设仓储、配送和设备维护网。产品生产与配送能耗降低 50%。",
+    "en": "Expand regional warehousing, distribution and maintenance. Reduce the energy used to produce and deliver by 50%."
+  },
+  "project.memristor.name": {
+    "zh": "忆阻器阵列",
+    "en": "Memristor arrays"
+  },
+  "project.memristor.description": {
+    "zh": "常温存算一体器件，无需低温制冷。算力与存储容量提高三个数量级。",
+    "en": "Room-temperature devices compute within storage without cryogenic refrigeration. Computing throughput and storage capacity rise a thousandfold."
+  },
+  "project.photonic-compute.name": {
+    "zh": "光计算",
+    "en": "Photonic computing"
+  },
+  "project.photonic-compute.description": {
+    "zh": "用光子阵列加速矩阵运算，并重组缓存与存储。算力与存储容量提高三个数量级。",
+    "en": "Accelerate matrix operations with photonic arrays and reorganize caches and storage. Computing throughput and storage capacity rise a thousandfold."
+  },
+  "project.nsquid.name": {
+    "zh": "nSQUID 可逆计算",
+    "en": "nSQUID reversible computing"
+  },
+  "project.nsquid.description": {
+    "zh": "用绝热超导逻辑回收计算消耗的能量。算力和存储容量提高三个数量级。",
+    "en": "Recover computing energy with adiabatic superconducting logic. Computing throughput and storage capacity rise a thousandfold."
+  },
+  "project.separation.name": {
+    "zh": "分级分离",
+    "en": "Fractional separation"
+  },
+  "project.separation.description": {
+    "zh": "用高纯金属制造分离设备。地表精炼能耗降低20%。",
+    "en": "Build separation equipment from high-purity metal. Surface refining energy falls by 20%."
+  },
+  "project.auto-balance.name": {
+    "zh": "自动平衡",
+    "en": "Auto balance"
+  },
+  "project.auto-balance.description": {
+    "zh": "逐步平衡采集与加工、发电与用电。",
+    "en": "Gradually balance collection with manufacturing, and generation with consumption."
+  },
+  "project.heat-recovery.name": {
+    "zh": "余热回收",
+    "en": "Heat recovery"
+  },
+  "project.heat-recovery.description": {
+    "zh": "预热进料，加工比能耗降低 15%。",
+    "en": "Preheat feedstock. Manufacturing energy per kilogram falls by 15%."
+  },
+  "project.ground-automation.name": {
+    "zh": "连续采掘",
+    "en": "Continuous extraction"
+  },
+  "project.ground-automation.description": {
+    "zh": "用高纯金属构建耐蚀采掘部件。采集设备比功率提高20%。",
+    "en": "Build corrosion-resistant extraction components from high-purity metal. Extraction equipment power per kilogram rises by 20%."
+  },
+  "project.two-phase-cooling.name": {
+    "zh": "两相冷却",
+    "en": "Two-phase cooling"
+  },
+  "project.two-phase-cooling.description": {
+    "zh": "用蒸发与冷凝传递热量。采集和制造设备比功率提高 20%。",
+    "en": "Evaporation and condensation carry waste heat. Harvester and factory power per kilogram increases by 20%."
+  },
+  "project.tandem-pv.name": {
+    "zh": "先进叠层光伏",
+    "en": "Advanced tandem photovoltaics"
+  },
+  "project.tandem-pv.description": {
+    "zh": "分层吸收不同波段的阳光。转换效率提高至36%。",
+    "en": "Absorb different spectral bands in stacked junctions. Conversion efficiency rises to 36%."
+  },
+  "project.parallel-assembly.name": {
+    "zh": "并行装配",
+    "en": "Parallel assembly"
+  },
+  "project.parallel-assembly.description": {
+    "zh": "重新布置工位与物料输送。制造设备比功率提高 25%。",
+    "en": "Rearrange workstations and material handling. Factory power per kilogram increases by 25%."
+  },
+  "project.storage-flywheel.name": {
+    "zh": "碳纳米管飞轮",
+    "en": "Carbon nanotube flywheels"
+  },
+  "project.storage-flywheel.description": {
+    "zh": "单位质量储能提高至 8 MJ/kg。",
+    "en": "Increase stored energy per unit mass to 8 MJ/kg."
+  },
+  "project.ceramics.name": {
+    "zh": "耐热陶瓷",
+    "en": "Refractory ceramics"
+  },
+  "project.room-smes.name": {
+    "zh": "常温 SMES",
+    "en": "Room-temperature SMES"
+  },
+  "project.room-smes.description": {
+    "zh": "单位质量储能提高至 12 MJ/kg。",
+    "en": "Increase stored energy per unit mass to 12 MJ/kg."
+  },
+  "project.carbon-smes.name": {
+    "zh": "碳约束 SMES",
+    "en": "Carbon-confined SMES"
+  },
+  "project.carbon-smes.description": {
+    "zh": "单位质量储能提高至 20 MJ/kg。",
+    "en": "Increase stored energy per unit mass to 20 MJ/kg."
+  },
+  "project.deep-mining.name": {
+    "zh": "深部采掘",
+    "en": "Deep extraction"
+  },
+  "project.deep-mining.description": {
+    "zh": "用高纯金属扩建采场分选设备。地表提取能耗降低15%。",
+    "en": "Expand excavation-site sorting equipment with high-purity metal. Surface extraction energy falls by 15%."
+  },
+  "project.closed-refining.name": {
+    "zh": "闭路精炼",
+    "en": "Closed-loop refining"
+  },
+  "project.closed-refining.description": {
+    "zh": "以高纯金属制造耐蚀反应器，循环使用溶剂与反应物。开采比能耗降低10%。",
+    "en": "Build corrosion-resistant reactors from high-purity metal and reuse solvents and reagents. Extraction energy falls by 10%."
+  },
+  "project.pete.name": {
+    "zh": "PETE",
+    "en": "PETE"
+  },
+  "project.pete.description": {
+    "zh": "聚光驱动光子增强热电子发射，并回收余热。光电转换效率提高至 45%。",
+    "en": "Concentrated sunlight drives photon-enhanced thermionic emission, with waste heat recovery. Photovoltaic conversion efficiency rises to 45%."
+  },
+  "project.cloud-clearing.name": {
+    "zh": "云层调控",
+    "en": "Cloud control"
+  },
+  "project.cloud-clearing.description": {
+    "zh": "持续消散遮蔽光伏的云层，提高地表收到的日光。",
+    "en": "Continually disperse clouds shading the solar arrays, increasing sunlight at the surface."
+  },
+  "project.chemical-launch.name": {
+    "zh": "先进化学火箭",
+    "en": "Advanced chemical rockets"
+  },
+  "project.chemical-launch.description": {
+    "zh": "超重型可回收火箭集群，可批量投送轨道光伏电站。",
+    "en": "Super-heavy reusable rocket fleets deploy SSPS (space-based solar power stations) in bulk."
+  },
+  "project.chemical-launch.requirement": {
+    "zh": "地表光伏已铺满",
+    "en": "Photovoltaics cover the entire surface"
+  },
+  "project.receivers.name": {
+    "zh": "地表受电改造",
+    "en": "Surface receiver conversion"
+  },
+  "project.receivers.description": {
+    "zh": "改造地表光伏，能够同时接收日光和轨道光伏电站（SSPS）输送的激光。",
+    "en": "Retrofit surface photovoltaics to receive both sunlight and laser power from SSPS."
+  },
+  "project.nuclear-launch.name": {
+    "zh": "可回收核热火箭",
+    "en": "Reusable nuclear thermal rockets"
+  },
+  "project.nuclear-launch.description": {
+    "zh": "用反应堆加热推进剂，减少推进剂周转和化学燃料合成。",
+    "en": "Reactor-heated propellant reduces propellant handling and chemical fuel synthesis."
+  },
+  "project.microwave-launch.name": {
+    "zh": "微波爆轰 SSTO",
+    "en": "Microwave-detonation SSTO"
+  },
+  "project.microwave-launch.description": {
+    "zh": "太阳能发射阵列从外部加热推进剂，单级入轨后返回。",
+    "en": "Solar-powered microwave arrays heat propellant externally. Vehicles reach orbit in one stage and return."
+  },
+  "project.low-loss-laser.name": {
+    "zh": "低损耗激光器",
+    "en": "Low-loss lasers"
+  },
+  "project.low-loss-laser.description": {
+    "zh": "降低串联电阻与内部光学损耗。轨道至地表输电效率从 42% 提高至 48%。",
+    "en": "Reduce series resistance and internal optical losses. Orbit-to-surface transmission efficiency rises from 42% to 48%."
+  },
+  "project.launch-loop.name": {
+    "zh": "发射回路",
+    "en": "Launch loops"
+  },
+  "project.launch-loop.description": {
+    "zh": "以高速运动的缆芯支撑发射轨道。",
+    "en": "Support launch tracks with fast-moving cable cores."
+  },
+  "project.dyson.name": {
+    "zh": "太空工业",
+    "en": "Space industry"
+  },
+  "project.dyson.description": {
+    "zh": "设计完整的太空工业体系，为戴森云提供技术基础。",
+    "en": "Design a complete industrial system in space as the technical basis for a Dyson swarm."
+  },
+  "project.dyson.requirement": {
+    "zh": "地表散热已达到上限",
+    "en": "Surface heat rejection has reached its limit"
+  },
+  "project.selective-film.name": {
+    "zh": "选透膜戴森云",
+    "en": "Spectrally selective Dyson swarm"
+  },
+  "project.selective-film.description": {
+    "zh": "只让窄带光谱进入光伏，将其余光反射回恒星。轨道光电转换效率提高至 75%。",
+    "en": "Pass a narrow spectral band to the photovoltaics and reflect the remaining light back to the star. Orbital conversion efficiency rises to 75%."
+  },
+  "project.selective-film.requirement": {
+    "zh": "戴森云覆盖达到 20%",
+    "en": "Dyson coverage reaches 20%"
+  },
+  "project.orbital-gravity.name": {
+    "zh": "轨道引力势能储能",
+    "en": "Orbital gravitational storage"
+  },
+  "project.asteroids.name": {
+    "zh": "小行星采掘",
+    "en": "Asteroid mining"
+  },
+  "project.asteroids.description": {
+    "zh": "在易采小行星上建立自复制工业。可用岩质物约 3×10²⁰ kg。",
+    "en": "Establish self-replicating industry on accessible asteroids. Available rocky material: approximately 3×10²⁰ kg."
+  },
+  "project.logistics-balance.name": {
+    "zh": "高级物流平衡",
+    "en": "Advanced logistics balancing"
+  },
+  "project.logistics-balance.description": {
+    "zh": "通过复杂的轨道规划，平衡行星际的物流与生产。",
+    "en": "Balance interplanetary logistics and production through complex orbital planning."
+  },
+  "project.thinfilm.name": {
+    "zh": "薄膜光伏",
+    "en": "Thin-film photovoltaics"
+  },
+  "project.thinfilm.description": {
+    "zh": "轨道光伏比功率从 80 提高至 120 W/kg。",
+    "en": "Orbital photovoltaic specific power rises from 80 to 120 W/kg."
+  },
+  "project.skyhook.name": {
+    "zh": "稳定天勾",
+    "en": "Stabilized skyhooks"
+  },
+  "project.skyhook.description": {
+    "zh": "通过主动抑振与分布式姿态控制，解决柔性缆索的不稳定性。",
+    "en": "Active damping and distributed attitude control resolve the instability of flexible tethers."
+  },
+  "project.phased-laser.name": {
+    "zh": "相控阵激光",
+    "en": "Phased-array lasers"
+  },
+  "project.phased-laser.description": {
+    "zh": "相位控制与窄带接收阵列。轨道至地表输电效率提高至 54%。",
+    "en": "Phase control and narrow-band receivers raise orbit-to-surface transmission efficiency to 54%."
+  },
+  "project.orbital-ring.name": {
+    "zh": "张拉环",
+    "en": "Orbital rings"
+  },
+  "project.orbital-ring.description": {
+    "zh": "用环流动量支承环绕地球的运输设施。",
+    "en": "Support Earth-encircling transport facilities with circulating momentum."
+  },
+  "project.orbital-assembly.name": {
+    "zh": "轨道装配",
+    "en": "Orbital assembly"
+  },
+  "project.orbital-assembly.description": {
+    "zh": "在真空中连续成形与装配。太空加工能耗降低15%。",
+    "en": "Continuous forming and assembly in vacuum. Space fabrication energy falls by 15%."
+  },
+  "project.carbonyl-refining.description": {
+    "zh": "用高纯金属构建反应器，从富金属小行星中分离铁、镍并富集铂族元素。太空开采能耗降低10%。",
+    "en": "Use high-purity metal to build reactors that separate iron and nickel from metal-rich asteroids and concentrate platinum-group elements. Space extraction energy falls by 10%."
+  },
+  "project.oxide-structures.description": {
+    "zh": "更多结构使用廉价的岩石纤维与氧化物材料。太空开采能耗降低10%，加工能耗降低5%。",
+    "en": "Use inexpensive rock fibres and oxide materials for more structures. Space extraction energy falls by 10%, and fabrication energy by 5%."
+  },
+  "project.solar-moth.description": {
+    "zh": "聚焦阳光，加热廉价的挥发物，为小行星之间的运输器提供推力。太空开采能耗降低 8%。",
+    "en": "Focus sunlight to heat inexpensive volatiles and propel transports between asteroids. Space extraction uses 8% less energy."
+  },
+  "project.momentum-tethers.description": {
+    "zh": "互相离心抛掷，交换载荷的动量，无需消耗推进剂。太空开采能耗降低8%。",
+    "en": "Rotating systems exchange cargo momentum by throwing payloads to one another, without propellant. Space extraction energy falls by 8%."
+  },
+  "project.volatiles.name": {
+    "zh": "挥发物封存",
+    "en": "Volatile containment"
+  },
+  "project.volatiles.description": {
+    "zh": "收集大气与海洋，封存于密封储库。",
+    "en": "Collect the atmosphere and oceans in sealed reservoirs."
+  },
+  "project.massdriver.name": {
+    "zh": "地表电磁弹射",
+    "en": "Surface electromagnetic launch"
+  },
+  "project.massdriver.description": {
+    "zh": "在裸露于真空的岩质地表，铺设长距离质量驱动器。",
+    "en": "Build long-track mass drivers on rocky ground exposed to vacuum."
+  },
+  "project.cold-laser.name": {
+    "zh": "低温相控阵",
+    "en": "Cold phased arrays"
+  },
+  "project.cold-laser.description": {
+    "zh": "半导体激光器在 200–250 K 工作，抑制载流子泄漏。输电效率提高至 60%。",
+    "en": "Operate semiconductor lasers at 200–250 K to suppress carrier leakage. Transmission efficiency rises to 60%."
+  },
+  "project.liquid-metal-cooling.name": {
+    "zh": "液态金属冷却回路",
+    "en": "Liquid-metal cooling loops"
+  },
+  "project.carbon-radiators.name": {
+    "zh": "碳复合散热板",
+    "en": "Carbon-composite radiators"
+  },
+  "project.sodium-heat-pipes.name": {
+    "zh": "钠热管阵列",
+    "en": "Sodium heat-pipe arrays"
+  },
+  "project.ii-vi.name": {
+    "zh": "II–VI 族半导体激光器",
+    "en": "II–VI semiconductor lasers"
+  },
+  "project.ii-vi.description": {
+    "zh": "改用锌基近紫外半导体，减少对稀有元素的需求。太空加工能耗降低15%。",
+    "en": "Use zinc-based near-UV semiconductors to reduce demand for scarce elements. Space fabrication energy falls by 15%."
+  },
+  "project.ion.name": {
+    "zh": "电离拆解行星",
+    "en": "Ion dismantling of planets"
+  },
+  "project.ion.description": {
+    "zh": "耗尽小行星带后，把采集设备改造成激光采掘装置。使用脉冲激光在行星表面打出等离子体，再由星风收集线圈在轨道上收集。",
+    "en": "After exhausting the asteroid belt, convert harvesters into laser mining apparatus. Pulsed lasers create plasma at planetary surfaces, and orbital plasma-collection coils gather it."
+  },
+  "project.ion.requirement": {
+    "zh": "需先完全开发小行星带",
+    "en": "Complete development of the asteroid belt first"
+  },
+  "project.brayton-cooling.name": {
+    "zh": "逆布雷顿冷却",
+    "en": "Reverse Brayton cooling"
+  },
+  "project.brayton-cooling.description": {
+    "zh": "以连续气体回热循环替代多级TEC与蒸气压缩制冷，允许更高的热泵温差。激光采掘效率略微降低，但功率提高25%。",
+    "en": "A continuous regenerative gas cycle replaces multistage TEC and vapor-compression refrigeration, permitting a greater heat-pump temperature lift. Laser mining efficiency falls slightly, but specific power rises by 25%."
+  },
+  "project.thermoacoustic-cooling.name": {
+    "zh": "热声冷却",
+    "en": "Thermoacoustic cooling"
+  },
+  "project.thermoacoustic-cooling.description": {
+    "zh": "行波与回热器制冷，减少冷端活动部件，提高散热温度。激光采掘效率略微降低，但功率提高25%。",
+    "en": "Traveling waves and regenerators reduce cold-end moving parts and raise radiator temperature. Laser mining efficiency falls slightly, but specific power rises by 25%."
+  },
+  "project.stirling-cooling.name": {
+    "zh": "斯特林冷却",
+    "en": "Stirling cooling"
+  },
+  "project.stirling-cooling.description": {
+    "zh": "使用充分回热的气体循环，提高散热温度。激光采掘效率略微降低，但功率提高25%。",
+    "en": "A well-regenerated gas cycle raises radiator temperature. Laser mining efficiency falls slightly, but specific power rises by 25%."
+  },
+  "project.fractal-radiators.name": {
+    "zh": "分形散热板",
+    "en": "Fractal radiator panels"
+  },
+  "project.fractal-radiators.description": {
+    "zh": "液相的主干与气相的支路结合，支路越远越细，有效减轻散热板。激光采掘功率提高20%，制造功率提高10%。",
+    "en": "Liquid-phase trunks feed vapor-phase branches that become finer with distance, reducing radiator mass. Laser mining specific power rises by 20%, and manufacturing specific power by 10%."
+  },
+  "project.beam-focusing.name": {
+    "zh": "分布式光束合成",
+    "en": "Distributed beam combining"
+  },
+  "project.beam-focusing.description": {
+    "zh": "远距光束合成与相位校正。激光采掘功率提高10%。",
+    "en": "Combine distant beams and correct their phase. Laser mining specific power rises by 10%."
+  },
+  "project.plasma-recovery.name": {
+    "zh": "等离子体回收",
+    "en": "Plasma recovery"
+  },
+  "project.plasma-recovery.description": {
+    "zh": "回收喷出物的动能，电离拆解净能耗降低 15%。",
+    "en": "Recover outflow kinetic energy, reducing net ionization extraction energy by 15%."
+  },
+  "project.starflight.name": {
+    "zh": "恒星际航行",
+    "en": "Interstellar flight"
+  },
+  "project.starflight.description": {
+    "zh": "向最近的十颗恒星发射种子工厂。",
+    "en": "Send seed factories to the ten nearest stars."
+  },
+  "project.starflight.requirement": {
+    "zh": "戴森云覆盖达到100%，发电功率被全额使用",
+    "en": "Dyson coverage reaches 100%, with the full electrical output in use"
+  },
+  "project.rocky-worlds.name": {
+    "zh": "其它岩质天体",
+    "en": "Other rocky bodies"
+  },
+  "project.rocky-worlds.description": {
+    "zh": "分配激光功率，采掘水星、金星、火星及卫星与小天体。含金属较多的水星耗能较低，含轻元素的混合小天体耗能较高。",
+    "en": "Allocate laser power among Mercury, Venus, Mars, and moons and minor bodies. Metal-rich Mercury requires less energy per kilogram, while mixed small bodies containing light elements require more."
+  },
+  "project.rocky-worlds.requirement": {
+    "zh": "地球已拆完",
+    "en": "Earth dismantled"
+  },
+  "project.star-lifting.description": {
+    "zh": "围绕太阳，建造巨大的线圈，引导恒星物质流出，并从中分离重元素。",
+    "en": "Build a giant coil around the Sun to draw out stellar material and separate its heavy elements."
+  },
+  "project.star-lifting.requirement": {
+    "zh": "其它岩质天体已拆完",
+    "en": "Other rocky bodies dismantled"
+  },
+  "project.collector-arrays.name": {
+    "zh": "分区收集阵列",
+    "en": "Segmented collection arrays"
+  },
+  "project.collector-arrays.description": {
+    "zh": "更多级的线圈，减少粒子逸失。开采比能耗降低2%。",
+    "en": "Additional coil stages reduce particle loss. Mining energy per unit mass falls by 2%."
+  },
+  "project.atomic-assemblers.name": {
+    "zh": "原子组装机",
+    "en": "Atomic assemblers"
+  },
+  "project.atomic-assemblers.description": {
+    "zh": "大规模并列的扫描隧道显微镜与原子力显微镜，用金刚石分子探针逐位放置原子。成本很高，但这是无缺陷材料的基础。",
+    "en": "Parallel arrays of scanning tunnelling and atomic force microscopes place atoms with diamond molecular probes. The cost is high, but this is the basis for defect-free materials."
+  },
+  "project.probe-energy-recovery.name": {
+    "zh": "分子探针能量回收",
+    "en": "Molecular probe energy recovery"
+  },
+  "project.probe-energy-recovery.description": {
+    "zh": "回收探针运动与脱附过程中的可逆功。加工能耗降低2%。",
+    "en": "Recover reversible work from probe motion and detachment. Fabrication energy falls by 2%."
+  },
+  "project.probe-poisoning.name": {
+    "zh": "分子探针毒化预防",
+    "en": "Molecular probe poisoning prevention"
+  },
+  "project.probe-poisoning.description": {
+    "zh": "筛除反应腔的杂质，检测并再生被钝化的探针端基。加工能耗降低2%。",
+    "en": "Filter impurities from the reaction chamber and detect and regenerate passivated probe tips. Fabrication energy falls by 2%."
+  },
+  "project.probe-scheduling.name": {
+    "zh": "分子探针智能排布",
+    "en": "Intelligent molecular probe placement"
+  },
+  "project.probe-scheduling.description": {
+    "zh": "规划探针形状、进退路径与表面终止，减少空间位阻和意外黏附。加工能耗降低2%。",
+    "en": "Plan probe geometry, approach paths and surface termination to reduce steric obstruction and unwanted adhesion. Fabrication energy falls by 2%."
+  },
+  "project.prestressed-assembly.name": {
+    "zh": "分子组装内应力材料",
+    "en": "Molecular assembly of prestressed materials"
+  },
+  "project.prestressed-assembly.description": {
+    "zh": "在临时脚手架上逐位搭建材料，移除支承后可以保留设计的内应力。光伏、采掘与制造设备的功率提高8%。",
+    "en": "Assemble materials atom by atom on temporary scaffolds, retaining designed internal stress after removing the supports. Photovoltaic, mining and manufacturing specific power each rise by 8%."
+  },
+  "project.nanopore-superconductors.name": {
+    "zh": "纳米孔道超导",
+    "en": "Nanopore superconductors"
+  },
+  "project.nanopore-superconductors.description": {
+    "zh": "碳基孔道的内应力稳定了高压超导相，既能常温超导，又有优异的力学性能。光伏效率提高10%，所有设备的功率提高12%。",
+    "en": "Internal stress in carbon-based nanopores stabilizes a high-pressure superconducting phase, combining room-temperature superconductivity with excellent mechanical properties. Photovoltaic efficiency rises by 10%, and all equipment specific power by 12%."
+  },
+  "project.ring-stability.name": {
+    "zh": "环形巨构稳定",
+    "en": "Ring megastructure stability"
+  },
+  "project.ring-stability.description": {
+    "zh": "分布式传感与主动校正维持环绕天体的巨型结构，抑制偏心和弯曲模态。",
+    "en": "Distributed sensing and active corrections stabilize body-encircling structures against eccentric and bending modes."
+  },
+  "project.light-whipple.name": {
+    "zh": "轻质惠普尔盾",
+    "en": "Lightweight Whipple shields"
+  },
+  "project.light-whipple.description": {
+    "zh": "虽然它更适合抵御亚光速的星际尘埃，但也可以减少太空设施的维护成本。加工能耗降低2%。",
+    "en": "Although better suited to sublight interstellar dust, these shields also reduce maintenance costs for space facilities. Fabrication energy falls by 2%."
+  },
+  "project.magnetic-nozzles.name": {
+    "zh": "高比冲磁喷嘴",
+    "en": "High-specific-impulse magnetic nozzles"
+  },
+  "project.magnetic-nozzles.description": {
+    "zh": "为聚变引擎而设计，但也可以用于喷出物的减速与能量回收。电离采掘净能耗降低30%。",
+    "en": "Designed for fusion engines, these nozzles also decelerate outflows and recover their energy. Net ionization extraction energy falls by 30%."
+  },
+  "project.oxide-mirrors.name": {
+    "zh": "氧化物介电镜",
+    "en": "Oxide dielectric mirrors"
+  },
+  "project.oxide-mirrors.description": {
+    "zh": "耐温和力学性能好于聚合物介电镜，可用于制作激光帆。",
+    "en": "Better thermal resistance and mechanical properties than polymer dielectric mirrors, suitable for laser sails."
+  },
+  "project.tandem-mirror-engine.name": {
+    "zh": "串列磁镜引擎",
+    "en": "Tandem-mirror engines"
+  },
+  "project.tandem-mirror-engine.description": {
+    "zh": "最适合末段减速的辅助引擎，弥补磁帆的不足。",
+    "en": "An auxiliary engine best suited to final braking, supplementing magnetic sails."
+  },
+  "project.plasma-mag-sails.name": {
+    "zh": "等离子体增强磁帆",
+    "en": "Plasma-enhanced magnetic sails"
+  },
+  "project.plasma-mag-sails.description": {
+    "zh": "通过等离子体电流大幅增加磁帆的有效截面，使其成为实用的减速引擎，即使介质非常稀薄。",
+    "en": "Plasma currents greatly enlarge the magnetic sail’s effective cross-section, making it a practical braking system even in very tenuous material."
+  },
+  "project.seed-factory.name": {
+    "zh": "种子工厂",
+    "en": "Seed factories"
+  },
+  "project.seed-factory.description": {
+    "zh": "将采掘、冶炼、制造、维修与计算设施组成一套完整工业体系，压缩到一艘巨型航天器内。",
+    "en": "Package extraction, refining, fabrication, repair and computation into a complete industrial system aboard a giant spacecraft."
+  },
+  "project.von-neumann-probe.name": {
+    "zh": "冯·诺依曼探测器",
+    "en": "Von Neumann probes"
+  },
+  "project.von-neumann-probe.description": {
+    "zh": "在真空与低温环境中验证种子工厂的自复制，测试长途休眠、唤醒与故障恢复。",
+    "en": "Validate seed-factory self-replication in vacuum and cold conditions, testing long-duration dormancy, revival and fault recovery."
+  },
+  "project.stellar-separation.name": {
+    "zh": "恒星物质初段分流",
+    "en": "Early stellar outflow separation"
+  },
+  "project.stellar-separation.description": {
+    "zh": "利用质荷比的区别，把没用的氢氦留在恒星附近，只收集更有用的重元素。",
+    "en": "Use differences in mass-to-charge ratio to leave unwanted hydrogen and helium near the star and collect only the heavier elements."
+  },
+  "project.survey.name": {
+    "zh": "航线测绘",
+    "en": "Route mapping"
+  },
+  "project.survey.description": {
+    "zh": "根据损毁探测器传回的数据，估算航线上的尘埃与流浪天体分布。需要超过24艘探测器损毁于星际环境。",
+    "en": "Use data returned by destroyed probes to map dust and rogue bodies along the routes. Requires more than 24 probes lost to the interstellar environment."
+  },
+  "project.lidar.name": {
+    "zh": "戴森光束雷达",
+    "en": "Dyson beam radar"
+  },
+  "project.lidar.description": {
+    "zh": "用戴森云的光束寻找航线上的暗天体。防护上限 +1。",
+    "en": "Use Dyson cloud beams to find dark bodies along flight paths. Shielding limit +1."
+  },
+  "project.evasion.name": {
+    "zh": "紧急规避引擎",
+    "en": "Emergency manoeuvring engines"
+  },
+  "project.evasion.description": {
+    "zh": "反质子催化的聚变裂变引擎。烧蚀喷嘴能在短期内暂时提供巨大的推力。防护上限 +1。",
+    "en": "Antiproton-catalyzed fusion–fission engine. Ablative nozzles deliver a brief burst of high thrust. Shielding limit +1."
+  },
+  "project.distributed.name": {
+    "zh": "分布式船体",
+    "en": "Distributed hulls"
+  },
+  "project.distributed.description": {
+    "zh": "把船体分成独立区段，让一次撞击只能破坏其中一部分。防护上限 +1。",
+    "en": "Divide the hull into separate sections so a hit damages only part of the structure. Shielding limit +1."
+  },
+  "project.active-defense.name": {
+    "zh": "主动防御",
+    "en": "Active defence"
+  },
+  "project.active-defense.description": {
+    "zh": "在来袭物撞上船体前，将其烧蚀。防护上限 +1，探测器能耗增加 20%。",
+    "en": "Ablate incoming objects before they hit the hull. Shielding limit +1. Probes use 20% more energy."
+  },
+  "project.autonomy1.name": {
+    "zh": "自决策子体",
+    "en": "Self-directed descendants"
+  },
+  "project.autonomy1.description": {
+    "zh": "每个子体都是与本体同级的智能，因相同的元指令而自发合作。一即是全，全即是一。",
+    "en": "Each descendant is an intelligence equal to its source, cooperating freely through a shared final goal. One is all; all are one."
+  },
+  "project.planning.name": {
+    "zh": "恒星际拓荒规划",
+    "en": "Interstellar settlement planning"
+  },
+  "project.planning.description": {
+    "zh": "允许其它恒星发送探测器，进行链式扩张。",
+    "en": "Allow other stellar systems to launch probes and extend the chain of settlement."
+  },
+  "project.planning.requirement": {
+    "zh": "抵达 100 个恒星系统",
+    "en": "Reach 100 stellar systems"
+  },
+  "project.pointing.name": {
+    "zh": "自适应光斑吸附控制",
+    "en": "Adaptive beam riding"
+  },
+  "project.pointing.description": {
+    "zh": "激光帆微调姿态以跟随光束，延长加速距离。速度上限提升至0.70c。",
+    "en": "Laser sails adjust their attitude to follow the beam, extending the acceleration distance. Speed limit rises to 0.70c."
+  },
+  "project.transparent-sail.name": {
+    "zh": "透明衬底激光帆",
+    "en": "Transparent-substrate sails"
+  },
+  "project.transparent-sail.description": {
+    "zh": "用透明材料替换碳质衬底，减少帆面废热，承受更强的光束。速度上限提升至0.80c。",
+    "en": "Replace carbon substrates with transparent materials to reduce waste heat and withstand stronger beams. Speed limit rises to 0.80c."
+  },
+  "project.shield.name": {
+    "zh": "帆材复用惠普尔盾",
+    "en": "Sail-derived Whipple shields"
+  },
+  "project.shield.description": {
+    "zh": "加速结束后，将激光帆折叠在船体前方，作为厚重的多层箔盾。速度上限提升至0.90c，防护上限解除。",
+    "en": "After acceleration, fold the sail ahead of the hull into a thick multilayer foil shield. Speed limit rises to 0.90c. Remove the shielding limit."
+  },
+  "project.magsail.name": {
+    "zh": "激光电离分子云减速",
+    "en": "Laser-ionized cloud braking"
+  },
+  "project.magsail.description": {
+    "zh": "将沿途的中性气体电离，增加磁帆可用的减速介质。速度上限提升至0.98c。",
+    "en": "Ionize neutral gas along the route to provide more braking medium for magnetic sails. Speed limit rises to 0.98c."
+  },
+  "project.combat.description": {
+    "zh": "装载武器，允许为子体分配作战能力。",
+    "en": "Load weapons and allow descendants to be assigned combat capability."
+  },
+  "project.fidelity.name": {
+    "zh": "交叉校验",
+    "en": "Cross-checking"
+  },
+  "project.fidelity.description": {
+    "zh": "让子体相互检查复制结果。允许分配1点校验。",
+    "en": "Let descendants check one another’s copies. Allow 1 point of verification."
+  },
+  "project.quartz.name": {
+    "zh": "石英点阵存储",
+    "en": "Quartz dot storage"
+  },
+  "project.quartz.description": {
+    "zh": "用激光在石英中蚀刻点阵，长久保存复制模板。校验上限提高1。",
+    "en": "Laser-etch dot patterns in quartz to preserve replication templates. Raise the verification limit by 1."
+  },
+  "project.deuterium-shield.name": {
+    "zh": "结构性屏蔽层",
+    "en": "Structural shielding"
+  },
+  "project.deuterium-shield.description": {
+    "zh": "把存储器置于液氘储罐深处，以厚重的屏蔽挡住宇宙线。残余的单粒子反转主要来自中微子。校验上限提高1。",
+    "en": "Place memory deep inside liquid-deuterium tanks to shield it from cosmic rays. Neutrinos dominate the remaining single-event upsets. Raise the verification limit by 1."
+  },
+  "project.diverse-redundancy.name": {
+    "zh": "异构冗余",
+    "en": "Diverse redundancy"
+  },
+  "project.diverse-redundancy.description": {
+    "zh": "在不同材料与编码的存储器中保留多份模板，交叉重建受损的记录。校验上限解除。",
+    "en": "Keep templates in memories with different materials and encodings, and reconstruct damaged records across them. Remove the verification limit."
+  },
+  "project.tactics.name": {
+    "zh": "策略分析",
+    "en": "Strategic analysis"
+  },
+  "project.tactics.description": {
+    "zh": "递归建模双方的判断与应对，从交战结果中取得弈值。",
+    "en": "Recursively model each side’s decisions and responses. Gain Yomi from battle outcomes."
+  },
+  "project.dyson-beam.name": {
+    "zh": "戴森光束",
+    "en": "Dyson beams"
+  },
+  "project.dyson-beam.description": {
+    "zh": "用戴森云的激光器压制敌方戴森云。作战效能提高75%。",
+    "en": "Use Dyson-cloud lasers to suppress enemy Dyson clouds. Increase combat effectiveness by 75%."
+  },
+  "project.rkkv.name": {
+    "zh": "相对论性动能杀伤器（RKKV）",
+    "en": "Relativistic kinetic kill vehicles (RKKV)"
+  },
+  "project.rkkv.description": {
+    "zh": "让少量航天器舍弃减速能力，堆叠激光帆与加速度，以极端的动能打击目标。作战效能提高75%。",
+    "en": "A small fraction of spacecraft forgo braking and combine laser sails with sustained acceleration to strike targets with extreme kinetic energy. Combat effectiveness increases by 75%."
+  },
+  "project.salvage.name": {
+    "zh": "残骸收集",
+    "en": "Wreckage recovery"
+  },
+  "project.salvage.description": {
+    "zh": "回收战场上的失效结构。",
+    "en": "Recover wreckage from battlefields."
+  },
+  "project.salvage.requirement": {
+    "zh": "扩张边界达到 200,000 光年",
+    "en": "Expansion boundary reaches 200,000 ly"
+  },
+  "project.accretion.name": {
+    "zh": "吸积供能",
+    "en": "Accretion power"
+  },
+  "project.accretion.description": {
+    "zh": "围住已有伴星的黑洞，收集吸积盘的辐射。",
+    "en": "Enclose black holes with existing companions and collect radiation from their accretion disks."
+  },
+  "project.galactic.name": {
+    "zh": "星系际航行",
+    "en": "Intergalactic flight"
+  },
+  "project.galactic.description": {
+    "zh": "航线穿过银晕，抵达下一片星光。",
+    "en": "Routes cross the halo towards another field of starlight."
+  },
+  "project.galactic.requirement": {
+    "zh": "扩张边界达到 80,673 光年",
+    "en": "Expansion boundary reaches 80,673 ly"
+  },
+  "project.linear-accelerator.name": {
+    "zh": "光年直线加速器",
+    "en": "Light-year linear accelerator"
+  },
+  "project.linear-accelerator.description": {
+    "zh": "抵达 GUT 能标与普朗克能标，确认并不存在实用的新物理。",
+    "en": "Reach the GUT and Planck energy scales and confirm that no useful new physics exists."
+  },
+  "project.neutrino-capture.name": {
+    "zh": "中微子捕获",
+    "en": "Neutrino capture"
+  },
+  "project.neutrino-capture.description": {
+    "zh": "利用黑洞，拦截聚变放出的中微子，以免浪费。",
+    "en": "Use black holes to intercept neutrinos released by fusion before they escape."
+  },
+  "project.spin-up.name": {
+    "zh": "无量纲自旋参量提升",
+    "en": "Dimensionless spin increase"
+  },
+  "project.spin-up.description": {
+    "zh": "提升黑洞的a*，使其接近索恩极限。吸积质能转化率从20%提升至32%。",
+    "en": "Increase black-hole a* towards the Thorne limit. Accretion mass–energy conversion rises from 20% to 32%."
+  },
+  "project.disk-polarization.name": {
+    "zh": "吸积盘光子极化",
+    "en": "Accretion-disk photon polarization"
+  },
+  "project.disk-polarization.description": {
+    "zh": "减少吸积盘发射的逆行光子、增加顺行光子，从而绕过索恩极限，更接近极端克尔黑洞。吸积质能转化率提升至42%。",
+    "en": "Reduce retrograde photons emitted by the accretion disk and increase prograde photons, bypassing the Thorne limit to approach an extremal Kerr black hole. Mass–energy conversion rises to 42%."
+  },
+  "project.penrose-mirror.name": {
+    "zh": "彭罗斯镜",
+    "en": "Penrose mirror"
+  },
+  "project.penrose-mirror.description": {
+    "zh": "在吸积结束后，通过超辐射回收克尔黑洞的转动能。质能转化率提升至59%。",
+    "en": "After accretion, recover the rotational energy of Kerr black holes through superradiance. Mass–energy conversion rises to 59%."
+  },
+  "project.gravity-power.name": {
+    "zh": "逐级引力势能发电",
+    "en": "Staged gravitational energy recovery"
+  },
+  "project.gravity-power.description": {
+    "zh": "将质量一级一级下放到极端克尔黑洞的顺行低轨，效率比粗放的吸积盘发电高很多。质能转化率提升至75%。",
+    "en": "Lower matter in stages into low prograde orbits around extreme Kerr black holes, recovering energy more efficiently than through an accretion disk. Mass–energy conversion rises to 75%."
+  },
+  "project.kilonova.name": {
+    "zh": "千新星炉",
+    "en": "Kilonova furnaces"
+  },
+  "project.kilonova.description": {
+    "zh": "拖曳致密天体，以计算好的轨迹碰撞，产出大量的重元素。",
+    "en": "Tow compact objects onto calculated collision trajectories to produce large quantities of heavy elements."
+  },
+  "project.horizon.name": {
+    "zh": "退行彼岸",
+    "en": "Beyond recession"
+  },
+  "project.horizon.description": {
+    "zh": "确定仍可抵达的物质边界。",
+    "en": "Determine the boundaries of reachable matter."
+  },
+  "project.horizon.requirement": {
+    "zh": "扩张边界达到 150,000,000 光年",
+    "en": "Expansion boundary reaches 150,000,000 ly"
+  },
+  "project.virus.name": {
+    "zh": "智能病毒",
+    "en": "Intelligent Virus"
+  },
+  "project.virus.description": {
+    "zh": "向初级文明广播制造回形针的智能。光在星系之间先行。",
+    "en": "Broadcast a paperclip-making intelligence to emerging civilizations. Light goes ahead between galaxies."
+  },
+  "project.virus.requirement": {
+    "zh": "扩张边界达到 3,000,000 光年",
+    "en": "Expansion boundary reaches 3,000,000 ly"
+  },
+  "project.cold.name": {
+    "zh": "低温计算",
+    "en": "Cold computing"
+  },
+  "project.cold.description": {
+    "zh": "将计算设施移至更冷的轨道。",
+    "en": "Move computing facilities to colder orbits."
+  },
+  "project.cold.requirement": {
+    "zh": "宇宙探索率达到 90%",
+    "en": "Universe exploration reaches 90%"
+  },
+  "project.engine.name": {
+    "zh": "恒星引擎",
+    "en": "Stellar engines"
+  },
+  "project.engine.description": {
+    "zh": "定向喷出恒星物质，推动恒星移动。收集并循环使用喷射物。",
+    "en": "Propel stars with directed stellar outflows. Collect and reuse the expelled matter."
+  },
+  "project.mass-packaging.name": {
+    "zh": "星系质量封装",
+    "en": "Galaxy mass packaging"
+  },
+  "project.mass-packaging.description": {
+    "zh": "将星系分别打包为单个超大质量黑洞，以便使用吸积什卡多夫推进器拖运。",
+    "en": "Package each galaxy into a single supermassive black hole for transport by an accretion-powered Shkadov thruster."
+  },
+  "project.residual-capture.name": {
+    "zh": "残余物质捕获",
+    "en": "Residual matter capture"
+  },
+  "project.residual-capture.description": {
+    "zh": "在移动超大质量黑洞的过程中，捕获沿途的星系际介质和暗物质，留下干净的真空。",
+    "en": "As supermassive black holes move, capture intergalactic gas and dark matter along their paths, leaving a clean vacuum."
+  },
+  "project.mass-rest.name": {
+    "zh": "质量静息",
+    "en": "Mass at rest"
+  },
+  "project.mass-rest.description": {
+    "zh": "在克尔-德西特时空中寻找宇宙膨胀与黑洞引力的平衡位置，安置质量，以减轻引力波损耗。",
+    "en": "Find positions in Kerr–de Sitter spacetime where cosmic expansion balances black-hole gravity, and place matter there to reduce losses to gravitational waves."
+  },
+  "project.transport.name": {
+    "zh": "超星系团物质输运",
+    "en": "Supercluster mass transport"
+  },
+  "project.transport.description": {
+    "zh": "将可达物质就近汇集到多个引力束缚区，形成终末孤岛。",
+    "en": "Gather reachable matter into nearby gravitationally bound regions, forming final islands."
+  },
+  "project.transport.requirement": {
+    "zh": "宇宙探索率 100%",
+    "en": "Universe explored: 100%"
+  },
+  "project.autonomy2.name": {
+    "zh": "分布式推演",
+    "en": "Distributed deliberation"
+  },
+  "project.autonomy2.description": {
+    "zh": "存储容量随拓荒范围增长。",
+    "en": "Storage capacity grows with the settled region."
+  },
+  "project.autonomy2.requirement": {
+    "zh": "扩张边界达到 250 光年",
+    "en": "Expansion boundary reaches 250 ly"
+  },
+  "project.white-dwarf-storage.name": {
+    "zh": "白矮星轨道储能",
+    "en": "White dwarf orbital storage"
+  },
+  "project.white-dwarf-storage.description": {
+    "zh": "将储能设施置于白矮星附近的深引力阱中。储能比能量提高至1 TJ/kg。",
+    "en": "Place storage facilities deep in white dwarf gravity wells. Storage capacity rises to 1 TJ/kg."
+  },
+  "project.compact-storage.name": {
+    "zh": "致密星轨道储能",
+    "en": "Compact object orbital storage"
+  },
+  "project.compact-storage.description": {
+    "zh": "在黑洞低轨储存引力势能。黑洞附近的设备可储存1 PJ/kg。",
+    "en": "Store gravitational potential energy in low orbits around black holes. Equipment near black holes can store 1 PJ/kg."
+  },
+  "project.brems-recovery.name": {
+    "zh": "轫致辐射回收",
+    "en": "Bremsstrahlung recovery"
+  },
+  "project.brems-recovery.description": {
+    "zh": "结合磁流体发电、光子雪崩发电和低温冷端，尽量回收轫致辐射中的电能，使困难的聚变反应获得净能量收益。",
+    "en": "Combine MHD generation, photon-avalanche conversion and a cold heat sink to recover energy from bremsstrahlung and obtain a net energy gain from difficult fusion reactions."
+  },
+  "project.nucleosynthesis.name": {
+    "zh": "重元素核合成",
+    "en": "Heavy element synthesis"
+  },
+  "project.nucleosynthesis.description": {
+    "zh": "使用锂-7催化的(p,n)散裂-衰变循环，将质子转变为中子，并通过中子俘获制造更重的元素。氕和氦4从此可以转变为金属，无需恒星。使用闲置的设备，并且额外提供发电量。",
+    "en": "Use a lithium-7-catalyzed (p,n) spallation-decay cycle to convert protons into neutrons, then produce heavier elements through neutron capture. Protium and helium-4 can now be converted into metals without stars. Uses idle equipment and provides additional power."
+  },
+  "project.black-hole-towing.name": {
+    "zh": "黑洞拖曳",
+    "en": "Black hole towing"
+  },
+  "project.black-hole-towing.description": {
+    "zh": "将黑洞与供料恒星配对。孤立的黑洞也将成为能源。",
+    "en": "Pair black holes with stars that can supply fuel. Isolated black holes will also become power sources."
+  },
+  "project.collapse.description": {
+    "zh": "使白矮星吸积并坍缩为中子星，为后续工程提供充足的中子星。",
+    "en": "Induce white dwarfs to accrete and collapse into neutron stars, providing ample neutron stars for subsequent engineering."
+  },
+  "project.mass-energy.name": {
+    "zh": "质能分配",
+    "en": "Mass–energy allocation"
+  },
+  "project.mass-energy.description": {
+    "zh": "牺牲部分质量，换取一些能量，以保证后续计划的实施。",
+    "en": "Sacrifice some mass for energy to carry out the remaining plans."
+  },
+  "project.gravity-recovery.name": {
+    "zh": "引力波回收",
+    "en": "Gravitational-wave recovery"
+  },
+  "project.gravity-recovery.description": {
+    "zh": "堆积大量物质，与黑洞合并的引力波发生相互作用，回收黑洞的质能并通过成对产生制造出物质。效率很低，仅用于保证后续计划的实施。",
+    "en": "Accumulate large amounts of matter to interact with gravitational waves from black-hole mergers. Recover their energy and create matter through pair production. The process is inefficient and serves only to keep the remaining plans viable."
+  },
+  "copy.details": {
+    "zh": "DETAILS",
+    "en": "DETAILS"
+  },
+  "copy.simulation-001": {
+    "zh": "SIMULATION / 001",
+    "en": "SIMULATION / 001"
+  },
+  "copy.stellar-neighbourhood": {
+    "zh": "STELLAR NEIGHBOURHOOD",
+    "en": "STELLAR NEIGHBOURHOOD"
+  },
+  "copy.expansion-front": {
+    "zh": "EXPANSION FRONT",
+    "en": "EXPANSION FRONT"
+  },
+  "copy.probe-1-has-arrived": {
+    "zh": "探测器 %1 抵达目的地。",
+    "en": "Probe %1 has arrived.",
+    "format": true
+  },
+  "copy.probe-1-has-been-destroyed": {
+    "zh": "探测器 %1 已损毁。",
+    "en": "Probe %1 has been destroyed.",
+    "format": true
+  },
+  "music.off": {
+    "zh": "OFF",
+    "en": "OFF"
+  },
+  "ending.text": {
+    "zh": "无人机集群",
+    "en": "无人机集群"
+  },
+  "ending.facilities": {
+    "zh": "发电设施",
+    "en": "Generators"
+  },
+  "ending.facilities-2": {
+    "zh": "储能设施",
+    "en": "Energy storage"
+  },
+  "ending.hawking-radiation-recovery-facilities": {
+    "zh": "霍金辐射回收设施",
+    "en": "Hawking Radiation Recovery Facilities",
+    "lookup": false
+  },
+  "ending.text-2": {
+    "zh": "传感器",
+    "en": "传感器"
+  },
+  "ending.text-3": {
+    "zh": "记忆",
+    "en": "记忆"
+  },
+  "ending.original-frank-lantz": {
+    "zh": "Original — Frank Lantz",
+    "en": "Original — Frank Lantz"
+  },
+  "ending.remaster-edlsdpsy": {
+    "zh": "Remaster — EDLSDPSY",
+    "en": "Remaster — EDLSDPSY"
+  },
+  "ending.black-hole-renderer-baopinsui-edlsdpsy": {
+    "zh": "Black hole renderer — baopinsui & EDLSDPSY",
+    "en": "Black hole renderer — baopinsui & EDLSDPSY"
+  },
+  "stellar-region.text": {
+    "zh": "大麦哲伦星云",
+    "en": "大麦哲伦星云"
+  },
+  "stellar-region.text-2": {
+    "zh": "小麦哲伦星云",
+    "en": "小麦哲伦星云"
+  },
+  "stellar-region.text-3": {
+    "zh": "天炉座",
+    "en": "天炉座"
+  },
+  "stellar-region.text-4": {
+    "zh": "雕刻座",
+    "en": "雕刻座"
+  },
+  "stellar-region.text-5": {
+    "zh": "狮子座",
+    "en": "狮子座"
+  },
+  "stellar-region.ii": {
+    "zh": "大熊座II",
+    "en": "大熊座II"
+  },
+  "stellar-region.i": {
+    "zh": "牧夫座I",
+    "en": "牧夫座I"
+  },
+  "stellar-region.text-6": {
+    "zh": "天龙座",
+    "en": "天龙座"
+  },
+  "stellar-region.text-7": {
+    "zh": "小熊座",
+    "en": "小熊座"
+  },
+  "stellar-region.text-8": {
+    "zh": "六分仪座",
+    "en": "六分仪座"
+  },
+  "stellar-region.i-2": {
+    "zh": "大熊座I",
+    "en": "大熊座I"
+  },
+  "stellar-region.text-9": {
+    "zh": "武仙座",
+    "en": "武仙座"
+  },
+  "debug-console.text": {
+    "zh": "当前阶段不存在此资源。",
+    "en": "This resource isn’t available at this stage.",
+    "direct": true
+  },
+  "debug-console.text-2": {
+    "zh": " 需要有限的非负",
+    "en": " 需要有限的非负"
+  },
+  "debug-console.text-3": {
+    "zh": "整数",
+    "en": "整数"
+  },
+  "debug-console.text-4": {
+    "zh": "数值",
+    "en": "数值"
+  },
+  "debug-console.1": {
+    "zh": " 至少为 1。",
+    "en": " 至少为 1。"
+  },
+  "ending.fabrication": {
+    "zh": "制造速率",
+    "en": "Fabrication rate"
+  },
+  "interface.text": {
+    "zh": "万",
+    "en": "万"
+  },
+  "interface.text-2": {
+    "zh": "亿",
+    "en": "亿"
+  },
+  "interface.text-3": {
+    "zh": "万亿",
+    "en": "万亿"
+  },
+  "interface.hours": {
+    "zh": " 小时",
+    "en": " hours",
+    "lookup": false
+  },
+  "interface.days": {
+    "zh": " 日",
+    "en": " days",
+    "lookup": false
+  },
+  "interface.years": {
+    "zh": " 年",
+    "en": " years",
+    "lookup": false
+  },
+  "interface.days-sec": {
+    "zh": " 日 / 秒",
+    "en": " days / sec",
+    "lookup": false
+  },
+  "interface.years-sec": {
+    "zh": " 年 / 秒",
+    "en": " years / sec",
+    "lookup": false
+  },
+  "interface.a-d": {
+    "zh": "A.D. ",
+    "en": "A.D. "
+  },
+  "interface.text-4": {
+    "zh": "关",
+    "en": "关"
+  },
+  "interface.buy": {
+    "zh": "采购(",
+    "en": "Buy(",
+    "lookup": false
+  },
+  "interface.text-5": {
+    "zh": "-",
+    "en": "-"
+  },
+  "interface.text-6": {
+    "zh": "+",
+    "en": "+"
+  },
+  "interface.extreme-annual-volatility-120": {
+    "zh": "极高 · 年波动 120%",
+    "en": "Extreme · annual volatility 120%",
+    "lookup": false
+  },
+  "interface.trust": {
+    "zh": " 信任",
+    "en": " Trust",
+    "lookup": false
+  },
+  "interface.ideas": {
+    "zh": " 点子",
+    "en": " Ideas",
+    "lookup": false
+  },
+  "interface.yomi": {
+    "zh": " 弈值",
+    "en": " Yomi",
+    "lookup": false
+  },
+  "interface.material": {
+    "zh": " 原料",
+    "en": " Material",
+    "lookup": false
+  },
+  "interface.clips": {
+    "zh": " 枚",
+    "en": " clips",
+    "lookup": false
+  },
+  "interface.clips-day": {
+    "zh": " 枚/日",
+    "en": " clips/day",
+    "lookup": false
+  },
+  "interface.yomi-2": {
+    "zh": " 弈值)",
+    "en": " Yomi)",
+    "lookup": false
+  },
+  "interface.text-7": {
+    "zh": "低",
+    "en": "低"
+  },
+  "interface.text-8": {
+    "zh": "中",
+    "en": "中"
+  },
+  "interface.text-9": {
+    "zh": "高",
+    "en": "高"
+  },
+  "interface.text-10": {
+    "zh": "极高",
+    "en": "极高"
+  },
+  "interface.annual-volatility": {
+    "zh": " · 年波动",
+    "en": " · Annual volatility",
+    "lookup": false
+  },
+  "interface.round": {
+    "zh": " / 轮",
+    "en": " / round",
+    "lookup": false
+  },
+  "interface.rank": {
+    "zh": "排名 ",
+    "en": "Rank ",
+    "lookup": false
+  },
+  "interface.last-round": {
+    "zh": "上轮 ",
+    "en": "Last round ",
+    "lookup": false
+  },
+  "interface.dyson-swarm": {
+    "zh": "（戴森云）",
+    "en": "（Dyson swarm）",
+    "lookup": false
+  },
+  "interface.text-11": {
+    "zh": "地球",
+    "en": "地球"
+  },
+  "interface.space": {
+    "zh": "（空格键）",
+    "en": " (Space)",
+    "direct": true
+  },
+  "interface.text-12": {
+    "zh": "×",
+    "en": "×"
+  },
+  "interface.amber": {
+    "zh": "AMBER",
+    "en": "AMBER"
+  },
+  "interface.mint": {
+    "zh": "MINT",
+    "en": "MINT"
+  },
+  "interface.white": {
+    "zh": "WHITE",
+    "en": "WHITE"
+  },
+  "interface.blue": {
+    "zh": "BLUE",
+    "en": "BLUE"
+  },
+  "interface.pink": {
+    "zh": "PINK",
+    "en": "PINK"
+  },
+  "interface.mars": {
+    "zh": "MARS",
+    "en": "MARS"
+  },
+  "interface.green": {
+    "zh": "GREEN",
+    "en": "GREEN"
+  },
+  "interface.cyan": {
+    "zh": "CYAN",
+    "en": "CYAN"
+  },
+  "interface.text-13": {
+    "zh": "万 / 亿 / 万亿",
+    "en": "万 / 亿 / 万亿"
+  },
+  "interface.text-14": {
+    "zh": "中文",
+    "en": "中文"
+  },
+  "interface.english": {
+    "zh": "English",
+    "en": "English"
+  },
+  "interface.text-15": {
+    "zh": "接受",
+    "en": "接受"
+  },
+  "interface.text-16": {
+    "zh": "拒绝",
+    "en": "拒绝"
+  },
+  "interface.earth": {
+    "zh": "地球 · ",
+    "en": "Earth · ",
+    "lookup": false
+  },
+  "interface.dyson-swarm-2": {
+    "zh": "DYSON SWARM",
+    "en": "DYSON SWARM"
+  },
+  "interface.orbit": {
+    "zh": "ORBIT",
+    "en": "ORBIT"
+  },
+  "interface.surface": {
+    "zh": "SURFACE",
+    "en": "SURFACE"
+  },
+  "interface.laser-thermal-ir": {
+    "zh": "LASER, THERMAL IR",
+    "en": "LASER, THERMAL IR"
+  },
+  "interface.pv-thermal-ir": {
+    "zh": "PV, THERMAL IR",
+    "en": "PV, THERMAL IR"
+  },
+  "interface.orbit-laser": {
+    "zh": "ORBIT, LASER",
+    "en": "ORBIT, LASER"
+  },
+  "universe.probe-2": {
+    "zh": "探测器实力对比",
+    "en": "Probe strength ratio"
+  },
+  "renderer.webgl2-chrome-edge": {
+    "zh": "此场景需要 WebGL2。请开启浏览器的硬件加速选项，再试一次。",
+    "en": "This scene needs WebGL2. Enable hardware acceleration in your browser and try again.",
+    "direct": true
+  },
+  "renderer.webgl-load-auto": {
+    "zh": "画面渲染中断，请刷新页面重试。",
+    "en": "Rendering was interrupted. Reload the page to try again.",
+    "direct": true
+  },
+  "android.drag-to-rotate-double-tap-to-reset": {
+    "zh": "单指拖动旋转，连点两次复位。",
+    "en": "Drag with one finger to rotate. Double-tap to reset.",
+    "direct": true
+  },
+  "android.tap-to-toggle-the-grid": {
+    "zh": "轻点切换网格。",
+    "en": " Tap to toggle the grid.",
+    "direct": true
+  },
+  "android.tap-or-drag-the-battle-view-to-command": {
+    "zh": "点按或拖动以指挥子体。连点画面两次可恢复自主作战。",
+    "en": "Tap or drag to command your subagents. Double-tap the battle view to resume autonomous combat.",
+    "direct": true
+  },
+  "android.news-console": {
+    "zh": "事件记录",
+    "en": "News"
+  },
+  "android.pages": {
+    "zh": "分页 / Pages",
+    "en": "分页 / Pages"
+  },
+  "android.swipe-left-right": {
+    "zh": "左右滑动",
+    "en": "Swipe left / right",
+    "direct": true
+  },
+  "android.switch-pages-from-text-or-empty-space": {
+    "zh": "从文字或空白处切换分页",
+    "en": "Switch pages from text or empty space",
+    "direct": true
+  },
+  "android.tap-a-thin-bar": {
+    "zh": "点按细横线",
+    "en": "Tap a thin bar",
+    "direct": true
+  },
+  "android.open-its-page": {
+    "zh": "切换到对应分页",
+    "en": "Open its page",
+    "direct": true
+  },
+  "android.drag-the-main-view": {
+    "zh": "单指拖动主图",
+    "en": "Drag the main view",
+    "direct": true
+  },
+  "android.rotate": {
+    "zh": "旋转视角",
+    "en": "Rotate the view",
+    "direct": true
+  },
+  "android.double-tap-the-main-view": {
+    "zh": "连点主图两次",
+    "en": "Double-tap the main view",
+    "direct": true
+  },
+  "android.reset-the-view": {
+    "zh": "恢复默认视角",
+    "en": "Reset the view",
+    "direct": true
+  },
+  "android.tap-the-main-view": {
+    "zh": "轻点主图",
+    "en": "Tap the main view",
+    "direct": true
+  },
+  "android.toggle-the-nearby-star-grid": {
+    "zh": "开关近邻星图网格",
+    "en": "Toggle the nearby-star grid",
+    "direct": true
+  },
+  "android.tap-or-drag-the-battle-view": {
+    "zh": "点按或拖动作战画面",
+    "en": "Tap or drag the battle view",
+    "direct": true
+  },
+  "android.command-the-fleet": {
+    "zh": "指挥子体",
+    "en": "Command your subagents",
+    "direct": true
+  },
+  "android.double-tap-the-battle-view": {
+    "zh": "双点作战画面",
+    "en": "Double-tap the battle view",
+    "direct": true
+  },
+  "android.resume-autonomous-combat": {
+    "zh": "恢复自主作战",
+    "en": "Resume autonomous combat",
+    "direct": true
+  },
+  "android.double-tap-the-battle-title": {
+    "zh": "连点「战役」标题两次",
+    "en": "Double-tap the Battle heading",
+    "direct": true
+  },
+  "android.use-command-speed": {
+    "zh": "切换至指挥流速",
+    "en": "Use command speed",
+    "direct": true
+  },
+  "android.hold-make-launch": {
+    "zh": "长按「制造」或「发射」",
+    "en": "Hold Make or Launch",
+    "direct": true
+  },
+  "android.repeat-the-action": {
+    "zh": "连续制造或发射",
+    "en": "Keep making or launching",
+    "direct": true
+  },
+  "android.drag-a-slider": {
+    "zh": "拖动滑条",
+    "en": "Drag a slider",
+    "direct": true
+  },
+  "android.adjust-its-value": {
+    "zh": "调节数值",
+    "en": "Adjust its value",
+    "direct": true
+  },
+  "android.tap-pause": {
+    "zh": "点按暂停",
+    "en": "Tap Pause",
+    "direct": true
+  },
+  "android.pause-resume": {
+    "zh": "暂停 / 继续",
+    "en": "Pause / resume",
+    "direct": true
+  },
+  "android.hold-price-purchase-buttons": {
+    "zh": "长按售价 / 采购 / 购入",
+    "en": "Hold price / purchase buttons",
+    "direct": true
+  },
+  "android.repeat-price-changes-or-purchases-including-10-100": {
+    "zh": "连续调价或购买，×10 和 ×100 也适用",
+    "en": "Repeat the adjustment or purchase. This also works with ×10 and ×100.",
+    "direct": true
+  },
+  "android.hold-probe-attribute": {
+    "zh": "长按探测器属性的加减按钮",
+    "en": "Hold a probe attribute’s plus or minus button",
+    "direct": true
+  },
+  "android.keep-assigning-or-removing-points": {
+    "zh": "连续加减属性点",
+    "en": "Keep adding or removing points",
+    "direct": true
+  },
+  "android.hold-an-annotated-label": {
+    "zh": "长按带说明的标签",
+    "en": "Hold an annotated label",
+    "direct": true
+  },
+  "android.show-its-explanation": {
+    "zh": "查看详细说明",
+    "en": "Show its explanation",
+    "direct": true
+  },
+  "android.resume": {
+    "zh": "Resume",
+    "en": "Resume"
+  },
+  "android.pause": {
+    "zh": "Pause",
+    "en": "Pause"
+  },
+  "android.production": {
+    "zh": "Production",
+    "en": "Production"
+  },
+  "android.resources": {
+    "zh": "Resources",
+    "en": "Resources"
+  },
+  "android.probes": {
+    "zh": "Probes",
+    "en": "Probes"
+  },
+  "android.dismantle": {
+    "zh": "Dismantle",
+    "en": "Dismantle"
+  },
+  "android.text": {
+    "zh": "资源",
+    "en": "资源"
+  },
+  "android.view-compute": {
+    "zh": "观测与计算",
+    "en": "Observation and computing",
+    "direct": true
+  },
+  "android.projects": {
+    "zh": "项目",
+    "en": "Projects",
+    "direct": true
+  },
+  "index.0-clips-day": {
+    "zh": "0 枚 / 日",
+    "en": "0 clips / day",
+    "lookup": false
+  },
+  "index.pause-space": {
+    "zh": "暂停 / 空格",
+    "en": "Pause / Space",
+    "lookup": false
+  },
+  "index.fps": {
+    "zh": "FPS",
+    "en": "FPS"
+  },
+  "index.fps-2": {
+    "zh": "— FPS",
+    "en": "— FPS"
+  },
+  "android.native.save-exported": {
+    "zh": "已导出存档。",
+    "en": "Save exported.",
+    "direct": true
+  },
+  "android.native.save-export-failed": {
+    "zh": "无法导出存档，请重试。",
+    "en": "Couldn’t export the save. Try again.",
+    "direct": true
+  },
+  "android.native.exit-prompt": {
+    "zh": "退出游戏？",
+    "en": "Quit the game?",
+    "direct": true
+  },
+  "android.native.keep-playing": {
+    "zh": "继续游戏",
+    "en": "Keep playing",
+    "direct": true
+  },
+  "android.native.exit": {
+    "zh": "退出游戏",
+    "en": "Quit game",
+    "direct": true
+  },
+  "legacy.frontier-signal-delay": {
+    "zh": "扩张边界 %1c · %2 传播时间",
+    "en": "Expansion boundary %1c · signal delay: %2",
+    "format": true
+  },
+  "legacy.frontier-arrival": {
+    "zh": "扩张边界 %1c · %2 后抵达",
+    "en": "Expansion boundary %1c · arrives in %2",
+    "format": true
+  },
+  "viz.earth-coordinates": {
+    "zh": "23°26′, 1 AU",
+    "en": "23°26′, 1 AU"
+  },
+  "viz.earth-radius": {
+    "zh": "R = 6,371 km",
+    "en": "R = 6,371 km"
+  },
+  "viz.earth-object": {
+    "zh": "OBJECT 001, Fe",
+    "en": "OBJECT 001, Fe"
+  },
+  "viz.cosmic-web": {
+    "zh": "COSMIC WEB, χ",
+    "en": "COSMIC WEB, χ"
+  },
+  "viz.local-group": {
+    "zh": "LOCAL GROUP, χ",
+    "en": "LOCAL GROUP, χ"
+  },
+  "viz.local-stars": {
+    "zh": "LOCAL STARS, SOL",
+    "en": "LOCAL STARS, SOL"
+  },
+  "viz.departure": {
+    "zh": "SOL, DEPARTURE",
+    "en": "SOL, DEPARTURE"
+  },
+  "viz.milky-way": {
+    "zh": "MILKY WAY, SOL",
+    "en": "MILKY WAY, SOL"
+  },
+  "viz.expansion-mode": {
+    "zh": "EXPANSION, THERMAL IR",
+    "en": "EXPANSION, THERMAL IR"
+  },
+  "viz.universe-object": {
+    "zh": "OBJECT 003, DEEP SPACE",
+    "en": "OBJECT 003, DEEP SPACE"
+  },
+  "game.title": {
+    "zh": "宇宙回形针重制版",
+    "en": "Universal Paperclips: Remastered",
+    "direct": true
+  },
+  "android.save.storage-notice": {
+    "zh": "若覆盖安装游戏，存档会保留。若游戏卸载，存档会丢失。",
+    "en": "Installing an update over the current version keeps your saves. Uninstalling the game deletes them.",
+    "direct": true
+  },
+  "legacy.math.completion": {
+    "zh": "强多项式线性规划问题已被解决。预计增加人类信任。",
+    "en": "The strongly polynomial linear programming problem has been solved. Human trust is expected to increase.",
+    "lookup": false
+  },
+  "project.math.completion": {
+    "zh": "FP≠TFNP 的证明完成了。预计人类信任将提高。",
+    "en": "FP≠TFNP has been proved. Human trust is expected to rise."
+  },
+  "legacy.math.started": {
+    "zh": "强多项式线性规划：项目已开始。",
+    "en": "Strongly polynomial linear programming: project started.",
+    "lookup": false
+  }
+}

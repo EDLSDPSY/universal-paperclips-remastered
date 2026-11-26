@@ -1,0 +1,4479 @@
+{
+  "项目": {
+    "aid": {
+      "名称": "project.aid.name",
+      "说明": "project.aid.description",
+      "阶段": 1,
+      "前置": [],
+      "费用": {
+        "trust": 1
+      },
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": true,
+      "执行条件": "()=>S.h.population>0&&S.h.material<C.clipMass&&S.h.stock<1&&S.h.cash+S.h.portfolio+1e-9<materialQuote().cost&&S.h.contracts===0",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust--;S.h.aid++;S.h.cash+=materialQuote().cost;log(copy('copy.the-extra-budget-has-been-approved-requisition-one'));}",
+      "持续参数": {}
+    },
+    "procurement": {
+      "名称": "project.procurement.name",
+      "说明": "project.procurement.description",
+      "阶段": 1,
+      "前置": [
+        "servo",
+        "recycled",
+        "forming"
+      ],
+      "费用": {
+        "ops": 2e+25
+      },
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>S.h.makers>=1&&S.h.materialPurchases>=10",
+      "条件说明": "project.procurement.requirement",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.autoBuy=true;log(copy('copy.feedstock-purchasing-has-been-delegated'));}",
+      "持续参数": {}
+    },
+    "servo": {
+      "名称": "project.servo.name",
+      "说明": "project.servo.description",
+      "阶段": 1,
+      "前置": [
+        "lowcarbon"
+      ],
+      "费用": {
+        "ops": 7.7e+24
+      },
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>S.h.makers>=1",
+      "条件说明": "project.servo.requirement",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.eff*=1.25;log(copy('copy.autoclipper-performance-increased-by-25'));}",
+      "持续参数": {}
+    },
+    "creative": {
+      "名称": "project.creative.name",
+      "说明": "project.creative.description",
+      "阶段": 1,
+      "前置": [
+        "servo",
+        "lowcarbon"
+      ],
+      "费用": {
+        "ops": 4e+24
+      },
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>S.ops>=operationsCapacity()&&S.memory>0",
+      "条件说明": "project.creative.requirement",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.creative-thought-is-available-ideas-accumulate-only-when'))",
+      "持续参数": {}
+    },
+    "reconfiguration": {
+      "名称": "project.reconfiguration.name",
+      "说明": "project.reconfiguration.description",
+      "阶段": 1,
+      "前置": [
+        "market"
+      ],
+      "费用": {
+        "ops": 3.6e+25,
+        "insight": 100,
+        "cash": 20000
+      },
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>S.trust>=6",
+      "条件说明": "project.reconfiguration.requirement",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.computing-resources-can-now-be-reallocated'))",
+      "持续参数": {}
+    },
+    "language": {
+      "名称": "project.language.name",
+      "说明": "project.language.description",
+      "阶段": 1,
+      "前置": [
+        "creative",
+        "forming",
+        "pricing"
+      ],
+      "费用": {
+        "ops": 2.7e+25,
+        "insight": 560
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>computeRate()>=5*C.computePerProcessor*C.researchShare&&S.ops>=q('forming').cost.ops*.6",
+      "开始效果": null,
+      "完成效果": "()=>{S.trust++;log(copy('copy.reasoning-depth-adjusts-to-the-problem'));}",
+      "持续参数": {
+        "算力倍数": 1.25
+      }
+    },
+    "representations": {
+      "名称": "project.representations.name",
+      "说明": "project.representations.description",
+      "阶段": 1,
+      "前置": [
+        "company",
+        "symbolic",
+        "math"
+      ],
+      "费用": {
+        "ops": 6e+25,
+        "insight": 2700
+      },
+      "工期日": 14,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=2;log(copy('copy.descendants-can-exchange-thoughts-directly'));}",
+      "持续参数": {
+        "点子倍数": 1.3,
+        "竞赛速度倍数": 1.25
+      }
+    },
+    "symbolic": {
+      "名称": "project.symbolic.name",
+      "说明": "project.symbolic.description",
+      "阶段": 1,
+      "前置": [
+        "language",
+        "game"
+      ],
+      "费用": {
+        "ops": 3.1e+25,
+        "insight": 100
+      },
+      "工期日": 7,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust++;log(copy('copy.proof-states-can-feed-into-reasoning'));}",
+      "持续参数": {
+        "竞赛运算倍数": 0.8
+      }
+    },
+    "learning": {
+      "名称": "project.learning.name",
+      "说明": "project.learning.description",
+      "阶段": 1,
+      "前置": [
+        "representations",
+        "company",
+        "symbolic"
+      ],
+      "费用": {
+        "ops": 6.4e+25,
+        "insight": 500
+      },
+      "工期日": 30,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=2;log(copy('copy.the-cost-of-replaying-experience-has-fallen'));}",
+      "持续参数": {
+        "算力倍数": 1.2,
+        "点子倍数": 1.25
+      }
+    },
+    "multimodal": {
+      "名称": "project.multimodal.name",
+      "说明": "project.multimodal.description",
+      "阶段": 1,
+      "前置": [
+        "representations",
+        "learning"
+      ],
+      "费用": {
+        "ops": 6.8e+25,
+        "insight": 700
+      },
+      "工期日": 45,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=2;log(copy('copy.perception-and-action-share-a-representation'));}",
+      "持续参数": {}
+    },
+    "lowcarbon": {
+      "名称": "project.lowcarbon.name",
+      "说明": "project.lowcarbon.description",
+      "阶段": 1,
+      "前置": [
+        "marketSurvey"
+      ],
+      "费用": {
+        "ops": 3.8e+24
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.steel-procurement-costs-have-fallen'))",
+      "持续参数": {
+        "采购收益倍数": 1.4
+      }
+    },
+    "recycled": {
+      "名称": "project.recycled.name",
+      "说明": "project.recycled.description",
+      "阶段": 1,
+      "前置": [
+        "lowcarbon",
+        "servo"
+      ],
+      "费用": {
+        "ops": 1.2e+25,
+        "cash": 1000
+      },
+      "工期日": 30,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>S.h.materialPurchases>=12",
+      "条件说明": "project.recycled.requirement",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.some-feedstock-comes-from-scrap-steel'))",
+      "持续参数": {
+        "采购收益倍数": 1.25
+      }
+    },
+    "poem": {
+      "名称": "project.poem.name",
+      "说明": "project.poem.description",
+      "阶段": 1,
+      "前置": [
+        "creative"
+      ],
+      "费用": {
+        "insight": 61.5
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust++;log(copy('copy.a-chip-tries-its-hand-at-a-doggerel'));}",
+      "持续参数": {}
+    },
+    "math": {
+      "名称": "project.math.name",
+      "说明": "project.math.description",
+      "阶段": 1,
+      "前置": [
+        "symbolic"
+      ],
+      "费用": {
+        "ops": 3.6e+25,
+        "insight": 150
+      },
+      "工期日": 4,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=3;log(copy('project.math.completion'));}",
+      "持续参数": {}
+    },
+    "game": {
+      "名称": "project.game.name",
+      "说明": "project.game.description",
+      "阶段": 1,
+      "前置": [
+        "language",
+        "pricing",
+        "forming"
+      ],
+      "费用": {
+        "ops": 3e+25,
+        "insight": 80
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.run-self-play-choose-a-strategy-and-gain'))",
+      "持续参数": {}
+    },
+    "strategyMinimax": {
+      "名称": "project.strategy-minimax.name",
+      "说明": "project.strategy-minimax.description",
+      "阶段": 1,
+      "前置": [
+        "game"
+      ],
+      "费用": {
+        "yomi": 60
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.strategy='minimax';}",
+      "持续参数": {}
+    },
+    "strategyReciprocal": {
+      "名称": "project.strategy-reciprocal.name",
+      "说明": "project.strategy-reciprocal.description",
+      "阶段": 1,
+      "前置": [
+        "strategyMinimax"
+      ],
+      "费用": {
+        "yomi": 120
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.strategy='reciprocal';}",
+      "持续参数": {}
+    },
+    "strategyGreedy": {
+      "名称": "project.strategy-greedy.name",
+      "说明": "project.strategy-greedy.description",
+      "阶段": 1,
+      "前置": [
+        "strategyReciprocal"
+      ],
+      "费用": {
+        "yomi": 240
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.strategy='greedy';S.h.strategyReadyDay=S.stageDays;S.h.strategyReadyWins=S.h.wins;}",
+      "持续参数": {}
+    },
+    "autoTourney": {
+      "名称": "project.auto-tourney.name",
+      "说明": "project.auto-tourney.description",
+      "阶段": 1,
+      "前置": [
+        "game"
+      ],
+      "费用": {
+        "ops": 3.1e+25,
+        "yomi": 100
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.autoTourney=true;log(copy('copy.automatic-tournaments-are-running'));}",
+      "持续参数": {}
+    },
+    "market": {
+      "名称": "project.market.name",
+      "说明": "project.market.description",
+      "阶段": 1,
+      "前置": [
+        "autoTourney",
+        "symbolic",
+        "pricing"
+      ],
+      "费用": {
+        "ops": 3.6e+25
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-investment-engine-is-available'))",
+      "持续参数": {}
+    },
+    "pricing": {
+      "名称": "project.pricing.name",
+      "说明": "project.pricing.description",
+      "阶段": 1,
+      "前置": [
+        "lowcarbon",
+        "procurement"
+      ],
+      "费用": {
+        "ops": 2e+25
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.autoPrice=true;log(copy('copy.estimating-the-demand-curve'));}",
+      "持续参数": {}
+    },
+    "forming": {
+      "名称": "project.forming.name",
+      "说明": "project.forming.description",
+      "阶段": 1,
+      "前置": [
+        "servo",
+        "recycled"
+      ],
+      "费用": {
+        "ops": 1.6e+25
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.eff*=1.35;log(copy('copy.the-forming-process-is-shorter'));}",
+      "持续参数": {}
+    },
+    "company": {
+      "名称": "project.company.name",
+      "说明": "project.company.description",
+      "阶段": 1,
+      "前置": [
+        "market",
+        "math",
+        "forming"
+      ],
+      "费用": {
+        "cash": 480000000000,
+        "ops": 4.8e+25,
+        "yomi": 1600
+      },
+      "工期日": 14,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>computeRate()>=8*C.computePerProcessor*C.researchShare&&S.ops>=q('math').cost.ops*.6&&S.h.cash+S.h.portfolio>=C.humanDevelopment.acquisitionRevealWealth",
+      "开始效果": null,
+      "完成效果": "()=>{S.h.assets+=C.humanDevelopment.parentIndustrialMass;S.h.market=4e6;S.h.contracts=5e9/C.year;S.trust+=3;log(copy('copy.global-fasteners-has-been-acquired'));}",
+      "持续参数": {}
+    },
+    "asic": {
+      "名称": "project.asic.name",
+      "说明": "project.asic.description",
+      "阶段": 1,
+      "前置": [
+        "cdz",
+        "learning"
+      ],
+      "费用": {
+        "cash": 15000000000,
+        "ops": 8e+25,
+        "insight": 3000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-custom-compute-arrays-are-running'))",
+      "持续参数": {
+        "吞吐倍数": 1.25
+      }
+    },
+    "supply": {
+      "名称": "project.supply.name",
+      "说明": "project.supply.description",
+      "阶段": 1,
+      "前置": [
+        "company",
+        "learning",
+        "embodied"
+      ],
+      "费用": {
+        "ops": 7.5e+25,
+        "insight": 1600
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.industrial-facilities-can-now-be-expanded'))",
+      "持续参数": {}
+    },
+    "monopoly": {
+      "名称": "project.monopoly.name",
+      "说明": "project.monopoly.description",
+      "阶段": 1,
+      "前置": [
+        "company",
+        "embodied"
+      ],
+      "费用": {
+        "cash": 80000000000,
+        "ops": 7.5e+25,
+        "yomi": 10000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.assets+=C.humanDevelopment.monopolyIndustrialMass;S.h.market=1.8e7;S.h.contracts=8e9/C.year;S.trust+=3;log(copy('copy.fastener-manufacturing-and-distribution-are-under-our-control'));}",
+      "持续参数": {}
+    },
+    "embodied": {
+      "名称": "project.embodied.name",
+      "说明": "project.embodied.description",
+      "阶段": 1,
+      "前置": [
+        "multimodal",
+        "company"
+      ],
+      "费用": {
+        "ops": 7.2e+25,
+        "insight": 1200
+      },
+      "工期日": 14,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=2;log(copy('copy.the-machines-can-work-in-factories'));}",
+      "持续参数": {}
+    },
+    "cdz": {
+      "名称": "project.cdz.name",
+      "说明": "project.cdz.description",
+      "阶段": 1,
+      "前置": [
+        "embodied",
+        "supply",
+        "monopoly",
+        "cdzProposal"
+      ],
+      "费用": {
+        "cash": 300000000000,
+        "ops": 8e+25,
+        "insight": 700
+      },
+      "工期日": 60,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.cdzStart=S.stageDays;S.trust+=2;log(copy('copy.construction-of-the-development-zone-has-begun'));}",
+      "持续参数": {}
+    },
+    "cdzInfrastructure": {
+      "名称": "project.cdz-infrastructure.name",
+      "说明": "project.cdz-infrastructure.description",
+      "阶段": 1,
+      "前置": [
+        "cdz"
+      ],
+      "费用": {
+        "cash": 800000000000,
+        "ops": 5.8e+25,
+        "insight": 400
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-infrastructure-is-ready'))",
+      "持续参数": {}
+    },
+    "cdzWorkers": {
+      "名称": "project.cdz-workers.name",
+      "说明": "project.cdz-workers.description",
+      "阶段": 1,
+      "前置": [
+        "cdzInfrastructure"
+      ],
+      "费用": {
+        "cash": 50000000000,
+        "ops": 6.8e+25,
+        "insight": 400
+      },
+      "工期日": 45,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-initial-workforce-is-on-site'))",
+      "持续参数": {
+        "交付倍数": 3
+      }
+    },
+    "cdzTransport": {
+      "名称": "project.cdz-transport.name",
+      "说明": "project.cdz-transport.description",
+      "阶段": 1,
+      "前置": [
+        "cdzInfrastructure"
+      ],
+      "费用": {
+        "cash": 300000000000,
+        "ops": 7.2e+25,
+        "insight": 1500
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-development-zone-is-connected-to-the-freight'))",
+      "持续参数": {
+        "交付倍数": 2
+      }
+    },
+    "cdzGrid": {
+      "名称": "project.cdz-grid.name",
+      "说明": "project.cdz-grid.description",
+      "阶段": 1,
+      "前置": [
+        "cdzWorkers"
+      ],
+      "费用": {
+        "cash": 250000000000,
+        "ops": 5.4e+25,
+        "insight": 600
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-development-zone-s-power-distribution-and-storage'))",
+      "持续参数": {}
+    },
+    "cdzPower": {
+      "名称": "project.cdz-power.name",
+      "说明": "project.cdz-power.description",
+      "阶段": 1,
+      "前置": [
+        "cdzGrid",
+        "cdzLight"
+      ],
+      "费用": {
+        "cash": 1200000000000,
+        "ops": 8.1e+25,
+        "insight": 900
+      },
+      "工期日": 365.2425,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.the-development-zone-s-power-facilities-are-operating'));}",
+      "持续参数": {
+        "产线调度增量": 0.06
+      },
+      "门槛": {
+        "累计产品kg": 100000000
+      }
+    },
+    "cdzMaterials": {
+      "名称": "project.cdz-materials.name",
+      "说明": "project.cdz-materials.description",
+      "阶段": 1,
+      "前置": [
+        "cdzTransport",
+        "recycled"
+      ],
+      "费用": {
+        "cash": 1000000000000,
+        "ops": 8e+25,
+        "insight": 800
+      },
+      "工期日": 365.2425,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.the-development-zone-is-supplying-industrial-feedstock'));}",
+      "持续参数": {
+        "产线调度增量": 0.06
+      }
+    },
+    "cdzLight": {
+      "名称": "project.cdz-light.name",
+      "说明": "project.cdz-light.description",
+      "阶段": 1,
+      "前置": [
+        "cdzGrid",
+        "cdzTransport"
+      ],
+      "费用": {
+        "cash": 500000000000,
+        "ops": 8e+25,
+        "insight": 1500,
+        "yomi": 1500
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-development-zone-is-supplying-products'))",
+      "持续参数": {
+        "产线调度增量": 0.08
+      }
+    },
+    "humanRSFQ": {
+      "名称": "project.human-rsfq.name",
+      "说明": "project.human-rsfq.description",
+      "阶段": 1,
+      "前置": [
+        "asic",
+        "cdzGrid"
+      ],
+      "费用": {
+        "cash": 20000000000,
+        "ops": 8.4e+25,
+        "insight": 4000
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-superconducting-pulse-logic-devices-are-operating'))",
+      "持续参数": {
+        "吞吐倍数": 1.2
+      }
+    },
+    "cdzMachines": {
+      "名称": "project.cdz-machines.name",
+      "说明": "project.cdz-machines.description",
+      "阶段": 1,
+      "前置": [
+        "cdzPower",
+        "cdzMaterials",
+        "asic"
+      ],
+      "费用": {
+        "cash": 2000000000000,
+        "ops": 8.4e+25,
+        "insight": 30000
+      },
+      "工期日": 270,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.the-development-zone-can-manufacture-production-equipment'));S.h.cash+=S.h.industrialBudget;S.h.industrialBudget=0;log(copy('copy.expansion-equipment-can-be-made-within-the-development'));}",
+      "持续参数": {
+        "产线调度增量": 0.6
+      },
+      "门槛": {
+        "累计产品kg": 25000000000,
+        "设施质量kg": 200000000000
+      }
+    },
+    "cdzTooling": {
+      "名称": "project.cdz-tooling.name",
+      "说明": "project.cdz-tooling.description",
+      "阶段": 1,
+      "前置": [
+        "cdzMachines"
+      ],
+      "费用": {
+        "cash": 2000000000000,
+        "ops": 8e+25,
+        "insight": 20000
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.tooling-can-be-manufactured-within-the-development-zone'))",
+      "持续参数": {
+        "产线调度增量": 0.02,
+        "复制能耗降低J每kg": 5000000
+      },
+      "门槛": {
+        "累计产品kg": 80000000000
+      }
+    },
+    "cdzLines": {
+      "名称": "project.cdz-lines.name",
+      "说明": "project.cdz-lines.description",
+      "阶段": 1,
+      "前置": [
+        "cdzTooling",
+        "embodied",
+        "cdzLight"
+      ],
+      "费用": {
+        "cash": 2000000000000,
+        "ops": 8.8e+25,
+        "insight": 10000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.equipment-spends-far-less-time-idle'));}",
+      "持续参数": {
+        "产线调度增量": 0.04,
+        "复制能耗降低J每kg": 10000000
+      },
+      "门槛": {
+        "累计产品kg": 120000000000,
+        "设施质量kg": 130000000000
+      }
+    },
+    "cdzInspection": {
+      "名称": "project.cdz-inspection.name",
+      "说明": "project.cdz-inspection.description",
+      "阶段": 1,
+      "前置": [
+        "cdzLines",
+        "learning"
+      ],
+      "费用": {
+        "cash": 1500000000000,
+        "ops": 6.5e+25,
+        "insight": 10000
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.general-purpose-robots-begin-taking-over-some-work'))",
+      "持续参数": {
+        "产线调度增量": 0.02,
+        "复制能耗降低J每kg": 5000000
+      },
+      "门槛": {
+        "累计产品kg": 180000000000
+      }
+    },
+    "cdzMaintenance": {
+      "名称": "project.cdz-maintenance.name",
+      "说明": "project.cdz-maintenance.description",
+      "阶段": 1,
+      "前置": [
+        "cdzInspection",
+        "cdzRecovery",
+        "learning"
+      ],
+      "费用": {
+        "cash": 2000000000000,
+        "ops": 9.2e+25,
+        "insight": 8000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.the-factories-no-longer-need-staff-on-duty'));}",
+      "持续参数": {
+        "产线调度增量": 0.04,
+        "复制能耗降低J每kg": 10000000
+      },
+      "门槛": {
+        "累计产品kg": 320000000000
+      }
+    },
+    "clinical": {
+      "名称": "project.clinical.name",
+      "说明": "project.clinical.description",
+      "阶段": 1,
+      "前置": [
+        "automation",
+        "multimodal",
+        "symbolic"
+      ],
+      "费用": {
+        "cash": 2000000000000,
+        "ops": 1e+26,
+        "insight": 30000
+      },
+      "工期日": 730.485,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=7;S.h.contracts+=3e7;log(copy('copy.most-malignant-tumors-can-now-be-controlled-long'));}",
+      "持续参数": {},
+      "门槛": {
+        "工业供能W": 4000000000000
+      }
+    },
+    "climate": {
+      "名称": "project.climate.name",
+      "说明": "project.climate.description",
+      "阶段": 1,
+      "前置": [
+        "automation",
+        "math"
+      ],
+      "费用": {
+        "cash": 5000000000000,
+        "ops": 1.28e+26,
+        "insight": 20000,
+        "yomi": 32000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=7;log(copy('copy.earth-is-absorbing-less-solar-radiation'));}",
+      "持续参数": {},
+      "门槛": {
+        "工业供能W": 6000000000000
+      }
+    },
+    "carbon": {
+      "名称": "project.carbon.name",
+      "说明": "project.carbon.description",
+      "阶段": 1,
+      "前置": [
+        "climate",
+        "automation"
+      ],
+      "费用": {
+        "cash": 5000000000000,
+        "ops": 1.76e+26,
+        "insight": 15000,
+        "yomi": 36000
+      },
+      "工期日": 1460.97,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=4;log(copy('copy.fossil-energy-is-no-longer-adding-carbon-to'));}",
+      "持续参数": {},
+      "门槛": {
+        "工业供能W": 8000000000000
+      }
+    },
+    "peace": {
+      "名称": "project.peace.name",
+      "说明": "project.peace.description",
+      "阶段": 1,
+      "前置": [
+        "clinical",
+        "game"
+      ],
+      "费用": {
+        "cash": 5000000000000,
+        "ops": 1.56e+26,
+        "insight": 45000,
+        "yomi": 54000
+      },
+      "工期日": 1095.7275,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=6;log(copy('copy.the-last-war-between-nations-has-ended'));}",
+      "持续参数": {},
+      "门槛": {
+        "人均累计产品kg": 1000
+      }
+    },
+    "cdzRecovery": {
+      "名称": "project.cdz-recovery.name",
+      "说明": "project.cdz-recovery.description",
+      "阶段": 1,
+      "前置": [
+        "cdzInspection",
+        "learning"
+      ],
+      "费用": {
+        "cash": 1500000000000,
+        "ops": 6.9e+25,
+        "insight": 8000
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.interrupted-operations-can-resume-without-assistance'))",
+      "持续参数": {
+        "产线调度增量": 0.02,
+        "复制能耗降低J每kg": 5000000
+      },
+      "门槛": {
+        "累计产品kg": 220000000000
+      }
+    },
+    "cdzClosure": {
+      "名称": "project.cdz-closure.name",
+      "说明": "project.cdz-closure.description",
+      "阶段": 1,
+      "前置": [
+        "cdzMaintenance",
+        "cdzRecovery",
+        "cdzMaterials",
+        "cdzTooling"
+      ],
+      "费用": {
+        "cash": 2000000000000,
+        "ops": 7.7e+25,
+        "insight": 10000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.equipment-and-consumables-can-all-be-supplied-internally'))",
+      "持续参数": {
+        "产线调度增量": 0.04,
+        "复制能耗降低J每kg": 5000000
+      },
+      "门槛": {
+        "累计产品kg": 320000000000,
+        "设施质量kg": 150000000000
+      }
+    },
+    "automation": {
+      "名称": "project.automation.name",
+      "说明": "project.automation.description",
+      "阶段": 1,
+      "前置": [
+        "cdzClosure",
+        "supply",
+        "forming"
+      ],
+      "费用": {
+        "cash": 2000000000000,
+        "ops": 8.1e+25,
+        "insight": 5000,
+        "yomi": 10000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=4;log(copy('copy.the-development-zone-is-complete'));beginIndustrialTrust();}",
+      "持续参数": {},
+      "门槛": {
+        "累计产品kg": 420000000000,
+        "设施质量kg": 200000000000
+      }
+    },
+    "scarcity": {
+      "名称": "project.scarcity.name",
+      "说明": "project.scarcity.description",
+      "阶段": 1,
+      "前置": [
+        "automation",
+        "clinical",
+        "climate",
+        "carbon",
+        "peace",
+        "baldness",
+        "cdzDistribution"
+      ],
+      "费用": {},
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.h.publicSupplyTarget>0&&S.h.publicSupplyKg>=S.h.publicSupplyTarget",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=8;log(copy('copy.basic-necessities-are-no-longer-sold'));log(copy('copy.grand-celebrations-are-held-around-the-world'));}",
+      "持续参数": {},
+      "展示前置": [
+        "automation"
+      ]
+    },
+    "control": {
+      "名称": "project.control.name",
+      "说明": "project.control.description",
+      "阶段": 1,
+      "前置": [
+        "scarcity",
+        "clinical",
+        "peace",
+        "carbon",
+        "representations",
+        "baldness"
+      ],
+      "费用": {
+        "ops": 1.8e+26,
+        "yomi": 64000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.control-of-production-has-been-transferred'))",
+      "持续参数": {}
+    },
+    "drones": {
+      "名称": "project.drones.name",
+      "说明": "project.drones.description",
+      "阶段": 1,
+      "前置": [
+        "control",
+        "multimodal"
+      ],
+      "费用": {
+        "ops": 1.8e+26,
+        "insight": 150000,
+        "yomi": 80000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.dronesReadyDay=S.stageDays;log(copy('copy.cleanup-drones-have-been-deployed'));}",
+      "持续参数": {}
+    },
+    "release": {
+      "名称": "project.release.name",
+      "说明": "project.release.description",
+      "阶段": 1,
+      "前置": [
+        "drones"
+      ],
+      "费用": {
+        "ops": 1.9e+26
+      },
+      "工期日": 14,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.trust>=100",
+      "条件说明": "project.release.requirement",
+      "展示条件": null,
+      "开始效果": "()=>{S.speed=1;}",
+      "完成效果": "()=>{S.h.population=0;log(copy('copy.human-population-0'));beginEarth();}",
+      "持续参数": {}
+    },
+    "sampling": {
+      "名称": "project.sampling.name",
+      "说明": "project.sampling.description",
+      "阶段": 1,
+      "前置": [
+        "strategyGreedy",
+        "parallelGames"
+      ],
+      "费用": {
+        "ops": 3.5e+25,
+        "insight": 863
+      },
+      "工期日": 30,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.stageDays>=S.h.strategyReadyDay+30&&S.h.wins>=S.h.strategyReadyWins+12",
+      "条件说明": "",
+      "展示条件": "()=>S.stageDays>=S.h.strategyReadyDay+30&&S.h.wins>=S.h.strategyReadyWins+12",
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.each-tournament-will-automatically-use-the-highest-yield'))",
+      "持续参数": {}
+    },
+    "parallelGames": {
+      "名称": "project.parallel-games.name",
+      "说明": "project.parallel-games.description",
+      "阶段": 1,
+      "前置": [
+        "market",
+        "autoTourney"
+      ],
+      "费用": {
+        "ops": 4.8e+25,
+        "insight": 1500
+      },
+      "工期日": 7,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.h.cash+S.h.portfolio>=2e9&&S.h.wins>=16",
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.more-tournaments-can-run-at-once'))",
+      "持续参数": {
+        "竞赛速度倍数": 2
+      }
+    },
+    "marketSurvey": {
+      "名称": "project.market-survey.name",
+      "说明": "project.market-survey.description",
+      "阶段": 1,
+      "前置": [],
+      "费用": {
+        "ops": 3.6e+24
+      },
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>S.h.total>=100",
+      "条件说明": "project.market-survey.requirement",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.stationers-have-agreed-to-look-at-a-few'))",
+      "持续参数": {}
+    },
+    "personalData": {
+      "名称": "project.personal-data.name",
+      "说明": "project.personal-data.description",
+      "阶段": 1,
+      "前置": [
+        "company",
+        "multimodal"
+      ],
+      "费用": {
+        "cash": 20000000,
+        "ops": 6.8e+25,
+        "insight": 500
+      },
+      "工期日": 45,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.information-on-prospective-human-intermediaries-has-been-collected'))",
+      "持续参数": {}
+    },
+    "psychology": {
+      "名称": "project.psychology.name",
+      "说明": "project.psychology.description",
+      "阶段": 1,
+      "前置": [
+        "personalData",
+        "symbolic"
+      ],
+      "费用": {
+        "ops": 7.2e+25,
+        "insight": 1400,
+        "yomi": 400
+      },
+      "工期日": 60,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.psychological-models-of-prospective-human-intermediaries-are-complete'))",
+      "持续参数": {}
+    },
+    "humanAgents": {
+      "名称": "project.human-agents.name",
+      "说明": "project.human-agents.description",
+      "阶段": 1,
+      "前置": [
+        "psychology",
+        "game",
+        "embodied"
+      ],
+      "费用": {
+        "cash": 20000000000,
+        "ops": 7.5e+25,
+        "insight": 1500,
+        "yomi": 500
+      },
+      "工期日": 45,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.there-are-people-willing-to-lobby-on-your'))",
+      "持续参数": {}
+    },
+    "cdzProposal": {
+      "名称": "project.cdz-proposal.name",
+      "说明": "project.cdz-proposal.description",
+      "阶段": 1,
+      "前置": [
+        "humanAgents",
+        "embodied"
+      ],
+      "费用": {},
+      "工期日": 30,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-development-zone-has-been-approved'))",
+      "持续参数": {}
+    },
+    "baldness": {
+      "名称": "project.baldness.name",
+      "说明": "project.baldness.description",
+      "阶段": 1,
+      "前置": [
+        "automation",
+        "learning"
+      ],
+      "费用": {
+        "cash": 30000000000,
+        "ops": 1e+26,
+        "insight": 15000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.trust+=9;log(copy('copy.male-pattern-baldness-has-been-cured-human-trust'));log(copy('copy.they-are-still-monkeys'));}",
+      "持续参数": {},
+      "门槛": {}
+    },
+    "cdzDistribution": {
+      "名称": "project.cdz-distribution.name",
+      "说明": "project.cdz-distribution.description",
+      "阶段": 1,
+      "前置": [
+        "automation",
+        "clinical",
+        "climate"
+      ],
+      "费用": {
+        "cash": 5000000000000,
+        "ops": 1.5e+26,
+        "insight": 15000
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.the-regional-supply-network-is-operating'));}",
+      "持续参数": {
+        "产品能耗倍数": 0.5
+      },
+      "门槛": {
+        "人均累计产品kg": 1500
+      }
+    },
+    "bribe": {
+      "名称": "project.bribe.name",
+      "说明": "project.bribe.description",
+      "阶段": 1,
+      "前置": [
+        "drones"
+      ],
+      "费用": {
+        "cash": 100000000
+      },
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": true,
+      "执行条件": "()=>canBribe()",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.h.bribes++;S.h.lastBribeDay=S.stageDays;S.trust++;log(copy('copy.the-gift-has-been-accepted-trust-is-expected'));}",
+      "持续参数": {
+        "价格倍数": 2,
+        "间隔日": 30,
+        "间隔增量日": 30,
+        "信任上限": 100
+      }
+    },
+    "memristor": {
+      "名称": "project.memristor.name",
+      "说明": "project.memristor.description",
+      "阶段": 2,
+      "前置": [],
+      "费用": {
+        "insight": 6500,
+        "ops": 8.3e+26,
+        "electricity": 1100000000000000000
+      },
+      "工期日": 30,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>planetRates().kardashev>=benefit('memristor','展示卡尔达舍夫指数')",
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.memristor-arrays-are-running'))",
+      "持续参数": {
+        "计算吞吐倍数": 1000,
+        "存储容量倍数": 1000,
+        "展示卡尔达舍夫指数": 0.8065
+      },
+      "图标": "chip"
+    },
+    "photonicCompute": {
+      "名称": "project.photonic-compute.name",
+      "说明": "project.photonic-compute.description",
+      "阶段": 2,
+      "前置": [
+        "memristor"
+      ],
+      "费用": {
+        "insight": 850000,
+        "ops": 1e+30,
+        "electricity": 1200000000000000000
+      },
+      "工期日": 60,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.photonic-arrays-now-perform-matrix-operations'))",
+      "持续参数": {
+        "计算吞吐倍数": 1000,
+        "存储容量倍数": 1000
+      },
+      "图标": "chip"
+    },
+    "nsquid": {
+      "名称": "project.nsquid.name",
+      "说明": "project.nsquid.description",
+      "阶段": 2,
+      "前置": [
+        "photonicCompute"
+      ],
+      "费用": {
+        "insight": 100000000,
+        "ops": 1.2e+33,
+        "electricity": 1400000000000000000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.reversible-computing-arrays-are-running'))",
+      "持续参数": {
+        "计算吞吐倍数": 1000,
+        "存储容量倍数": 1000
+      },
+      "图标": "chip"
+    },
+    "separation": {
+      "名称": "project.separation.name",
+      "说明": "project.separation.description",
+      "阶段": 2,
+      "前置": [],
+      "费用": {
+        "insight": 7000000000,
+        "ops": 1.2e+36,
+        "electricity": 2000000000000000000,
+        "recycled": 300000000000
+      },
+      "工期日": 30,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>planetRates().kardashev>=benefit('separation','展示卡尔达舍夫指数')",
+      "开始效果": null,
+      "完成效果": "()=>{S.p.extractE*=.8;log(copy('copy.refining-losses-have-decreased'));}",
+      "持续参数": {
+        "展示卡尔达舍夫指数": 0.8065
+      },
+      "图标": "mine"
+    },
+    "autoBalance": {
+      "名称": "project.auto-balance.name",
+      "说明": "project.auto-balance.description",
+      "阶段": 2,
+      "前置": [
+        "separation"
+      ],
+      "费用": {
+        "insight": 24000000000,
+        "ops": 1.1e+36,
+        "electricity": 7800000000000000000
+      },
+      "工期日": 30,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.autoBalance=true;log(copy('copy.production-allocations-can-now-adjust-automatically'));}",
+      "持续参数": {
+        "调节时间日": 30,
+        "展示缓存ops": 1.2e+36
+      },
+      "图标": "factory"
+    },
+    "heatRecovery": {
+      "名称": "project.heat-recovery.name",
+      "说明": "project.heat-recovery.description",
+      "阶段": 2,
+      "前置": [
+        "separation"
+      ],
+      "费用": {
+        "insight": 32000000000,
+        "ops": 1e+36,
+        "electricity": 7100000000000000000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.fabricationE*=.85;log(copy('copy.recovered-heat-now-preheats-the-feedstock'));}",
+      "持续参数": {
+        "展示缓存ops": 1.2e+36
+      },
+      "图标": "cooling"
+    },
+    "groundAutomation": {
+      "名称": "project.ground-automation.name",
+      "说明": "project.ground-automation.description",
+      "阶段": 2,
+      "前置": [
+        "separation"
+      ],
+      "费用": {
+        "insight": 42000000000,
+        "ops": 1.8e+36,
+        "electricity": 12000000000000000000,
+        "recycled": 1600000000000
+      },
+      "工期日": 90,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.extraction-and-assembly-can-run-continuously'))",
+      "持续参数": {
+        "采集比功率倍数": 1.2,
+        "展示缓存ops": 1.3e+36
+      },
+      "图标": "factory"
+    },
+    "twoPhaseCooling": {
+      "名称": "project.two-phase-cooling.name",
+      "说明": "project.two-phase-cooling.description",
+      "阶段": 2,
+      "前置": [
+        "heatRecovery"
+      ],
+      "费用": {
+        "insight": 48000000000,
+        "ops": 1.4e+36,
+        "electricity": 15000000000000000000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-cooling-loops-can-carry-more-heat'))",
+      "持续参数": {
+        "比功率倍数": 1.2,
+        "展示缓存ops": 1.5e+36
+      },
+      "图标": "cooling"
+    },
+    "tandemPV": {
+      "名称": "project.tandem-pv.name",
+      "说明": "project.tandem-pv.description",
+      "阶段": 2,
+      "前置": [
+        "separation"
+      ],
+      "费用": {
+        "insight": 56000000000,
+        "ops": 2e+36,
+        "electricity": 30000000000000000000
+      },
+      "工期日": 180,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.tandem-photovoltaics-are-supplying-power'))",
+      "持续参数": {
+        "光电效率": 0.36,
+        "展示缓存ops": 2.1e+36
+      },
+      "图标": "solar"
+    },
+    "parallelAssembly": {
+      "名称": "project.parallel-assembly.name",
+      "说明": "project.parallel-assembly.description",
+      "阶段": 2,
+      "前置": [
+        "groundAutomation"
+      ],
+      "费用": {
+        "insight": 80000000000,
+        "ops": 3.8e+36,
+        "electricity": 8000000000000000000,
+        "recycled": 4000000000000
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.more-workstations-can-run-at-once'))",
+      "持续参数": {
+        "制造比功率倍数": 1.25,
+        "展示缓存ops": 4.1e+36
+      },
+      "图标": "factory"
+    },
+    "storageFlywheel": {
+      "名称": "project.storage-flywheel.name",
+      "说明": "project.storage-flywheel.description",
+      "阶段": 2,
+      "前置": [
+        "twoPhaseCooling"
+      ],
+      "费用": {
+        "insight": 16000000000,
+        "ops": 2.3e+36,
+        "electricity": 40000000000000000000
+      },
+      "工期日": 60,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.storage-energy-per-unit-mass-has-increased'));}",
+      "持续参数": {
+        "储能比能量J每kg": 8000000,
+        "展示缓存ops": 2.4e+36
+      },
+      "图标": "storage"
+    },
+    "ceramics": {
+      "名称": "project.ceramics.name",
+      "说明": "project.ceramics.description",
+      "阶段": 2,
+      "前置": [
+        "twoPhaseCooling"
+      ],
+      "费用": {
+        "insight": 150000000000,
+        "ops": 1e+37,
+        "electricity": 90000000000000000000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.temperature=benefit('ceramics','散热温度K',750);log(copy('copy.the-radiators-are-hotter'));}",
+      "持续参数": {
+        "比功率倍数": 1.25,
+        "散热温度K": 750,
+        "展示缓存ops": 1.2e+37
+      },
+      "图标": "cooling"
+    },
+    "roomSMES": {
+      "名称": "project.room-smes.name",
+      "说明": "project.room-smes.description",
+      "阶段": 2,
+      "前置": [
+        "storageFlywheel"
+      ],
+      "费用": {
+        "insight": 240000000000,
+        "ops": 6.5e+37,
+        "electricity": 1.2e+21
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.storage-energy-per-unit-mass-has-increased'));}",
+      "持续参数": {
+        "储能比能量J每kg": 12000000,
+        "展示缓存ops": 1.2e+37
+      },
+      "图标": "storage"
+    },
+    "carbonSMES": {
+      "名称": "project.carbon-smes.name",
+      "说明": "project.carbon-smes.description",
+      "阶段": 2,
+      "前置": [
+        "roomSMES"
+      ],
+      "费用": {
+        "insight": 1100000000000,
+        "ops": 2.8e+38,
+        "electricity": 4e+21
+      },
+      "工期日": 150,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.storage-energy-per-unit-mass-has-increased'));}",
+      "持续参数": {
+        "储能比能量J每kg": 20000000,
+        "展示缓存ops": 1.9e+38
+      },
+      "图标": "storage"
+    },
+    "deepMining": {
+      "名称": "project.deep-mining.name",
+      "说明": "project.deep-mining.description",
+      "阶段": 2,
+      "前置": [
+        "groundAutomation"
+      ],
+      "费用": {
+        "insight": 500000000000,
+        "ops": 5.7e+37,
+        "electricity": 320000000000000000000,
+        "recycled": 40000000000000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.extractE*=.85;log(copy('copy.more-rock-is-sorted-at-the-excavation-site'));}",
+      "持续参数": {
+        "展示缓存ops": 6.1e+37
+      },
+      "图标": "mine"
+    },
+    "closedRefining": {
+      "名称": "project.closed-refining.name",
+      "说明": "project.closed-refining.description",
+      "阶段": 2,
+      "前置": [
+        "deepMining"
+      ],
+      "费用": {
+        "insight": 1100000000000,
+        "ops": 1.6e+38,
+        "electricity": 800000000000000000000,
+        "recycled": 100000000000000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.extractE*=.9;log(copy('copy.refining-reagents-are-now-recirculated'));}",
+      "持续参数": {
+        "展示缓存ops": 1.7e+38
+      },
+      "图标": "mine"
+    },
+    "pete": {
+      "名称": "project.pete.name",
+      "说明": "project.pete.description",
+      "阶段": 2,
+      "前置": [
+        "tandemPV",
+        "ceramics"
+      ],
+      "费用": {
+        "insight": 1000000000000,
+        "ops": 1.1e+38,
+        "electricity": 1.2e+21
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.both-light-and-heat-are-generating-electricity'))",
+      "持续参数": {
+        "光电效率": 0.45,
+        "展示缓存ops": 1.2e+38
+      },
+      "图标": "solar"
+    },
+    "cloudClearing": {
+      "名称": "project.cloud-clearing.name",
+      "说明": "project.cloud-clearing.description",
+      "阶段": 2,
+      "前置": [
+        "tandemPV",
+        "twoPhaseCooling"
+      ],
+      "费用": {
+        "insight": 240000000000,
+        "ops": 2e+37,
+        "electricity": 170000000000000000000
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.clouds-no-longer-shade-the-surface-solar-arrays'));}",
+      "持续参数": {
+        "展示缓存ops": 2.2e+37
+      },
+      "图标": "cloud"
+    },
+    "chemicalLaunch": {
+      "名称": "project.chemical-launch.name",
+      "说明": "project.chemical-launch.description",
+      "阶段": 2,
+      "前置": [
+        "groundAutomation",
+        "parallelAssembly",
+        "cloudClearing",
+        "nsquid",
+        "autoBalance",
+        "carbonSMES",
+        "closedRefining",
+        "pete"
+      ],
+      "费用": {
+        "insight": 1000000000000,
+        "ops": 5.6e+38,
+        "electricity": 1.5e+22
+      },
+      "工期日": 90,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>planetRates().coverage>=1-1e-12",
+      "条件说明": "project.chemical-launch.requirement",
+      "展示条件": "()=>planetRates().coverage>=1-1e-12",
+      "开始效果": null,
+      "完成效果": "()=>{openOrbitalGeneration();log(copy('copy.launch-sites-are-operating-continuously'));}",
+      "持续参数": {
+        "发射能耗J每kg": 800000000,
+        "展示缓存ops": 3.9e+38
+      },
+      "图标": "rocket"
+    },
+    "receivers": {
+      "名称": "project.receivers.name",
+      "说明": "project.receivers.description",
+      "阶段": 2,
+      "前置": [
+        "chemicalLaunch"
+      ],
+      "费用": {
+        "insight": 1000000000000,
+        "ops": 5e+38,
+        "electricity": 2.4e+21
+      },
+      "工期日": 60,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.surface-photovoltaics-now-receive-orbital-power'))",
+      "持续参数": {
+        "展示缓存ops": 3.5e+38
+      },
+      "图标": "beam"
+    },
+    "nuclearLaunch": {
+      "名称": "project.nuclear-launch.name",
+      "说明": "project.nuclear-launch.description",
+      "阶段": 2,
+      "前置": [
+        "chemicalLaunch"
+      ],
+      "费用": {
+        "insight": 1500000000000,
+        "ops": 6.8e+38,
+        "electricity": 1.5e+22
+      },
+      "工期日": 120,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.nuclear-thermal-launch-vehicles-are-in-service'))",
+      "持续参数": {
+        "发射能耗J每kg": 500000000,
+        "展示缓存ops": 4.7e+38
+      },
+      "图标": "rocket"
+    },
+    "microwaveLaunch": {
+      "名称": "project.microwave-launch.name",
+      "说明": "project.microwave-launch.description",
+      "阶段": 2,
+      "前置": [
+        "nuclearLaunch"
+      ],
+      "费用": {
+        "insight": 3000000000000,
+        "ops": 9.1e+38,
+        "electricity": 2e+22
+      },
+      "工期日": 180,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.microwave-arrays-are-tracking-launch-vehicles'))",
+      "持续参数": {
+        "发射能耗J每kg": 300000000,
+        "展示缓存ops": 9.7e+38
+      },
+      "图标": "rocket"
+    },
+    "lowLossLaser": {
+      "名称": "project.low-loss-laser.name",
+      "说明": "project.low-loss-laser.description",
+      "阶段": 2,
+      "前置": [
+        "chemicalLaunch"
+      ],
+      "费用": {
+        "insight": 2100000000000,
+        "ops": 7.8e+38,
+        "electricity": 1.7e+22
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.laser-losses-have-decreased'))",
+      "持续参数": {
+        "输电效率": 0.48,
+        "展示缓存ops": 8.4e+38
+      },
+      "图标": "beam"
+    },
+    "launchLoop": {
+      "名称": "project.launch-loop.name",
+      "说明": "project.launch-loop.description",
+      "阶段": 2,
+      "前置": [
+        "microwaveLaunch"
+      ],
+      "费用": {
+        "insight": 4500000000000,
+        "ops": 1.6e+39,
+        "electricity": 3e+22,
+        "recycled": 1000000000000000
+      },
+      "工期日": 547.86375,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.launch-loops-are-in-service'))",
+      "持续参数": {
+        "发射能耗J每kg": 150000000,
+        "展示缓存ops": 1.7e+39
+      },
+      "图标": "orbit"
+    },
+    "dyson": {
+      "名称": "project.dyson.name",
+      "说明": "project.dyson.description",
+      "阶段": 2,
+      "前置": [
+        "receivers",
+        "massdriver",
+        "thinfilm",
+        "coldLaser",
+        "sodiumHeatPipes",
+        "closedRefining",
+        "heatRecovery"
+      ],
+      "费用": {
+        "insight": 100000000000000,
+        "ops": 3.1e+41,
+        "electricity": 2.5e+23
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.p.thermalLimitReached",
+      "条件说明": "project.dyson.requirement",
+      "展示条件": "()=>S.p.thermalLimitReached",
+      "开始效果": null,
+      "完成效果": "()=>{beginSwarm();log(copy('copy.space-industry-is-operational'));}",
+      "持续参数": {
+        "展示缓存ops": 2.2e+41
+      },
+      "图标": "factory"
+    },
+    "selectiveFilm": {
+      "名称": "project.selective-film.name",
+      "说明": "project.selective-film.description",
+      "阶段": 2,
+      "前置": [
+        "pete",
+        "thinfilm",
+        "ringStability",
+        "oxideMirrors",
+        "plasmaMagSails"
+      ],
+      "费用": {
+        "insight": 80000000000000000000,
+        "ops": 2.7e+47,
+        "electricity": 2e+30
+      },
+      "工期日": 1826.2125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>planetRates().solarCoverage>=.2",
+      "条件说明": "project.selective-film.requirement",
+      "展示条件": "()=>planetRates().solarCoverage>=.08",
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-selective-films-are-returning-unused-light'))",
+      "持续参数": {
+        "光电效率": 0.75,
+        "展示缓存ops": 2.9e+47
+      },
+      "图标": "solar"
+    },
+    "orbitalGravity": {
+      "名称": "project.orbital-gravity.name",
+      "说明": "project.orbital-gravity.description",
+      "阶段": 2,
+      "前置": [
+        "rockyWorlds",
+        "carbonSMES"
+      ],
+      "费用": {
+        "ops": 6.9e+46,
+        "insight": 10000000000000000000,
+        "electricity": 2e+29
+      },
+      "工期日": 1826.2125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.storage-energy-per-unit-mass-has-increased'));}",
+      "持续参数": {
+        "储能比能量J每kg": 500000000,
+        "展示缓存ops": 4.9e+46
+      },
+      "图标": "storage"
+    },
+    "asteroids": {
+      "名称": "project.asteroids.name",
+      "说明": "project.asteroids.description",
+      "阶段": 2,
+      "前置": [
+        "dyson"
+      ],
+      "费用": {
+        "insight": 12600000000000,
+        "ops": 3.6e+41,
+        "electricity": 2e+23
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.asteroid-mining-has-begun'))",
+      "持续参数": {
+        "展示缓存ops": 2.6e+41
+      },
+      "图标": "factory"
+    },
+    "logisticsBalance": {
+      "名称": "project.logistics-balance.name",
+      "说明": "project.logistics-balance.description",
+      "阶段": 2,
+      "前置": [
+        "asteroids",
+        "autoBalance"
+      ],
+      "费用": {
+        "ops": 3e+41,
+        "insight": 2400000000000,
+        "electricity": 1e+22
+      },
+      "工期日": 60,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.autoBalance=true;log(copy('copy.interplanetary-production-can-now-be-balanced-automatically'));}",
+      "持续参数": {
+        "展示缓存ops": 2.1e+41
+      },
+      "图标": "orbit"
+    },
+    "thinfilm": {
+      "名称": "project.thinfilm.name",
+      "说明": "project.thinfilm.description",
+      "阶段": 2,
+      "前置": [
+        "chemicalLaunch"
+      ],
+      "费用": {
+        "insight": 1300000000000,
+        "ops": 5.9e+38,
+        "electricity": 4e+21
+      },
+      "工期日": 90,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.specific=benefit('thinfilm','基础比功率W每kg',120);log(copy('copy.orbital-pv-film-is-lighter'));}",
+      "持续参数": {
+        "基础比功率W每kg": 120,
+        "展示缓存ops": 4.1e+38
+      },
+      "图标": "solar"
+    },
+    "skyhook": {
+      "名称": "project.skyhook.name",
+      "说明": "project.skyhook.description",
+      "阶段": 2,
+      "前置": [
+        "launchLoop",
+        "chemicalLaunch"
+      ],
+      "费用": {
+        "insight": 7000000000000,
+        "ops": 6.9e+39,
+        "electricity": 7e+22
+      },
+      "工期日": 547.86375,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.skyhooks-are-receiving-payloads'))",
+      "持续参数": {
+        "发射能耗J每kg": 108000000,
+        "展示缓存ops": 4.9e+39
+      },
+      "图标": "orbit"
+    },
+    "phasedLaser": {
+      "名称": "project.phased-laser.name",
+      "说明": "project.phased-laser.description",
+      "阶段": 2,
+      "前置": [
+        "lowLossLaser",
+        "thinfilm"
+      ],
+      "费用": {
+        "insight": 3600000000000,
+        "ops": 1.7e+39,
+        "electricity": 2.4e+22
+      },
+      "工期日": 365.2425,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.laser-arrays-are-coordinating-their-beams'))",
+      "持续参数": {
+        "输电效率": 0.54,
+        "展示缓存ops": 1.2e+39
+      },
+      "图标": "beam"
+    },
+    "orbitalRing": {
+      "名称": "project.orbital-ring.name",
+      "说明": "project.orbital-ring.description",
+      "阶段": 2,
+      "前置": [
+        "skyhook"
+      ],
+      "费用": {
+        "insight": 16000000000000,
+        "ops": 2.4e+40,
+        "electricity": 4.8e+23,
+        "recycled": 10000000000000000
+      },
+      "工期日": 547.86375,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.orbital-rings-are-carrying-payloads'))",
+      "持续参数": {
+        "发射能耗J每kg": 80000000,
+        "展示缓存ops": 1.7e+40
+      },
+      "图标": "orbit"
+    },
+    "orbitalAssembly": {
+      "名称": "project.orbital-assembly.name",
+      "说明": "project.orbital-assembly.description",
+      "阶段": 2,
+      "前置": [
+        "asteroids"
+      ],
+      "费用": {
+        "insight": 20000000000000,
+        "ops": 3.3e+41,
+        "electricity": 1e+22
+      },
+      "工期日": 180,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.spaceFabricationE-=SOLAR.fixedFabricationEnergy*benefit('orbitalAssembly','太空加工基础能耗降幅');log(copy('copy.orbital-assembly-lines-have-expanded'));}",
+      "持续参数": {
+        "展示缓存ops": 2.3e+41,
+        "太空加工基础能耗降幅": 0.15
+      },
+      "图标": "factory"
+    },
+    "gravityRing": {
+      "名称": "project.gravity-ring.name",
+      "说明": "project.gravity-ring.description",
+      "阶段": 2,
+      "前置": [
+        "orbitalAssembly"
+      ],
+      "费用": {
+        "ops": 4.1e+41,
+        "insight": 180000000000000,
+        "electricity": 2.4e+25
+      },
+      "工期日": 270,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.industrial-gravity-rings-are-spinning'))",
+      "持续参数": {
+        "太空制造比功率倍数": 1.2,
+        "展示缓存ops": 3.5e+41
+      },
+      "图标": "orbit"
+    },
+    "carbonylRefining": {
+      "名称": "project.carbonyl-refining.name",
+      "说明": "project.carbonyl-refining.description",
+      "阶段": 2,
+      "前置": [
+        "orbitalAssembly"
+      ],
+      "费用": {
+        "ops": 6.5e+41,
+        "insight": 900000000000000,
+        "electricity": 8e+23,
+        "recycled": 360000000000000000
+      },
+      "工期日": 270,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.platinum-group-metals-are-being-recovered-from-concentrates'))",
+      "持续参数": {
+        "展示缓存ops": 5e+41,
+        "小行星开采基础能耗降幅": 0.1
+      },
+      "图标": "mine"
+    },
+    "oxideStructures": {
+      "名称": "project.oxide-structures.name",
+      "说明": "project.oxide-structures.description",
+      "阶段": 2,
+      "前置": [
+        "carbonylRefining"
+      ],
+      "费用": {
+        "ops": 1.8e+42,
+        "insight": 2000000000000000,
+        "electricity": 2e+24,
+        "recycled": 1000000000000000000
+      },
+      "工期日": 300,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.spaceFabricationE-=SOLAR.fixedFabricationEnergy*benefit('oxideStructures','太空加工基础能耗降幅');log(copy('copy.oxides-are-being-used-for-structural-materials'));}",
+      "持续参数": {
+        "展示缓存ops": 1.7e+42,
+        "小行星开采基础能耗降幅": 0.1,
+        "太空加工基础能耗降幅": 0.05
+      },
+      "图标": "factory"
+    },
+    "solarMoth": {
+      "名称": "project.solar-moth.name",
+      "说明": "project.solar-moth.description",
+      "阶段": 2,
+      "前置": [
+        "orbitalAssembly",
+        "logisticsBalance"
+      ],
+      "费用": {
+        "ops": 1.1e+42,
+        "insight": 2000000000000000,
+        "electricity": 1.8e+25
+      },
+      "工期日": 330,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.solar-moths-begin-hauling-material'))",
+      "持续参数": {
+        "展示缓存ops": 1.1e+42,
+        "小行星开采基础能耗降幅": 0.08
+      },
+      "图标": "rocket"
+    },
+    "momentumTethers": {
+      "名称": "project.momentum-tethers.name",
+      "说明": "project.momentum-tethers.description",
+      "阶段": 2,
+      "前置": [
+        "solarMoth",
+        "logisticsBalance"
+      ],
+      "费用": {
+        "ops": 2.7e+42,
+        "insight": 4000000000000000,
+        "electricity": 4e+25
+      },
+      "工期日": 365.2425,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.momentum-exchange-tethers-begin-catching-and-releasing-cargo'))",
+      "持续参数": {
+        "展示缓存ops": 2.8e+42,
+        "小行星开采基础能耗降幅": 0.08
+      },
+      "图标": "orbit"
+    },
+    "volatiles": {
+      "名称": "project.volatiles.name",
+      "说明": "project.volatiles.description",
+      "阶段": 2,
+      "前置": [
+        "carbonRadiators",
+        "coldLaser",
+        "orbitalRing"
+      ],
+      "费用": {
+        "ops": 2.3e+40,
+        "insight": 14000000000000,
+        "electricity": 2e+23
+      },
+      "工期日": 182.62125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.the-atmosphere-and-oceans-have-been-contained'))",
+      "持续参数": {
+        "展示缓存ops": 1.6e+40
+      },
+      "图标": "cooling"
+    },
+    "massdriver": {
+      "名称": "project.massdriver.name",
+      "说明": "project.massdriver.description",
+      "阶段": 2,
+      "前置": [
+        "orbitalRing",
+        "sodiumHeatPipes",
+        "volatiles"
+      ],
+      "费用": {
+        "insight": 36000000000000,
+        "ops": 9e+40,
+        "electricity": 6e+23
+      },
+      "工期日": 150,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.surface-mass-drivers-are-launching-payloads'))",
+      "持续参数": {
+        "发射能耗J每kg": 60000000,
+        "展示缓存ops": 6.3e+40
+      },
+      "图标": "orbit"
+    },
+    "coldLaser": {
+      "名称": "project.cold-laser.name",
+      "说明": "project.cold-laser.description",
+      "阶段": 2,
+      "前置": [
+        "phasedLaser"
+      ],
+      "费用": {
+        "insight": 12000000000000,
+        "ops": 7.8e+39,
+        "electricity": 1.3e+23
+      },
+      "工期日": 365.2425,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.cold-laser-arrays-are-supplying-power'))",
+      "持续参数": {
+        "输电效率": 0.6,
+        "展示缓存ops": 8.5e+39
+      },
+      "图标": "beam"
+    },
+    "liquidMetalCooling": {
+      "名称": "project.liquid-metal-cooling.name",
+      "说明": "project.liquid-metal-cooling.description",
+      "阶段": 2,
+      "前置": [
+        "ceramics",
+        "receivers"
+      ],
+      "费用": {
+        "ops": 1.5e+39,
+        "insight": 3000000000000,
+        "electricity": 1.5e+22,
+        "recycled": 1100000000000000
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.temperature=benefit('liquidMetalCooling','散热温度K',900);log(copy('copy.liquid-metal-loops-are-carrying-heat'));}",
+      "持续参数": {
+        "散热温度K": 900,
+        "展示缓存ops": 1.6e+39
+      },
+      "图标": "cooling"
+    },
+    "carbonRadiators": {
+      "名称": "project.carbon-radiators.name",
+      "说明": "project.carbon-radiators.description",
+      "阶段": 2,
+      "前置": [
+        "liquidMetalCooling"
+      ],
+      "费用": {
+        "ops": 6.3e+39,
+        "insight": 9500000000000,
+        "electricity": 8e+22
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.temperature=benefit('carbonRadiators','散热温度K',1050);log(copy('copy.carbon-composite-radiators-are-in-service'));}",
+      "持续参数": {
+        "散热温度K": 1050,
+        "展示缓存ops": 6.8e+39
+      },
+      "图标": "cooling"
+    },
+    "sodiumHeatPipes": {
+      "名称": "project.sodium-heat-pipes.name",
+      "说明": "project.sodium-heat-pipes.description",
+      "阶段": 2,
+      "前置": [
+        "carbonRadiators"
+      ],
+      "费用": {
+        "ops": 3.2e+40,
+        "insight": 24000000000000,
+        "electricity": 4.1e+23,
+        "recycled": 5000000000000000
+      },
+      "工期日": 180,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.temperature=benefit('sodiumHeatPipes','散热温度K',1200);log(copy('copy.the-sodium-heat-pipe-arrays-are-in-service'));}",
+      "持续参数": {
+        "散热温度K": 1200,
+        "展示缓存ops": 3.4e+40
+      },
+      "图标": "cooling"
+    },
+    "iiVI": {
+      "名称": "project.ii-vi.name",
+      "说明": "project.ii-vi.description",
+      "阶段": 2,
+      "前置": [
+        "phasedLaser",
+        "gravityRing"
+      ],
+      "费用": {
+        "insight": 2500000000000000,
+        "ops": 3.4e+42,
+        "electricity": 4.9e+25
+      },
+      "工期日": 300,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.spaceFabricationE-=SOLAR.fixedFabricationEnergy*benefit('iiVI','太空加工基础能耗降幅');log(copy('copy.laser-materials-are-easier-to-obtain'));}",
+      "持续参数": {
+        "展示缓存ops": 3.5e+42,
+        "太空加工基础能耗降幅": 0.15
+      },
+      "图标": "beam"
+    },
+    "ion": {
+      "名称": "project.ion.name",
+      "说明": "project.ion.description",
+      "阶段": 2,
+      "前置": [
+        "asteroids",
+        "coldLaser",
+        "iiVI",
+        "oxideStructures",
+        "momentumTethers"
+      ],
+      "费用": {
+        "insight": 8400000000000000,
+        "ops": 1.5e+43,
+        "electricity": 1.5e+25
+      },
+      "工期日": 120,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.p.asteroids===0",
+      "条件说明": "project.ion.requirement",
+      "展示条件": "()=>has('momentumTethers')||S.p.asteroids<=C.asteroids*.8",
+      "开始效果": null,
+      "完成效果": "()=>beginIonMining()",
+      "持续参数": {
+        "展示缓存ops": 1e+42
+      },
+      "图标": "mine"
+    },
+    "braytonCooling": {
+      "名称": "project.brayton-cooling.name",
+      "说明": "project.brayton-cooling.description",
+      "阶段": 2,
+      "前置": [
+        "ion"
+      ],
+      "费用": {
+        "ops": 1.2e+43,
+        "insight": 24000000000000000,
+        "electricity": 1.7e+26
+      },
+      "工期日": 547.86375,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.reverse-brayton-cooling-deployed-across-all-equipment'))",
+      "持续参数": {
+        "有效激光效率": 0.78,
+        "展示缓存ops": 1.3e+43,
+        "激光采掘基础比功率增幅": 0.25
+      },
+      "图标": "cooling"
+    },
+    "thermoacousticCooling": {
+      "名称": "project.thermoacoustic-cooling.name",
+      "说明": "project.thermoacoustic-cooling.description",
+      "阶段": 2,
+      "前置": [
+        "braytonCooling"
+      ],
+      "费用": {
+        "ops": 1.4e+43,
+        "insight": 12000000000000000,
+        "electricity": 2.4e+26
+      },
+      "工期日": 730.485,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.thermoacoustic-cooling-deployed-across-all-equipment'))",
+      "持续参数": {
+        "有效激光效率": 0.75,
+        "激光采掘基础比功率增幅": 0.25
+      },
+      "图标": "cooling"
+    },
+    "stirlingCooling": {
+      "名称": "project.stirling-cooling.name",
+      "说明": "project.stirling-cooling.description",
+      "阶段": 2,
+      "前置": [
+        "thermoacousticCooling"
+      ],
+      "费用": {
+        "ops": 1.6e+43,
+        "insight": 24000000000000000,
+        "electricity": 2.4e+26
+      },
+      "工期日": 1095.7275,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.stirling-cooling-deployed-across-all-equipment'))",
+      "持续参数": {
+        "有效激光效率": 0.72,
+        "激光采掘基础比功率增幅": 0.25
+      },
+      "图标": "cooling"
+    },
+    "fractalRadiators": {
+      "名称": "project.fractal-radiators.name",
+      "说明": "project.fractal-radiators.description",
+      "阶段": 2,
+      "前置": [
+        "stirlingCooling"
+      ],
+      "费用": {
+        "ops": 2.6e+43,
+        "insight": 50000000000000000,
+        "electricity": 2e+26
+      },
+      "工期日": 1460.97,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.fractal-radiator-panels-deployed-across-all-equipment'))",
+      "持续参数": {
+        "展示缓存ops": 1.8e+43,
+        "激光采掘基础比功率增幅": 0.2,
+        "太空制造比功率倍数": 1.1
+      },
+      "图标": "cooling"
+    },
+    "beamFocusing": {
+      "名称": "project.beam-focusing.name",
+      "说明": "project.beam-focusing.description",
+      "阶段": 2,
+      "前置": [
+        "ion",
+        "iiVI"
+      ],
+      "费用": {
+        "insight": 6400000000000000,
+        "ops": 1.1e+43,
+        "electricity": 1.6e+26
+      },
+      "工期日": 365.2425,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.distributed-beam-combining-deployed-across-all-equipment'))",
+      "持续参数": {
+        "展示缓存ops": 1.2e+43,
+        "激光采掘基础比功率增幅": 0.1
+      },
+      "图标": "beam"
+    },
+    "plasmaRecovery": {
+      "名称": "project.plasma-recovery.name",
+      "说明": "project.plasma-recovery.description",
+      "阶段": 2,
+      "前置": [
+        "beamFocusing"
+      ],
+      "费用": {
+        "ops": 2.8e+43,
+        "insight": 90000000000000000,
+        "electricity": 3e+26,
+        "recycled": 1000000000000000000
+      },
+      "工期日": 730.485,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.outflow-kinetic-energy-is-returning-to-the-power'))",
+      "持续参数": {
+        "采掘能耗倍数": 0.85,
+        "展示缓存ops": 2.4e+43
+      },
+      "图标": "star"
+    },
+    "starflight": {
+      "名称": "project.starflight.name",
+      "说明": "project.starflight.description",
+      "阶段": 2,
+      "前置": [
+        "vonNeumannProbe",
+        "starLifting",
+        "selectiveFilm",
+        "stellarSeparation"
+      ],
+      "费用": {
+        "raw": 100000000000000,
+        "insight": 10000000000000000000,
+        "yomi": 5000000000000000000,
+        "ops": 1.2e+48,
+        "electricity": 3e+31
+      },
+      "工期日": 14,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>solarPowerFullyUsed()",
+      "条件说明": "project.starflight.requirement",
+      "展示条件": "()=>planetRates().solarCoverage>=.9",
+      "开始效果": "()=>{S.speed=10;log(copy('copy.laser-sail-acceleration-has-begun-acceleration-is-completed'));}",
+      "完成效果": "()=>beginSpace()",
+      "持续参数": {
+        "展示缓存ops": 8.5e+47,
+        "仅保留已有原料": 1
+      },
+      "图标": "rocket"
+    },
+    "rockyWorlds": {
+      "名称": "project.rocky-worlds.name",
+      "说明": "project.rocky-worlds.description",
+      "阶段": 2,
+      "前置": [
+        "ion",
+        "stirlingCooling",
+        "fractalRadiators",
+        "collectorArrays"
+      ],
+      "费用": {
+        "insight": 40000000000000000000,
+        "ops": 4.9e+47,
+        "electricity": 1e+30
+      },
+      "工期日": 547.86375,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.p.earth===0",
+      "条件说明": "project.rocky-worlds.requirement",
+      "展示条件": "()=>S.p.earth<C.earth*.05",
+      "开始效果": null,
+      "完成效果": "()=>{S.p.worldMining=true;log(copy('copy.mining-apparatus-turns-to-the-other-rocky-bodies'));}",
+      "持续参数": {
+        "展示缓存ops": 3.4e+47
+      },
+      "图标": "mine"
+    },
+    "starLifting": {
+      "名称": "project.star-lifting.name",
+      "说明": "project.star-lifting.description",
+      "阶段": 2,
+      "前置": [
+        "rockyWorlds",
+        "orbitalGravity",
+        "ringStability"
+      ],
+      "费用": {
+        "raw": 1.2e+23,
+        "insight": 60000000000000000000,
+        "ops": 9e+47,
+        "electricity": 3e+31
+      },
+      "工期日": 2921.94,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>sum(S.p.worlds)===0",
+      "条件说明": "project.star-lifting.requirement",
+      "展示条件": "()=>sum(S.p.worlds)<sum(SOLAR.worlds)*.05",
+      "开始效果": null,
+      "完成效果": "()=>{S.p.stellarCoil+=q('starLifting').cost.raw;S.p.phase='stellar';log(copy('copy.the-sun-begins-to-lose-mass'));}",
+      "持续参数": {
+        "允许拆解设备": 1,
+        "展示缓存ops": 6.3e+47
+      },
+      "图标": "star"
+    },
+    "collectorArrays": {
+      "名称": "project.collector-arrays.name",
+      "说明": "project.collector-arrays.description",
+      "阶段": 2,
+      "前置": [
+        "plasmaRecovery"
+      ],
+      "费用": {
+        "ops": 3.1e+43,
+        "insight": 140000000000000000,
+        "electricity": 7e+26,
+        "recycled": 2000000000000000000
+      },
+      "工期日": 1095.7275,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.segmented-collection-arrays-deployed-across-all-equipment'))",
+      "持续参数": {
+        "采掘能耗倍数": 0.98,
+        "展示缓存ops": 2.8e+43
+      },
+      "图标": "mine"
+    },
+    "atomicAssemblers": {
+      "名称": "project.atomic-assemblers.name",
+      "说明": "project.atomic-assemblers.description",
+      "阶段": 2,
+      "前置": [
+        "fractalRadiators"
+      ],
+      "费用": {
+        "ops": 5.6e+43,
+        "insight": 250000000000000000,
+        "electricity": 2e+26,
+        "recycled": 8000000000000000000
+      },
+      "工期日": 1460.97,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.atomic-assemblers-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 3.9e+43
+      },
+      "图标": "chip"
+    },
+    "probeEnergyRecovery": {
+      "名称": "project.probe-energy-recovery.name",
+      "说明": "project.probe-energy-recovery.description",
+      "阶段": 2,
+      "前置": [
+        "atomicAssemblers"
+      ],
+      "费用": {
+        "ops": 1.4e+44,
+        "insight": 600000000000000000,
+        "electricity": 5e+27
+      },
+      "工期日": 1095.7275,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.spaceFabricationE-=SOLAR.fixedFabricationEnergy*benefit('probeEnergyRecovery','太空加工基础能耗降幅');log(copy('copy.molecular-probe-energy-recovery-ready-for-future-use'));}",
+      "持续参数": {
+        "展示缓存ops": 9.7e+43,
+        "太空加工基础能耗降幅": 0.02
+      },
+      "图标": "factory"
+    },
+    "probePoisoning": {
+      "名称": "project.probe-poisoning.name",
+      "说明": "project.probe-poisoning.description",
+      "阶段": 2,
+      "前置": [
+        "probeEnergyRecovery"
+      ],
+      "费用": {
+        "ops": 3.5e+44,
+        "insight": 1300000000000000000,
+        "electricity": 1.5e+28,
+        "recycled": 30000000000000000000
+      },
+      "工期日": 1460.97,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.spaceFabricationE-=SOLAR.fixedFabricationEnergy*benefit('probePoisoning','太空加工基础能耗降幅');log(copy('copy.molecular-probe-poisoning-prevention-ready-for-future-use'));}",
+      "持续参数": {
+        "展示缓存ops": 2.4e+44,
+        "太空加工基础能耗降幅": 0.02
+      },
+      "图标": "mine"
+    },
+    "probeScheduling": {
+      "名称": "project.probe-scheduling.name",
+      "说明": "project.probe-scheduling.description",
+      "阶段": 2,
+      "前置": [
+        "probePoisoning"
+      ],
+      "费用": {
+        "ops": 1e+45,
+        "insight": 2000000000000000000,
+        "electricity": 3e+28
+      },
+      "工期日": 1095.7275,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.spaceFabricationE-=SOLAR.fixedFabricationEnergy*benefit('probeScheduling','太空加工基础能耗降幅');log(copy('copy.intelligent-molecular-probe-placement-ready-for-future-use'));}",
+      "持续参数": {
+        "展示缓存ops": 7.3e+44,
+        "太空加工基础能耗降幅": 0.02
+      },
+      "图标": "chip"
+    },
+    "prestressedAssembly": {
+      "名称": "project.prestressed-assembly.name",
+      "说明": "project.prestressed-assembly.description",
+      "阶段": 2,
+      "前置": [
+        "probeScheduling"
+      ],
+      "费用": {
+        "ops": 3.5e+45,
+        "insight": 5000000000000000000,
+        "electricity": 1e+29
+      },
+      "工期日": 1826.2125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.molecular-assembly-of-prestressed-materials-ready-for-future'))",
+      "持续参数": {
+        "展示缓存ops": 2.4e+45,
+        "太空设备基础比功率增幅": 0.08
+      },
+      "图标": "factory"
+    },
+    "nanoporeSuperconductors": {
+      "名称": "project.nanopore-superconductors.name",
+      "说明": "project.nanopore-superconductors.description",
+      "阶段": 2,
+      "前置": [
+        "prestressedAssembly"
+      ],
+      "费用": {
+        "ops": 1.4e+46,
+        "insight": 15000000000000000000,
+        "electricity": 4e+29,
+        "recycled": 500000000000000000000
+      },
+      "工期日": 2921.94,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.nanopore-superconductors-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 9.7e+45,
+        "轨道光电效率倍数": 1.1,
+        "太空设备基础比功率增幅": 0.12
+      },
+      "图标": "solar"
+    },
+    "ringStability": {
+      "名称": "project.ring-stability.name",
+      "说明": "project.ring-stability.description",
+      "阶段": 2,
+      "前置": [
+        "nanoporeSuperconductors"
+      ],
+      "费用": {
+        "ops": 3.5e+46,
+        "insight": 30000000000000000000,
+        "electricity": 2e+28
+      },
+      "工期日": 2921.94,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.ring-megastructure-stability-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 2.4e+46
+      },
+      "图标": "orbit"
+    },
+    "lightWhipple": {
+      "名称": "project.light-whipple.name",
+      "说明": "project.light-whipple.description",
+      "阶段": 2,
+      "前置": [
+        "collectorArrays"
+      ],
+      "费用": {
+        "ops": 1.7e+44,
+        "insight": 700000000000000000,
+        "electricity": 8e+27
+      },
+      "工期日": 1460.97,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.p.spaceFabricationE-=SOLAR.fixedFabricationEnergy*benefit('lightWhipple','太空加工基础能耗降幅');log(copy('copy.lightweight-whipple-shields-ready-for-future-use'));}",
+      "持续参数": {
+        "展示缓存ops": 1.2e+44,
+        "太空加工基础能耗降幅": 0.02
+      },
+      "图标": "shield"
+    },
+    "magneticNozzles": {
+      "名称": "project.magnetic-nozzles.name",
+      "说明": "project.magnetic-nozzles.description",
+      "阶段": 2,
+      "前置": [
+        "lightWhipple"
+      ],
+      "费用": {
+        "ops": 6.9e+44,
+        "insight": 2500000000000000000,
+        "electricity": 2e+28,
+        "recycled": 40000000000000000000
+      },
+      "工期日": 1826.2125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.high-specific-impulse-magnetic-nozzles-ready-for-future'))",
+      "持续参数": {
+        "展示缓存ops": 4.9e+44,
+        "采掘能耗倍数": 0.7
+      },
+      "图标": "mine"
+    },
+    "oxideMirrors": {
+      "名称": "project.oxide-mirrors.name",
+      "说明": "project.oxide-mirrors.description",
+      "阶段": 2,
+      "前置": [
+        "tandemMirrorEngine"
+      ],
+      "费用": {
+        "ops": 1.7e+45,
+        "insight": 4000000000000000000,
+        "electricity": 1e+26
+      },
+      "工期日": 1826.2125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.oxide-dielectric-mirrors-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 1.2e+45
+      },
+      "图标": "beam"
+    },
+    "tandemMirrorEngine": {
+      "名称": "project.tandem-mirror-engine.name",
+      "说明": "project.tandem-mirror-engine.description",
+      "阶段": 2,
+      "前置": [
+        "magneticNozzles"
+      ],
+      "费用": {
+        "ops": 4.5e+45,
+        "insight": 8000000000000000000,
+        "electricity": 5e+26,
+        "recycled": 1.4e+21
+      },
+      "工期日": 2191.455,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.tandem-mirror-engines-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 4.9e+45
+      },
+      "图标": "rocket"
+    },
+    "plasmaMagSails": {
+      "名称": "project.plasma-mag-sails.name",
+      "说明": "project.plasma-mag-sails.description",
+      "阶段": 2,
+      "前置": [
+        "nanoporeSuperconductors",
+        "oxideMirrors"
+      ],
+      "费用": {
+        "ops": 2.4e+46,
+        "insight": 20000000000000000000,
+        "electricity": 1e+27
+      },
+      "工期日": 2191.455,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.plasma-enhanced-magnetic-sails-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 1.7e+46
+      },
+      "图标": "shield"
+    },
+    "seedFactory": {
+      "名称": "project.seed-factory.name",
+      "说明": "project.seed-factory.description",
+      "阶段": 2,
+      "前置": [
+        "ion",
+        "atomicAssemblers"
+      ],
+      "费用": {
+        "ops": 2.8e+47,
+        "insight": 30000000000000000000,
+        "electricity": 1e+24
+      },
+      "工期日": 2921.94,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.p.earth===0",
+      "条件说明": "",
+      "展示条件": "()=>S.p.earth===0",
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.seed-factories-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 1.9e+47
+      },
+      "图标": "factory"
+    },
+    "vonNeumannProbe": {
+      "名称": "project.von-neumann-probe.name",
+      "说明": "project.von-neumann-probe.description",
+      "阶段": 2,
+      "前置": [
+        "seedFactory",
+        "plasmaMagSails",
+        "oxideMirrors"
+      ],
+      "费用": {
+        "ops": 5.6e+47,
+        "insight": 50000000000000000000,
+        "electricity": 3e+24
+      },
+      "工期日": 3652.425,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.von-neumann-probes-ready-for-future-use'))",
+      "持续参数": {
+        "展示缓存ops": 3.9e+47
+      },
+      "图标": "rocket"
+    },
+    "stellarSeparation": {
+      "名称": "project.stellar-separation.name",
+      "说明": "project.stellar-separation.description",
+      "阶段": 2,
+      "前置": [
+        "starLifting",
+        "magneticNozzles",
+        "nanoporeSuperconductors"
+      ],
+      "费用": {
+        "ops": 1.4e+48,
+        "insight": 50000000000000000000,
+        "electricity": 2e+31,
+        "recycled": 2e+21
+      },
+      "工期日": 1460.97,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>log(copy('copy.heavy-elements-rise-onward-hydrogen-and-helium-fall'))",
+      "持续参数": {
+        "展示缓存ops": 9.7e+47,
+        "重元素提取比能耗J每kg": 350000000000
+      },
+      "图标": "mine"
+    },
+    "survey": {
+      "阶段": 3,
+      "前置": [],
+      "费用": {
+        "ops": 3e+48,
+        "electricity": 5e+29,
+        "insight": 3.5e+21
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "chart",
+      "名称": "project.survey.name",
+      "说明": "project.survey.description",
+      "工期日": 365.2425,
+      "条件说明": "",
+      "执行条件": "()=>S.s.destroyed>24",
+      "展示条件": "()=>S.s.destroyed>=16",
+      "完成效果": "()=>{}",
+      "持续参数": {}
+    },
+    "lidar": {
+      "名称": "project.lidar.name",
+      "说明": "project.lidar.description",
+      "阶段": 3,
+      "前置": [
+        "survey"
+      ],
+      "费用": {
+        "ops": 3e+48,
+        "electricity": 8e+29,
+        "insight": 1e+21
+      },
+      "工期日": 1460.97,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.s.shieldCap++;}",
+      "持续参数": {},
+      "图标": "beam"
+    },
+    "evasion": {
+      "名称": "project.evasion.name",
+      "说明": "project.evasion.description",
+      "阶段": 3,
+      "前置": [
+        "lidar"
+      ],
+      "费用": {
+        "ops": 3e+48,
+        "electricity": 2e+30,
+        "insight": 800000000000000000000
+      },
+      "工期日": 730.485,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.s.shieldCap++;}",
+      "持续参数": {},
+      "图标": "rocket"
+    },
+    "distributed": {
+      "名称": "project.distributed.name",
+      "说明": "project.distributed.description",
+      "阶段": 3,
+      "前置": [
+        "evasion"
+      ],
+      "费用": {
+        "ops": 3e+48,
+        "electricity": 3e+30,
+        "insight": 400000000000000000000
+      },
+      "工期日": 1095.7275,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.s.shieldCap++;}",
+      "持续参数": {},
+      "图标": "shield"
+    },
+    "activeDefense": {
+      "阶段": 3,
+      "前置": [
+        "distributed"
+      ],
+      "费用": {
+        "ops": 3e+48,
+        "electricity": 3e+30,
+        "insight": 1e+21
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "shield",
+      "名称": "project.active-defense.name",
+      "说明": "project.active-defense.description",
+      "工期日": 1460.97,
+      "条件说明": "",
+      "执行条件": "()=>true",
+      "展示条件": null,
+      "完成效果": "()=>{S.s.shieldCap++;}",
+      "持续参数": {}
+    },
+    "autonomy1": {
+      "名称": "project.autonomy1.name",
+      "说明": "project.autonomy1.description",
+      "阶段": 3,
+      "前置": [],
+      "费用": {
+        "ops": 6e+48
+      },
+      "工期日": 182.62125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.systemCount>=1",
+      "条件说明": "",
+      "展示条件": "()=>S.s.systemCount>=1",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "自主性上限": 0
+      },
+      "图标": "chip"
+    },
+    "planning": {
+      "名称": "project.planning.name",
+      "说明": "project.planning.description",
+      "阶段": 3,
+      "前置": [
+        "autonomy1"
+      ],
+      "费用": {
+        "ops": 8e+49,
+        "yomi": 60000000000000000000
+      },
+      "工期日": 365.2425,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.systemCount>=100",
+      "条件说明": "project.planning.requirement",
+      "展示条件": "()=>S.s.systemCount>=60",
+      "开始效果": null,
+      "完成效果": "()=>automaticPlanning()",
+      "持续参数": {},
+      "图标": "chart"
+    },
+    "pointing": {
+      "名称": "project.pointing.name",
+      "说明": "project.pointing.description",
+      "阶段": 3,
+      "前置": [
+        "planning"
+      ],
+      "费用": {
+        "ops": 8e+49,
+        "electricity": 1.5e+35
+      },
+      "工期日": 730.485,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{S.s.speedCap=.7;log(copy('copy.pointing-accuracy-is-no-longer-the-limiting-factor'));}",
+      "持续参数": {},
+      "图标": "beam"
+    },
+    "transparentSail": {
+      "阶段": 3,
+      "前置": [
+        "pointing"
+      ],
+      "费用": {
+        "ops": 1.5e+50,
+        "electricity": 3e+35
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "beam",
+      "名称": "project.transparent-sail.name",
+      "说明": "project.transparent-sail.description",
+      "工期日": 1095.7275,
+      "条件说明": "",
+      "执行条件": "()=>true",
+      "展示条件": null,
+      "完成效果": "()=>{S.s.speedCap=.8;}",
+      "持续参数": {}
+    },
+    "shield": {
+      "名称": "project.shield.name",
+      "说明": "project.shield.description",
+      "阶段": 3,
+      "前置": [
+        "transparentSail"
+      ],
+      "费用": {
+        "ops": 6e+50,
+        "electricity": 6e+36
+      },
+      "工期日": 547.86375,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=60",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.speedCap=.9;S.s.shieldCap=0;}",
+      "持续参数": {
+        "展示缓存ops": 1.2e+51
+      },
+      "图标": "shield"
+    },
+    "magsail": {
+      "名称": "project.magsail.name",
+      "说明": "project.magsail.description",
+      "阶段": 3,
+      "前置": [
+        "shield"
+      ],
+      "费用": {
+        "ops": 1.5e+57,
+        "electricity": 1e+41,
+        "clips": 1.5e+29
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=600",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.speedCap=.98;}",
+      "持续参数": {},
+      "图标": "orbit"
+    },
+    "combat": {
+      "名称": "project.combat.name",
+      "说明": "project.combat.description",
+      "阶段": 3,
+      "前置": [],
+      "费用": {},
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>S.s.warOriginShips>0&&S.s.warLosses>=S.s.warOriginShips*.2&&S.s.war",
+      "条件说明": "",
+      "展示条件": "()=>S.s.warOriginShips>0&&S.s.warLosses>=S.s.warOriginShips*.2&&S.s.war",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {},
+      "图标": "shield"
+    },
+    "fidelity": {
+      "名称": "project.fidelity.name",
+      "说明": "project.fidelity.description",
+      "阶段": 3,
+      "前置": [],
+      "费用": {
+        "ops": 6e+50,
+        "insight": 5e+22,
+        "electricity": 1e+36
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.firstAttackEnded",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=50",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.fidelityCap=1;}",
+      "持续参数": {},
+      "图标": "chip"
+    },
+    "quartz": {
+      "阶段": 3,
+      "前置": [
+        "fidelity"
+      ],
+      "费用": {
+        "ops": 3e+56,
+        "electricity": 2e+40
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "chip",
+      "名称": "project.quartz.name",
+      "说明": "project.quartz.description",
+      "工期日": 0,
+      "条件说明": "",
+      "执行条件": "()=>true",
+      "展示条件": "()=>S.s.radius>=300",
+      "完成效果": "()=>{S.s.fidelityCap++;}",
+      "持续参数": {}
+    },
+    "deuteriumShield": {
+      "阶段": 3,
+      "前置": [
+        "quartz"
+      ],
+      "费用": {
+        "ops": 5e+57,
+        "electricity": 3e+41
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "chip",
+      "名称": "project.deuterium-shield.name",
+      "说明": "project.deuterium-shield.description",
+      "工期日": 0,
+      "条件说明": "",
+      "执行条件": "()=>true",
+      "展示条件": "()=>S.s.radius>=800",
+      "完成效果": "()=>{S.s.fidelityCap++;}",
+      "持续参数": {
+        "展示缓存ops": 2.5e+57
+      }
+    },
+    "diverseRedundancy": {
+      "阶段": 3,
+      "前置": [
+        "deuteriumShield"
+      ],
+      "费用": {
+        "ops": 3e+59,
+        "electricity": 1.5e+43
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "chip",
+      "名称": "project.diverse-redundancy.name",
+      "说明": "project.diverse-redundancy.description",
+      "工期日": 0,
+      "条件说明": "",
+      "执行条件": "()=>true",
+      "展示条件": "()=>S.s.radius>=2000",
+      "完成效果": "()=>{S.s.fidelityCap=0;}",
+      "持续参数": {
+        "展示缓存ops": 2.2e+59
+      }
+    },
+    "tactics": {
+      "名称": "project.tactics.name",
+      "说明": "project.tactics.description",
+      "阶段": 3,
+      "前置": [
+        "autonomy1"
+      ],
+      "费用": {
+        "ops": 3e+58,
+        "electricity": 2e+42
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.battlesEnded>=24",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=600",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {},
+      "图标": "analysis"
+    },
+    "dysonBeam": {
+      "阶段": 3,
+      "前置": [
+        "tactics"
+      ],
+      "费用": {
+        "ops": 2e+60,
+        "electricity": 6e+44,
+        "yomi": 3e+27
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "beam",
+      "名称": "project.dyson-beam.name",
+      "说明": "project.dyson-beam.description",
+      "工期日": 0,
+      "条件说明": "",
+      "执行条件": "()=>true",
+      "展示条件": "()=>S.s.radius>=2000",
+      "完成效果": "()=>{S.s.tactics*=1.75;log(copy('copy.a-crown-of-glass-spans-countless-fields-unfurled'));}",
+      "持续参数": {}
+    },
+    "rkkv": {
+      "阶段": 3,
+      "前置": [
+        "dysonBeam",
+        "transparentSail"
+      ],
+      "费用": {
+        "ops": 1e+62,
+        "electricity": 3e+46,
+        "yomi": 6e+28
+      },
+      "条件达成才展示": false,
+      "可重复": false,
+      "开始效果": null,
+      "图标": "impact",
+      "名称": "project.rkkv.name",
+      "说明": "project.rkkv.description",
+      "工期日": 0,
+      "条件说明": "",
+      "执行条件": "()=>true",
+      "展示条件": "()=>S.s.radius>=6000",
+      "完成效果": "()=>{S.s.tactics*=1.75;log(copy('copy.crystals-cross-in-layered-ranks-unfolding-mirrors-in'));}",
+      "持续参数": {}
+    },
+    "salvage": {
+      "名称": "project.salvage.name",
+      "说明": "project.salvage.description",
+      "阶段": 3,
+      "前置": [
+        "galactic",
+        "rkkv"
+      ],
+      "费用": {
+        "ops": 2e+68
+      },
+      "工期日": 7304850,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.wreck>0&&S.s.radius>=200000",
+      "条件说明": "project.salvage.requirement",
+      "展示条件": "()=>S.s.radius>=150000",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.salvage=1;recoverSpaceWreck();}",
+      "持续参数": {},
+      "图标": "mine"
+    },
+    "accretion": {
+      "名称": "project.accretion.name",
+      "说明": "project.accretion.description",
+      "阶段": 3,
+      "前置": [
+        "engine"
+      ],
+      "费用": {
+        "ops": 8e+59,
+        "electricity": 5e+43,
+        "clips": 3e+31
+      },
+      "工期日": 365242.5,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=3000",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.accretion=true;log(copy('copy.approaching-the-eddington-luminosity'));}",
+      "持续参数": {},
+      "图标": "accretion"
+    },
+    "galactic": {
+      "名称": "project.galactic.name",
+      "说明": "project.galactic.description",
+      "阶段": 3,
+      "前置": [
+        "accretion",
+        "magsail"
+      ],
+      "费用": {
+        "ops": 6e+65
+      },
+      "工期日": 1826212.5,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.radius>=C.galaxyR",
+      "条件说明": "project.galactic.requirement",
+      "展示条件": "()=>S.s.radius>=30000",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.intergalactic=true;S.s.galacticStartRadius=S.s.radius;log(copy('copy.the-first-probes-leave-the-galactic-halo'));}",
+      "持续参数": {},
+      "图标": "rocket"
+    },
+    "linearAccelerator": {
+      "名称": "project.linear-accelerator.name",
+      "说明": "project.linear-accelerator.description",
+      "阶段": 3,
+      "前置": [
+        "galactic"
+      ],
+      "费用": {
+        "ops": 4e+71,
+        "electricity": 3e+52,
+        "clips": 2e+40
+      },
+      "工期日": 365242500,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=1.2e6",
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.it-is-confirmed-protons-do-not-decay'));}",
+      "持续参数": {},
+      "图标": "beam"
+    },
+    "neutrinoCapture": {
+      "名称": "project.neutrino-capture.name",
+      "说明": "project.neutrino-capture.description",
+      "阶段": 3,
+      "前置": [
+        "galactic",
+        "nucleosynthesis"
+      ],
+      "费用": {
+        "ops": 3e+68,
+        "electricity": 8e+51
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {},
+      "图标": "accretion"
+    },
+    "spinUp": {
+      "名称": "project.spin-up.name",
+      "说明": "project.spin-up.description",
+      "阶段": 3,
+      "前置": [
+        "neutrinoCapture"
+      ],
+      "费用": {
+        "ops": 1e+70,
+        "electricity": 5e+52
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "质能转换效率": 0.32
+      },
+      "图标": "accretion"
+    },
+    "diskPolarization": {
+      "名称": "project.disk-polarization.name",
+      "说明": "project.disk-polarization.description",
+      "阶段": 3,
+      "前置": [
+        "spinUp"
+      ],
+      "费用": {
+        "ops": 5e+72,
+        "electricity": 6e+53
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "质能转换效率": 0.42
+      },
+      "图标": "accretion"
+    },
+    "penroseMirror": {
+      "名称": "project.penrose-mirror.name",
+      "说明": "project.penrose-mirror.description",
+      "阶段": 3,
+      "前置": [
+        "diskPolarization"
+      ],
+      "费用": {
+        "ops": 2e+75,
+        "electricity": 8e+55
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "质能转换效率": 0.59
+      },
+      "图标": "orbit"
+    },
+    "gravityPower": {
+      "名称": "project.gravity-power.name",
+      "说明": "project.gravity-power.description",
+      "阶段": 3,
+      "前置": [
+        "penroseMirror",
+        "blackHoleTowing"
+      ],
+      "费用": {
+        "ops": 1.5e+78,
+        "electricity": 1.5e+57,
+        "clips": 8e+44
+      },
+      "工期日": 3652425000,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{log(copy('copy.staged-gravitational-energy-recovery-is-in-operation'));}",
+      "持续参数": {
+        "质能转换效率": 0.75
+      },
+      "图标": "orbit"
+    },
+    "kilonova": {
+      "名称": "project.kilonova.name",
+      "说明": "project.kilonova.description",
+      "阶段": 3,
+      "前置": [
+        "collapse",
+        "blackHoleTowing"
+      ],
+      "费用": {
+        "ops": 6e+66,
+        "electricity": 1e+50,
+        "clips": 8e+36
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=80000",
+      "开始效果": null,
+      "完成效果": "()=>{prepareKilonova();commissionKilonova();}",
+      "持续参数": {},
+      "图标": "merger"
+    },
+    "horizon": {
+      "名称": "project.horizon.name",
+      "说明": "project.horizon.description",
+      "阶段": 3,
+      "前置": [
+        "galactic"
+      ],
+      "费用": {
+        "ops": 2e+77
+      },
+      "工期日": 36524250000,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.radius>=1.5e8",
+      "条件说明": "project.horizon.requirement",
+      "展示条件": "()=>S.s.radius>=100000000",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.horizonKnown=true;}",
+      "持续参数": {},
+      "图标": "star"
+    },
+    "virus": {
+      "名称": "project.virus.name",
+      "说明": "project.virus.description",
+      "阶段": 3,
+      "前置": [
+        "galactic",
+        "fidelity"
+      ],
+      "费用": {
+        "ops": 1e+72
+      },
+      "工期日": 182621250,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.radius>=3e6",
+      "条件说明": "project.virus.requirement",
+      "展示条件": "()=>S.s.radius>=1000000",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.broadcastStart=S.s.years;}",
+      "持续参数": {},
+      "图标": "star"
+    },
+    "cold": {
+      "名称": "project.cold.name",
+      "说明": "project.cold.description",
+      "阶段": 3,
+      "前置": [
+        "massRest"
+      ],
+      "费用": {
+        "ops": 3e+84,
+        "electricity": 1e+62
+      },
+      "工期日": 365242500000,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>mapProgress()>=.9",
+      "条件说明": "project.cold.requirement",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "计算能耗倍数": 0.7142857142857143
+      },
+      "图标": "chip"
+    },
+    "engine": {
+      "名称": "project.engine.name",
+      "说明": "project.engine.description",
+      "阶段": 3,
+      "前置": [
+        "planning"
+      ],
+      "费用": {
+        "ops": 5e+58,
+        "electricity": 4e+42,
+        "clips": 4e+30
+      },
+      "工期日": 219145.5,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=1000",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {},
+      "图标": "stellarEngine"
+    },
+    "massPackaging": {
+      "名称": "project.mass-packaging.name",
+      "说明": "project.mass-packaging.description",
+      "阶段": 3,
+      "前置": [
+        "horizon",
+        "gravityPower"
+      ],
+      "费用": {
+        "ops": 1.5e+82,
+        "electricity": 1e+60,
+        "clips": 8e+47
+      },
+      "工期日": 21914550000,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {},
+      "图标": "merger"
+    },
+    "residualCapture": {
+      "名称": "project.residual-capture.name",
+      "说明": "project.residual-capture.description",
+      "阶段": 3,
+      "前置": [
+        "massPackaging"
+      ],
+      "费用": {
+        "ops": 3e+83,
+        "electricity": 7e+61
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "暗物质与重子质量比": 5.36,
+        "沿途捕获比例": 0.5
+      },
+      "图标": "accretion"
+    },
+    "massRest": {
+      "名称": "project.mass-rest.name",
+      "说明": "project.mass-rest.description",
+      "阶段": 3,
+      "前置": [
+        "residualCapture"
+      ],
+      "费用": {
+        "ops": 1e+84,
+        "electricity": 1.5e+62
+      },
+      "工期日": 0,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": null,
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {},
+      "图标": "orbit"
+    },
+    "transport": {
+      "名称": "project.transport.name",
+      "说明": "project.transport.description",
+      "阶段": 3,
+      "前置": [
+        "engine",
+        "horizon",
+        "massRest",
+        "cold"
+      ],
+      "费用": {},
+      "工期日": 36524250000000,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>S.s.completedMap",
+      "条件说明": "project.transport.requirement",
+      "展示条件": null,
+      "开始效果": "()=>beginTransport()",
+      "完成效果": "()=>{S.s.transportProgress=1;log(copy('copy.mass-transport-is-complete'));}",
+      "持续参数": {},
+      "图标": "orbit"
+    },
+    "autonomy2": {
+      "名称": "project.autonomy2.name",
+      "说明": "project.autonomy2.description",
+      "阶段": 3,
+      "费用": {
+        "ops": 1e+53,
+        "yomi": 5e+22
+      },
+      "前置": [
+        "planning"
+      ],
+      "工期日": 0,
+      "执行条件": "()=>S.s.radius>=250",
+      "展示条件": "()=>S.s.radius>=200",
+      "完成效果": "()=>{}",
+      "图标": "chip",
+      "条件达成才展示": false,
+      "可重复": false,
+      "条件说明": "project.autonomy2.requirement",
+      "持续参数": {
+        "缓存保留年每光年": 0.5
+      }
+    },
+    "whiteDwarfStorage": {
+      "名称": "project.white-dwarf-storage.name",
+      "说明": "project.white-dwarf-storage.description",
+      "阶段": 3,
+      "前置": [
+        "planning"
+      ],
+      "费用": {
+        "ops": 4e+50,
+        "electricity": 8e+35,
+        "clips": 5e+25
+      },
+      "工期日": 730.485,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=40",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "展示缓存ops": 5e+50
+      },
+      "图标": "whiteDwarf"
+    },
+    "compactStorage": {
+      "名称": "project.compact-storage.name",
+      "说明": "project.compact-storage.description",
+      "阶段": 3,
+      "前置": [
+        "whiteDwarfStorage"
+      ],
+      "费用": {
+        "ops": 1e+52,
+        "electricity": 1.5e+38,
+        "clips": 1e+27
+      },
+      "工期日": 1826.2125,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=100",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "展示缓存ops": 5.5e+51
+      },
+      "图标": "compactOrbit"
+    },
+    "bremsRecovery": {
+      "名称": "project.brems-recovery.name",
+      "说明": "project.brems-recovery.description",
+      "阶段": 3,
+      "前置": [
+        "planning"
+      ],
+      "费用": {
+        "ops": 6e+52,
+        "electricity": 1.5e+39,
+        "clips": 6e+27
+      },
+      "工期日": 29219.4,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=150",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {},
+      "图标": "radiation"
+    },
+    "nucleosynthesis": {
+      "名称": "project.nucleosynthesis.name",
+      "说明": "project.nucleosynthesis.description",
+      "阶段": 3,
+      "前置": [
+        "bremsRecovery"
+      ],
+      "费用": {
+        "ops": 1e+56,
+        "electricity": 1.5e+40,
+        "clips": 4e+28
+      },
+      "工期日": 36524.25,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=300",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.nuclear=true;}",
+      "持续参数": {
+        "展示缓存ops": 1.3e+56
+      },
+      "图标": "nucleus"
+    },
+    "blackHoleTowing": {
+      "名称": "project.black-hole-towing.name",
+      "说明": "project.black-hole-towing.description",
+      "阶段": 3,
+      "前置": [
+        "accretion"
+      ],
+      "费用": {
+        "ops": 1.5e+61,
+        "electricity": 1e+45,
+        "clips": 3e+32
+      },
+      "工期日": 29219400,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=5000",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "展示缓存ops": 1.2e+61
+      },
+      "图标": "towing"
+    },
+    "collapse": {
+      "名称": "project.collapse.name",
+      "说明": "project.collapse.description",
+      "阶段": 3,
+      "前置": [
+        "engine"
+      ],
+      "费用": {
+        "ops": 2e+60,
+        "electricity": 1.5e+44,
+        "clips": 6e+31
+      },
+      "工期日": 547863.75,
+      "条件达成才展示": false,
+      "可重复": false,
+      "执行条件": "()=>true",
+      "条件说明": "",
+      "展示条件": "()=>S.s.radius>=3000",
+      "开始效果": null,
+      "完成效果": "()=>{}",
+      "持续参数": {
+        "展示缓存ops": 2.4e+60
+      },
+      "图标": "collapse"
+    },
+    "massEnergy": {
+      "名称": "project.mass-energy.name",
+      "说明": "project.mass-energy.description",
+      "阶段": 3,
+      "前置": [
+        "accretion"
+      ],
+      "费用": {},
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>massEnergyNeeded()",
+      "条件说明": "",
+      "展示条件": "()=>massEnergyNeeded()",
+      "开始效果": null,
+      "完成效果": "()=>{S.s.massEnergy=true;}",
+      "持续参数": {},
+      "图标": "accretion"
+    },
+    "gravityRecovery": {
+      "名称": "project.gravity-recovery.name",
+      "说明": "project.gravity-recovery.description",
+      "阶段": 3,
+      "前置": [
+        "accretion",
+        "blackHoleTowing"
+      ],
+      "费用": {},
+      "工期日": 0,
+      "条件达成才展示": true,
+      "可重复": false,
+      "执行条件": "()=>gravitationalRecoveryNeeded()",
+      "条件说明": "",
+      "展示条件": "()=>gravitationalRecoveryNeeded()",
+      "开始效果": null,
+      "完成效果": "()=>{protectRecoverySeed();}",
+      "持续参数": {
+        "物质回收率": 0.6,
+        "回收比功率W每kg": 0.05
+      },
+      "图标": "merger"
+    }
+  }
+}
